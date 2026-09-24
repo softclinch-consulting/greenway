@@ -42,6 +42,7 @@ pds
 sds
 sds2
 mysql-timestamps/
+mysql/
 addons
 
 # cPanel user home internal directories
