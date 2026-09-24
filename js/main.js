@@ -42,7 +42,9 @@ windows.on('scroll', function() {
  jQuery MeanMenu
 ------------------------------ */
     var mean_menu = $('nav#dropdown');
-    mean_menu.meanmenu();
+    mean_menu.meanmenu({
+        meanScreenWidth: "991"
+    });
 	
 /*--------------------------
  scrollUp
