@@ -1,0 +1,984 @@
+<?php
+@include('web-admin/config.php');
+?>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TNPCB Authorized Used Oil Recycling &amp; Waste Oil Collection in Tamil Nadu, India | Green Way Industries</title>
+  <meta name="description" content="TNPCB authorized used oil recycler &amp; industrial waste oil collection company in Tamil Nadu. GPS vacuum tanker pickup, Form-10 manifests &amp; certified recycling across India. Call +91 93600 36055.">
+  <meta name="keywords" content="used oil recycling Tamil Nadu, waste oil collection Chennai, TNPCB authorized used oil recycler, industrial waste oil disposal India, waste oil collection near me, used oil recycling company, used lubricating oil recycler, hazardous waste management Tamil Nadu, Form 10 manifest waste oil, spent oil recycling, industrial waste management India, used oil collection service, used engine oil buyers Tamil Nadu, furnace oil suppliers Chennai, waste oil tanker service Hosur Coimbatore, Green Way Industries">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://wasteoil.in/">
+
+  <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
+  <meta name="geo.region" content="IN-TN">
+  <meta name="geo.placename" content="Chennai, Tamil Nadu, India">
+  <meta name="geo.position" content="13.0336;80.2117">
+  <meta name="ICBM" content="13.0336, 80.2117">
+
+  <!-- Open Graph & Social Cards for High SERP & Social CTR -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Green Way Industries">
+  <meta property="og:title" content="TNPCB Authorized Used Oil Recycling &amp; Waste Oil Collection in Tamil Nadu, India | Green Way Industries">
+  <meta property="og:description" content="TNPCB authorized used oil recycler &amp; industrial waste oil collection company in Tamil Nadu. GPS vacuum tanker pickup, Form-10 manifests &amp; certified recycling across India.">
+  <meta property="og:url" content="https://wasteoil.in/">
+  <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Used Oil Recycling &amp; Waste Oil Collection in Tamil Nadu, India | Green Way Industries">
+  <meta name="twitter:description" content="TNPCB authorized used oil recycler &amp; industrial waste oil collection company in Tamil Nadu. GPS vacuum tanker pickup, Form-10 manifests &amp; certified recycling across India.">
+  <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
+
+  <!-- JSON-LD Structured Data Schema for LocalBusiness & RecyclingCenter Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RecyclingCenter",
+    "name": "Green Way Industries",
+    "alternateName": "Green Way Waste Oil Recyclers",
+    "url": "https://wasteoil.in/",
+    "logo": "https://wasteoil.in/img/logo/logo.png",
+    "image": "https://wasteoil.in/img/slider/s4.jpg",
+    "description": "TNPCB authorized used oil recycling, on-site waste oil collection, GPS vacuum tanker logistics, and hazardous waste management serving Chennai, Tamil Nadu, and pan-India.",
+    "telephone": "+919360036055",
+    "email": "admin@usedoil.in",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600083",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.0336,
+      "longitude": 80.2117
+    },
+    "hasMap": "https://maps.google.com/?q=Ashok+Nagar+Chennai",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:30"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+      { "@type": "City", "name": "Chennai" },
+      { "@type": "City", "name": "Coimbatore" },
+      { "@type": "City", "name": "Hosur" },
+      { "@type": "City", "name": "Sriperumbudur" },
+      { "@type": "City", "name": "Oragadam" },
+      { "@type": "Country", "name": "India" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61579705359815",
+      "https://www.linkedin.com/company/green-way-industries-tnpcb-authorized-recycler/",
+      "https://www.instagram.com/green_wayindustries/",
+      "https://www.youtube.com/channel/UCt_oegAiIuHzagDOdyA7qSg"
+    ]
+  }
+  </script>
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
+  <link rel="stylesheet" href="css/meanmenu.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/magnific.min.css">
+  <link rel="stylesheet" href="css/venobox.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- 2026 Modern Industrial Sustainability Styles -->
+  <link rel="stylesheet" href="css/service-modern.css">
+</head>
+<body>
+
+<?php include('header.php'); ?>
+
+<main class="gw-home-2026">
+
+  <!-- ========================================================================
+       1. HERO — CENTRAL SEO & CONVERSION HUB
+       ======================================================================== -->
+  <section class="gw-hero-2026 gw-parallax-section">
+    <!-- Lightweight HTML5 Particle Canvas -->
+    <canvas id="gw-hero-particles"></canvas>
+
+    <!-- Anti-Gravity Floating Ambient Elements (Depth Layers) -->
+    <div class="gw-hero-floating-elements">
+      <!-- Background Layer: Orbiting Process Rings -->
+      <div class="gw-float-element gw-ring-1 gw-depth-bg"></div>
+      <div class="gw-float-element gw-ring-2 gw-depth-bg"></div>
+      <!-- Midground Layer: Liquid Droplets -->
+      <div class="gw-float-element gw-drop-1 gw-depth-mid"></div>
+      <!-- Foreground Layer: Micro Droplet -->
+      <div class="gw-float-element gw-drop-2 gw-depth-fg"></div>
+    </div>
+
+    <div class="container">
+      <div class="gw-hero-content gw-depth-fg">
+        <div class="gw-hero-badge-2026 gw-reveal gw-delay-1">
+          <span class="gw-dot"></span>
+          <span>Responsible Industrial Waste Management</span>
+        </div>
+        <h1 class="gw-reveal gw-delay-2">
+          Waste Oil Collection, Recycling &amp; <span>Industrial Waste Management</span>
+        </h1>
+        <p class="gw-hero-lead gw-reveal gw-delay-3">
+          Green Way Industries provides responsible waste oil collection, recycling, disposal and industrial waste management solutions for businesses across Tamil Nadu.
+        </p>
+        <div class="gw-hero-actions gw-reveal gw-delay-4" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+          <a class="gw-btn-lift gw-btn-primary-2026" href="#request">
+            <i class="fa fa-truck"></i> Request Waste Oil Collection
+          </a>
+          <a class="gw-btn-lift gw-btn-outline-2026" href="tel:+919360036055">
+            <i class="fa fa-phone"></i> Talk to Our Waste Management Team
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. CLIENT / PARTNER MARQUEE STRIP
+       ======================================================================== -->
+  <div class="gw-clients-strip">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:28px;">
+        <span class="gw-eyebrow-2026" style="font-size:13px;letter-spacing:2px;">
+          Serving Industrial Facilities &amp; Commercial Operations Across Tamil Nadu
+        </span>
+      </div>
+      <div class="gw-marquee-wrapper">
+        <div class="gw-marquee-track">
+          <!-- Primary Set -->
+          <div class="gw-client-logo-wrap"><img src="client/12_1.png" alt="Industrial Facility 1" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/13_2.png" alt="Industrial Facility 2" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/14_3.png" alt="Industrial Facility 3" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/15_4.png" alt="Industrial Facility 4" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/16_5.png" alt="Industrial Facility 5" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/17_6.png" alt="Industrial Facility 6" loading="lazy"></div>
+          <!-- Loop Duplication Set for Seamless Animation -->
+          <div class="gw-client-logo-wrap"><img src="client/12_1.png" alt="Industrial Facility 1" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/13_2.png" alt="Industrial Facility 2" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/14_3.png" alt="Industrial Facility 3" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/15_4.png" alt="Industrial Facility 4" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/16_5.png" alt="Industrial Facility 5" loading="lazy"></div>
+          <div class="gw-client-logo-wrap"><img src="client/17_6.png" alt="Industrial Facility 6" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       3. BRAND VALUE TRUST STRIP — CONTINUOUS SIDE-TO-SIDE SLIDING MOTION
+       ======================================================================== -->
+  <section class="gw-trust-strip-2026" aria-label="Core Capabilities">
+    <div class="gw-trust-marquee-wrapper">
+      <div class="gw-trust-marquee-track">
+        <!-- Set 1 -->
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-shield"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Responsible Waste Handling</span>
+            <span class="gw-trust-sub">Safe &amp; systematic handling of used and industrial waste</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-recycle"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Resource Recovery</span>
+            <span class="gw-trust-sub">Focus on recycling and recovery where suitable</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-cogs"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Industrial Waste Solutions</span>
+            <span class="gw-trust-sub">Designed around business waste requirements</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-map-marker"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Tamil Nadu Service Coverage</span>
+            <span class="gw-trust-sub">Serving industrial and commercial facilities statewide</span>
+          </div>
+        </div>
+        <!-- Set 2 (Seamless Infinite Loop Duplication) -->
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-shield"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Responsible Waste Handling</span>
+            <span class="gw-trust-sub">Safe &amp; systematic handling of used and industrial waste</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-recycle"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Resource Recovery</span>
+            <span class="gw-trust-sub">Focus on recycling and recovery where suitable</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-cogs"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Industrial Waste Solutions</span>
+            <span class="gw-trust-sub">Designed around business waste requirements</span>
+          </div>
+        </div>
+        <div class="gw-trust-card">
+          <div class="gw-trust-card-icon"><i class="fa fa-map-marker"></i></div>
+          <div class="gw-trust-card-text">
+            <span class="gw-trust-title">Tamil Nadu Service Coverage</span>
+            <span class="gw-trust-sub">Serving industrial and commercial facilities statewide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. COMPANY INTRODUCTION
+       ======================================================================== -->
+  <section class="gw-section-2026">
+    <div class="container">
+      <div class="gw-about-grid-2026">
+        <!-- Left: Layered Visual Frame with Floating Badges -->
+        <div class="gw-about-visual-wrap gw-reveal">
+          <img class="gw-about-main-img" src="about/1_vd.jpg" alt="Green Way Industries Waste Oil Recycling Facility">
+          <img class="gw-about-sub-img" src="about/1_vd1.jpg" alt="Industrial Oil Laboratory Testing">
+          <div class="gw-about-badge">
+            <b>15+</b>
+            <span>Years of Experience</span>
+          </div>
+        </div>
+
+        <!-- Right: Structured Content & Hierarchy -->
+        <div class="gw-about-content gw-reveal gw-delay-1">
+          <span class="gw-eyebrow-2026">About Green Way Industries</span>
+          <h2 class="gw-h2-2026">Responsible Waste Oil Management for Industry</h2>
+          <p class="gw-lead-2026 gw-lead-left">
+            Green Way Industries provides waste oil collection, recycling, disposal and industrial waste management solutions for businesses that need a responsible way to manage used and industrial waste.
+          </p>
+          <p style="font-size:15.5px;color:var(--gw-text);line-height:1.68;margin-bottom:20px;">
+            Our approach combines collection, transportation, handling, processing and documentation to support safer waste management and responsible resource recovery. We work with industrial facilities across relevant sectors to streamline waste operations while maintaining safe handling standards.
+          </p>
+          <ul class="gw-about-features">
+            <li>
+              <i class="fa fa-check-circle"></i>
+              <span><strong>Systematic Collection:</strong> Structured logistics tailored to facility operational requirements and waste streams.</span>
+            </li>
+            <li>
+              <i class="fa fa-check-circle"></i>
+              <span><strong>Resource Recovery:</strong> Directing suitable waste oils toward recycling and recovery where technically viable.</span>
+            </li>
+            <li>
+              <i class="fa fa-check-circle"></i>
+              <span><strong>Responsible Documentation:</strong> Complete tracking and records maintained for all managed waste consignments.</span>
+            </li>
+          </ul>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;">
+            <a class="gw-btn-lift gw-btn-green-2026" href="about.php">Learn About Green Way Industries</a>
+            <a class="gw-btn-lift gw-btn-secondary" style="color:var(--gw-deep)!important;border:1.5px solid var(--gw-green);" href="#services">View Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. STATISTICS / COUNTER SECTION
+       ======================================================================== -->
+  <section class="gw-stats-section-2026">
+    <div class="container">
+      <div class="gw-stats-grid-2026">
+        <div class="gw-stat-card-2026 gw-reveal">
+          <div class="gw-stat-number-wrap">
+            <span class="gw-counter-value" data-target="15">0</span>
+            <span class="gw-stat-unit">+</span>
+          </div>
+          <p>Years of Experience</p>
+        </div>
+        <div class="gw-stat-card-2026 gw-reveal gw-delay-1">
+          <div class="gw-stat-number-wrap">
+            <span class="gw-counter-value" data-target="3">0</span>
+            <span class="gw-stat-unit">+</span>
+          </div>
+          <p>Processing / Operational Units</p>
+        </div>
+        <div class="gw-stat-card-2026 gw-reveal gw-delay-2">
+          <div class="gw-stat-number-wrap">
+            <span class="gw-counter-value" data-target="300">0</span>
+            <span class="gw-stat-unit">+</span>
+          </div>
+          <p>Industrial Clients Served</p>
+        </div>
+        <div class="gw-stat-card-2026 gw-reveal gw-delay-3">
+          <div class="gw-stat-number-wrap">
+            <span class="gw-counter-value" data-target="400">0</span>
+            <span class="gw-stat-unit">+</span>
+          </div>
+          <p>Waste Collections Completed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. CONNECTED JOURNEY — MISSION → VISION → RESOURCE RECOVERY
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-soft">
+    <div class="container">
+      <div class="text-center gw-reveal">
+        <span class="gw-eyebrow-2026">Strategic Direction</span>
+        <h2 class="gw-h2-2026">Connecting Purpose to Sustainable Industrial Action</h2>
+        <p class="gw-lead-2026">
+          A structured framework guiding how we handle, process, and recover industrial waste materials responsibly.
+        </p>
+      </div>
+
+      <div class="gw-journey-wrapper gw-reveal gw-delay-1">
+        <div class="gw-journey-line hidden-xs hidden-sm"></div>
+        <div class="gw-journey-grid">
+          <!-- Step 1: Mission -->
+          <div class="gw-journey-card gw-tilt-card">
+            <div class="gw-journey-node">
+              <i class="fa fa-compass"></i>
+            </div>
+            <span class="gw-journey-step-tag">Step 01 • Purpose</span>
+            <h3>Our Mission</h3>
+            <p>
+              Make importance about waste management to our customers and provide practical solutions through safe handling and structured processes.
+            </p>
+          </div>
+
+          <!-- Step 2: Vision -->
+          <div class="gw-journey-card gw-tilt-card">
+            <div class="gw-journey-node">
+              <i class="fa fa-leaf"></i>
+            </div>
+            <span class="gw-journey-step-tag">Step 02 • Preservation</span>
+            <h3>Our Vision</h3>
+            <p>
+              Protect natural environments through responsible service delivery and support the conservation of petroleum resources.
+            </p>
+          </div>
+
+          <!-- Step 3: Resource Recovery -->
+          <div class="gw-journey-card gw-tilt-card">
+            <div class="gw-journey-node">
+              <i class="fa fa-recycle"></i>
+            </div>
+            <span class="gw-journey-step-tag">Step 03 • Impact</span>
+            <h3>Resource Recovery</h3>
+            <p>
+              Direct suitable waste streams toward recovery and recycling to support a more sustainable industrial future across Tamil Nadu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. SERVICES OVERVIEW — BALANCED 3x3 GRID + SPOTLIGHT CARD
+       ======================================================================== -->
+  <section id="services" class="gw-section-2026">
+    <div class="container">
+      <div class="text-center gw-reveal">
+        <span class="gw-eyebrow-2026">Service Overview</span>
+        <h2 class="gw-h2-2026">Waste Oil &amp; Industrial Waste Management Services</h2>
+        <p class="gw-lead-2026">
+          Green Way Industries provides collection, recycling, disposal and management solutions tailored to the operational requirements of businesses and industrial facilities.
+        </p>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="gw-service-filters">
+          <button type="button" class="gw-service-filter-btn is-active" data-filter="all">
+            <i class="fa fa-th-large"></i> All Solutions (10)
+          </button>
+          <button type="button" class="gw-service-filter-btn" data-filter="oil-recycling">
+            <i class="fa fa-recycle"></i> Oil Collection &amp; Recycling
+          </button>
+          <button type="button" class="gw-service-filter-btn" data-filter="specialized">
+            <i class="fa fa-cogs"></i> Specialized Streams
+          </button>
+          <button type="button" class="gw-service-filter-btn" data-filter="hazardous">
+            <i class="fa fa-truck"></i> Hazardous &amp; Marine Logistics
+          </button>
+        </div>
+      </div>
+
+      <?php
+      $coreServices = [
+        ['Waste Oil Collection', 'waste-oil-collection-professional.php', 'Collection solutions for used and waste oil generated by industrial and commercial operations.', '21_3.jpg', 'oil-recycling'],
+        ['Waste Oil Recycling', 'waste-oil-recycling-professional.php', 'Responsible recovery and recycling of suitable waste oils.', '17_2.jpg', 'oil-recycling'],
+        ['Used Oil Disposal', 'used-oil-disposal-professional.php', 'Waste oil disposal solutions focused on responsible handling and environmental protection.', '22_4.jpg', 'oil-recycling'],
+        ['Used Oil Recycling', 'used-oil-recycler-professional.php', 'Recovery and processing options for suitable used-oil streams.', '23_5.jpg', 'oil-recycling'],
+        ['Used Transformer Oil Recycling', 'used-transformer-oil-recycling-professional.php', 'Management and recycling solutions for used transformer oil.', '25_7.jpg', 'specialized'],
+        ['Used Hydraulic Oil Management', 'used-hydraulic-oil-professional.php', 'Collection and responsible management of used hydraulic oil.', '26_8.jpg', 'specialized'],
+        ['Spent Oil Management', 'spent-oil-professional.php', 'Collection, handling and processing of spent industrial oils.', '27_9.jpg', 'specialized oil-recycling'],
+        ['Hazardous Waste Transportation', 'hazardous-waste-transport-professional.php', 'Transportation solutions for applicable hazardous industrial waste streams.', '28_10.jpg', 'hazardous'],
+        ['Marine & Ship Waste Management', 'hazardous-waste-disposal-for-ships-professional.php', 'Waste-management support for applicable marine and ship-generated waste streams.', '29_11.jpg', 'hazardous specialized']
+      ];
+      ?>
+
+      <!-- 3x3 Balanced Card Grid for First 9 Services -->
+      <div class="gw-services-grid-2026">
+        <?php
+        foreach ($coreServices as $idx => $s) {
+          $delayClass = 'gw-delay-' . (($idx % 3) + 1);
+        ?>
+          <article class="gw-service-card-2026 gw-tilt-card gw-reveal <?php echo $delayClass; ?>" data-category="<?php echo $s[4]; ?>">
+            <div class="gw-service-img-wrap">
+              <span class="gw-service-num"><?php echo sprintf('%02d', $idx + 1); ?></span>
+              <img src="service_one/<?php echo $s[3]; ?>" alt="<?php echo htmlspecialchars($s[0]); ?> in Tamil Nadu" loading="lazy">
+            </div>
+            <div class="gw-service-card-body">
+              <h3><?php echo htmlspecialchars($s[0]); ?></h3>
+              <p><?php echo htmlspecialchars($s[2]); ?></p>
+              <a class="gw-service-card-link" href="<?php echo $s[1]; ?>">
+                Learn about <?php echo htmlspecialchars($s[0]); ?> <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        <?php } ?>
+      </div>
+
+      <!-- Service 10: Full-Width Enterprise Spotlight Card -->
+      <article class="gw-service-spotlight-card gw-reveal" data-category="specialized hazardous">
+        <div class="gw-spotlight-img-wrap">
+          <span class="gw-service-num">10 • Enterprise</span>
+          <img src="service_one/30_12.jpg" alt="Industrial Waste Management Solutions in Tamil Nadu" loading="lazy">
+          <span class="gw-mosaic-badge gw-float-anim" style="bottom:18px;left:18px;top:auto;">
+            <span class="gw-pulse-dot"></span> Integrated Facility Programs
+          </span>
+        </div>
+        <div class="gw-spotlight-content">
+          <span class="gw-spotlight-tag">
+            <i class="fa fa-industry"></i> Integrated Facility Waste Management
+          </span>
+          <h3>Industrial Waste Management</h3>
+          <p class="gw-spotlight-desc">
+            Integrated waste-management support for industrial facilities across Tamil Nadu, assisting businesses with safe containment, transportation, and responsible processing.
+          </p>
+          <div class="gw-spotlight-features">
+            <div class="gw-spotlight-feat">
+              <i class="fa fa-check-circle"></i> Structured Facility Waste Programs
+            </div>
+            <div class="gw-spotlight-feat">
+              <i class="fa fa-check-circle"></i> Safe Containment &amp; Storage Protocols
+            </div>
+            <div class="gw-spotlight-feat">
+              <i class="fa fa-check-circle"></i> Dedicated Collection &amp; Transport Logistics
+            </div>
+            <div class="gw-spotlight-feat">
+              <i class="fa fa-check-circle"></i> Responsible Consignment Documentation
+            </div>
+          </div>
+          <div class="gw-spotlight-actions">
+            <a class="gw-spotlight-btn" href="industrial-waste-management-professional.php">
+              Learn about Industrial Waste Management <i class="fa fa-arrow-right"></i>
+            </a>
+            <a class="gw-spotlight-call" href="tel:+919360036055">
+              <i class="fa fa-phone"></i> +91 93600 36055
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. WHY BUSINESSES CHOOSE GREEN WAY INDUSTRIES (5 CUSTOMER-FOCUSED POINTS)
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-soft">
+    <div class="container">
+      <div class="text-center gw-reveal">
+        <span class="gw-eyebrow-2026">Customer-Focused Approach</span>
+        <h2 class="gw-h2-2026">Why Businesses Choose Green Way Industries</h2>
+        <p class="gw-lead-2026">
+          A structured approach to helping businesses manage used oil and industrial waste responsibly.
+        </p>
+      </div>
+
+      <div class="gw-pillars-grid" style="grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
+        <div class="gw-pillar-card gw-tilt-card gw-reveal">
+          <div class="gw-pillar-icon"><i class="fa fa-shield"></i></div>
+          <h3>Responsible Handling</h3>
+          <p>
+            Focus on systematic collection, safe handling, and responsible waste management.
+          </p>
+        </div>
+        <div class="gw-pillar-card gw-tilt-card gw-reveal gw-delay-1">
+          <div class="gw-pillar-icon"><i class="fa fa-cogs"></i></div>
+          <h3>Industry-Focused Solutions</h3>
+          <p>
+            Solutions designed around the operational requirements of industrial and commercial customers.
+          </p>
+        </div>
+        <div class="gw-pillar-card gw-tilt-card gw-reveal gw-delay-2">
+          <div class="gw-pillar-icon"><i class="fa fa-recycle"></i></div>
+          <h3>Resource Recovery</h3>
+          <p>
+            Where suitable, waste streams can be directed toward recycling and resource recovery.
+          </p>
+        </div>
+        <div class="gw-pillar-card gw-tilt-card gw-reveal gw-delay-3">
+          <div class="gw-pillar-icon"><i class="fa fa-truck"></i></div>
+          <h3>End-to-End Support</h3>
+          <p>
+            Support across relevant stages of collection, transportation, processing and waste management.
+          </p>
+        </div>
+        <div class="gw-pillar-card gw-tilt-card gw-reveal gw-delay-1">
+          <div class="gw-pillar-icon"><i class="fa fa-check-circle"></i></div>
+          <h3>Practical Waste Management</h3>
+          <p>
+            A structured approach to helping businesses manage used oil and industrial waste responsibly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. HOW OUR WASTE MANAGEMENT PROCESS WORKS (5 STEPS)
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-deep">
+    <div class="container">
+      <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+        <div class="col-md-4 gw-reveal">
+          <span class="gw-eyebrow-2026 gw-eyebrow-lime">Structured Process</span>
+          <h2 class="gw-h2-2026">How Our Waste Management Process Works</h2>
+          <p style="font-size:16px;color:#dbe7df;line-height:1.68;margin-bottom:28px;">
+            A clear 5-stage overview of how waste oil and industrial waste materials move from collection to responsible management.
+          </p>
+          <a class="gw-btn-lift gw-btn-primary-2026" href="#request">
+            <i class="fa fa-calendar-check-o"></i> Request Waste Oil Collection
+          </a>
+        </div>
+        <div class="col-md-8 gw-reveal gw-delay-1">
+          <div class="row">
+            <?php
+            $steps = [
+              ['Identify', 'Understand the type, source and quantity of waste.'],
+              ['Collect', 'Arrange collection according to the waste stream and operational requirement.'],
+              ['Transport', 'Move the collected material through the appropriate handling and transportation process.'],
+              ['Process', 'Suitable waste streams are processed, recycled or otherwise managed according to their characteristics and applicable requirements.'],
+              ['Responsible Management', 'Maintain appropriate documentation and responsible waste-management practices.']
+            ];
+            foreach ($steps as $i => $step) {
+              $num = str_pad($i + 1, 2, '0', STR_PAD_LEFT);
+            ?>
+              <div class="col-sm-6" style="margin-bottom:24px;">
+                <div style="position:relative;padding:18px 18px 18px 60px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:6px;min-height:115px;">
+                  <span style="position:absolute;top:18px;left:14px;width:34px;height:34px;border-radius:50%;background:var(--gw-lime);color:var(--gw-deep);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px;">
+                    <?php echo $num; ?>
+                  </span>
+                  <h3 style="font-size:18px;color:#ffffff;margin:0 0 6px;font-weight:700;"><?php echo $step[0]; ?></h3>
+                  <p style="font-size:13.5px;color:#dbe7df;margin:0;line-height:1.55;"><?php echo $step[1]; ?></p>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. INDUSTRIES WE SERVE (SHORT TEASER ONLY)
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-industries-section">
+    <div class="container">
+      <div class="text-center gw-reveal">
+        <span class="gw-eyebrow-2026">Sector Expertise</span>
+        <h2 class="gw-h2-2026">Industries We Serve</h2>
+        <p class="gw-lead-2026">
+          Green Way Industries supports waste-management requirements across industrial and commercial sectors, including manufacturing, automotive, electrical and power, engineering, marine and other businesses generating used oil and industrial waste.
+        </p>
+      </div>
+
+      <div class="gw-industries-grid gw-reveal gw-delay-1">
+        <?php
+        $industries = [
+          ['fa-industry', 'Manufacturing', 'Industrial machinery lubricants, cutting fluids & spent hydraulic oil.'],
+          ['fa-wrench', 'Automotive', 'Used engine oil, transmission fluids, gear oils & fleet maintenance waste.'],
+          ['fa-bolt', 'Electrical & Power', 'Decommissioned transformer insulating oils and substation dielectric fluids.'],
+          ['fa-cogs', 'Engineering', 'Metalworking coolants, machining lubricants & industrial fluids.'],
+          ['fa-ship', 'Marine & Shipping', 'Vessel slop oil, bilge waste water, shipboard lubricants & engine room runoff.'],
+          ['fa-building', 'Construction & Infrastructure', 'Heavy equipment oils, hydraulic fluids & generator maintenance waste.']
+        ];
+        foreach ($industries as $idx => $ind) {
+          $delayClass = 'gw-delay-' . (($idx % 3) + 1);
+        ?>
+          <div class="gw-industry-card gw-tilt-card <?php echo $delayClass; ?>">
+            <div class="gw-industry-icon">
+              <i class="fa <?php echo $ind[0]; ?>"></i>
+            </div>
+            <h3><?php echo htmlspecialchars($ind[1]); ?></h3>
+            <p><?php echo htmlspecialchars($ind[2]); ?></p>
+          </div>
+        <?php } ?>
+      </div>
+
+      <div class="text-center" style="margin-top:32px;">
+        <a class="gw-btn-lift gw-btn-green-2026" href="our-industries.php">
+          Explore Industries We Serve <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================
+       11. COMPLIANCE & RESPONSIBLE WASTE MANAGEMENT (SHORT TEASER)
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-soft">
+    <div class="container">
+      <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+        <div class="col-md-6 gw-reveal">
+          <span class="gw-eyebrow-2026">Regulatory Awareness</span>
+          <h2 class="gw-h2-2026">Compliance &amp; Responsible Waste Management</h2>
+          <p class="gw-lead-2026 gw-lead-left">
+            Green Way Industries follows applicable requirements and maintains appropriate documentation and processes for its waste-management operations.
+          </p>
+          <p style="font-size:15px;color:var(--gw-text);line-height:1.65;margin-bottom:20px;">
+            We support industrial facilities by ensuring safe handling, disciplined consignment records, and adherence to environmental standards throughout collection, transportation, and processing.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+            <div style="display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--gw-deep);">
+              <i class="fa fa-check-circle" style="color:var(--gw-green);font-size:18px;"></i>
+              <span><strong>Consignment Documentation:</strong> Systematic record-keeping and manifest documentation for all waste transfers.</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--gw-deep);">
+              <i class="fa fa-check-circle" style="color:var(--gw-green);font-size:18px;"></i>
+              <span><strong>Safe Handling Practices:</strong> Structured containment, spill-prevention procedures, and trained handling personnel.</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;font-size:14.5px;color:var(--gw-deep);">
+              <i class="fa fa-check-circle" style="color:var(--gw-green);font-size:18px;"></i>
+              <span><strong>Resource Recovery Focus:</strong> Prioritizing recycling and recovery where waste oil streams are technically suitable.</span>
+            </div>
+          </div>
+          <div>
+            <a class="gw-btn-lift gw-btn-green-2026" href="certifications.php">
+              View Certifications &amp; Compliance <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 gw-reveal gw-delay-1">
+          <div class="gw-visual-frame" style="border-radius:8px;overflow:hidden;box-shadow:var(--gw-shadow-md);background:#ffffff;padding:28px;border:1px solid #dce8dd;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+              <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;text-align:center;">
+                <div style="width:52px;height:52px;border-radius:50%;background:#e5f2e8;color:var(--gw-green);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;">
+                  <i class="fa fa-file-text-o"></i>
+                </div>
+                <h4 style="font-size:16px;color:var(--gw-deep);margin:0 0 6px;font-weight:700;">Manifest Records</h4>
+                <p style="font-size:13px;color:var(--gw-text-muted);margin:0;line-height:1.5;">Tracked documentation for industrial consignments</p>
+              </div>
+              <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;text-align:center;">
+                <div style="width:52px;height:52px;border-radius:50%;background:#e5f2e8;color:var(--gw-green);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;">
+                  <i class="fa fa-shield"></i>
+                </div>
+                <h4 style="font-size:16px;color:var(--gw-deep);margin:0 0 6px;font-weight:700;">Safe Handling</h4>
+                <p style="font-size:13px;color:var(--gw-text-muted);margin:0;line-height:1.5;">Structured containment and safe transfer protocols</p>
+              </div>
+              <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;text-align:center;">
+                <div style="width:52px;height:52px;border-radius:50%;background:#e5f2e8;color:var(--gw-green);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;">
+                  <i class="fa fa-recycle"></i>
+                </div>
+                <h4 style="font-size:16px;color:var(--gw-deep);margin:0 0 6px;font-weight:700;">Resource Recovery</h4>
+                <p style="font-size:13px;color:var(--gw-text-muted);margin:0;line-height:1.5;">Responsible recycling of suitable waste streams</p>
+              </div>
+              <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;text-align:center;">
+                <div style="width:52px;height:52px;border-radius:50%;background:#e5f2e8;color:var(--gw-green);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:22px;">
+                  <i class="fa fa-truck"></i>
+                </div>
+                <h4 style="font-size:16px;color:var(--gw-deep);margin:0 0 6px;font-weight:700;">Compliant Logistics</h4>
+                <p style="font-size:13px;color:var(--gw-text-muted);margin:0;line-height:1.5;">Dedicated transportation across Tamil Nadu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. TAMIL NADU SERVICE AREA & LOCATIONS
+       ======================================================================== -->
+  <section class="gw-section-2026">
+    <div class="container">
+      <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+        <div class="col-md-6 gw-reveal">
+          <span class="gw-eyebrow-2026">Service Coverage</span>
+          <h2 class="gw-h2-2026">Waste Management Services Across Tamil Nadu</h2>
+          <p class="gw-lead-2026 gw-lead-left">
+            Green Way Industries supports waste oil and industrial waste-management requirements across Tamil Nadu, with operations serving industrial and commercial customers in relevant locations.
+          </p>
+          <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;margin-bottom:24px;">
+            <p style="margin:0 0 10px;font-size:14.5px;color:var(--gw-deep);">
+              <i class="fa fa-building" style="color:var(--gw-green);margin-right:8px;"></i>
+              <strong>Corporate Office:</strong> Suscon Builder, 53rd Street, Ashok Nagar, Chennai, Tamil Nadu – 600083
+            </p>
+            <p style="margin:0;font-size:14.5px;color:var(--gw-deep);">
+              <i class="fa fa-industry" style="color:var(--gw-green);margin-right:8px;"></i>
+              <strong>Processing Plant:</strong> Plot No: 101-104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu – 604207
+            </p>
+          </div>
+          <p style="font-size:14.5px;color:var(--gw-text-muted);margin-bottom:12px;font-weight:600;">
+            Industrial Hubs &amp; Coverage Areas:
+          </p>
+          <div class="gw-locations-wrap">
+            <?php
+            $cities = ['Chennai', 'Villupuram', 'Tindivanam', 'Cuddalore', 'Kanchipuram', 'Chengalpattu', 'Tiruvallur', 'Ranipet', 'Coimbatore', 'Madurai', 'Tiruppur', 'Salem'];
+            foreach ($cities as $city) {
+              echo '<span class="gw-city-chip"><i class="fa fa-check"></i> ' . $city . '</span>';
+            }
+            ?>
+          </div>
+        </div>
+        <div class="col-md-6 gw-reveal gw-delay-1">
+          <div class="gw-visual-frame" style="border-radius:8px;overflow:hidden;box-shadow:var(--gw-shadow-md);">
+            <img src="img/service/3.jpg" alt="Waste Oil Collection Fleet in Tamil Nadu" style="width:100%;height:380px;object-fit:cover;">
+            <div class="gw-visual-badge">
+              <span><i class="fa fa-shield"></i> Operational Coverage</span>
+              <span>Tamil Nadu Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       14. FREQUENTLY ASKED QUESTIONS (BROAD HOMEPAGE FAQS)
+       ======================================================================== -->
+  <section class="gw-section-2026 gw-soft" id="faq">
+    <div class="container">
+      <div class="text-center gw-reveal">
+        <span class="gw-eyebrow-2026">General Inquiries</span>
+        <h2 class="gw-h2-2026">Frequently Asked Questions</h2>
+        <p class="gw-lead-2026">
+          Clear answers to common questions about our waste oil collection, recycling, and industrial waste management services.
+        </p>
+      </div>
+
+      <div class="row align-items-stretch" style="margin-top:24px;">
+        <!-- Left: Visual Frame with Floating Badge & Quick Guidance -->
+        <div class="col-md-5 col-sm-12 gw-reveal" style="margin-bottom:28px;">
+          <div class="gw-faq-visual-card">
+            <img class="gw-faq-bg-img" src="img/service/2.jpg" alt="Industrial Waste Oil Recycling Facility in Tamil Nadu">
+            <!-- Anti-gravity floating badge -->
+            <div class="gw-faq-float-badge gw-float-anim">
+              <span class="gw-pulse-dot"></span>
+              <span><i class="fa fa-shield"></i> Service Support</span>
+            </div>
+            <!-- Glassmorphism Quick-Help Card -->
+            <div class="gw-faq-float-card">
+              <h4>Need Technical Guidance?</h4>
+              <p>
+                Our waste-management team can answer questions regarding waste types, collection logistics, and documentation.
+              </p>
+              <a href="tel:+919360036055" class="gw-faq-call-btn">
+                <i class="fa fa-phone"></i> Call +91 93600 36055
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 6 Broad Homepage FAQ Questions -->
+        <div class="col-md-7 col-sm-12 gw-reveal gw-delay-1">
+          <div class="gw-faq-wrapper" style="margin-top:0;">
+            <!-- FAQ 1 -->
+            <div class="gw-faq-item is-active">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q01</span>
+                  <h3 class="gw-faq-title">What types of waste oil does Green Way Industries manage?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body" style="display:block;">
+                <p>
+                  Green Way Industries can support the collection and management of suitable used and waste oil streams generated by industrial and commercial operations. Requirements depend on the type and condition of the material.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="gw-faq-item">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q02</span>
+                  <h3 class="gw-faq-title">Does Green Way Industries provide waste oil collection?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body">
+                <p>
+                  Yes. Businesses can contact Green Way Industries to discuss their waste type, approximate quantity, location and collection requirement.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="gw-faq-item">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q03</span>
+                  <h3 class="gw-faq-title">Does Green Way Industries provide waste oil recycling?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body">
+                <p>
+                  Green Way Industries provides recycling and resource-recovery solutions for suitable waste oil streams.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="gw-faq-item">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q04</span>
+                  <h3 class="gw-faq-title">Where does Green Way Industries operate?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body">
+                <p>
+                  Green Way Industries serves industrial and commercial waste-management requirements across Tamil Nadu.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="gw-faq-item">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q05</span>
+                  <h3 class="gw-faq-title">How can a business request waste oil collection?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body">
+                <p>
+                  Businesses can contact the waste-management team and provide the waste type, approximate quantity, facility location and preferred collection frequency.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="gw-faq-item">
+              <button class="gw-faq-header" type="button">
+                <div class="gw-faq-title-wrap">
+                  <span class="gw-faq-badge">Q06</span>
+                  <h3 class="gw-faq-title">Can Green Way Industries manage industrial waste other than used oil?</h3>
+                </div>
+                <div class="gw-faq-icon"><i class="fa fa-chevron-down"></i></div>
+              </button>
+              <div class="gw-faq-body">
+                <p>
+                  Yes, the company provides industrial waste-management services for applicable waste streams. The exact solution depends on the type and characteristics of the waste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       15. FINAL CTA — INQUIRY & COLLECTION REQUEST
+       ======================================================================== -->
+  <section id="request" class="gw-section-2026 gw-deep">
+    <div class="container">
+      <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+        <div class="col-md-6 gw-reveal">
+          <span class="gw-eyebrow-2026 gw-eyebrow-lime">Service Inquiries</span>
+          <h2 class="gw-h2-2026">Have Used Oil or Industrial Waste to Manage?</h2>
+          <p style="font-size:16.5px;color:#dbe7df;line-height:1.68;margin-bottom:26px;">
+            Tell us about your waste type, approximate quantity, facility location and collection requirement. Our team can discuss the appropriate waste-management solution for your business.
+          </p>
+          <div style="margin-bottom:24px;">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+              <div style="width:44px;height:44px;border-radius:50%;background:rgba(181,232,95,0.15);border:1px solid var(--gw-lime);display:flex;align-items:center;justify-content:center;color:var(--gw-lime);font-size:18px;">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div>
+                <span style="font-size:12.5px;text-transform:uppercase;color:#b5e85f;letter-spacing:1px;display:block;">Call Direct Support</span>
+                <a href="tel:+919360036055" style="font-size:20px;font-weight:700;color:#ffffff;text-decoration:none;">+91 93600 36055</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+              <div style="width:44px;height:44px;border-radius:50%;background:rgba(181,232,95,0.15);border:1px solid var(--gw-lime);display:flex;align-items:center;justify-content:center;color:var(--gw-lime);font-size:18px;">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div>
+                <span style="font-size:12.5px;text-transform:uppercase;color:#b5e85f;letter-spacing:1px;display:block;">Email Our Team</span>
+                <a href="mailto:info@wasteoil.in" style="font-size:18px;font-weight:600;color:#ffffff;text-decoration:none;">info@wasteoil.in</a>
+              </div>
+            </div>
+            <div>
+              <a class="gw-btn-lift gw-btn-outline-2026" href="contact-us.php" style="border-color:rgba(255,255,255,0.3);color:#ffffff;">
+                <i class="fa fa-envelope-o"></i> Contact Our Team
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 gw-reveal gw-delay-1">
+          <div class="gw-request-card">
+            <h3>Request Waste Oil Collection</h3>
+            <p style="font-size:14px;color:var(--gw-text-muted);margin-bottom:20px;">
+              Tell us about your waste type, approximate quantity, facility location and collection requirement.
+            </p>
+            <form action="contact-us.php" method="get">
+              <input class="gw-form-control-2026" type="text" name="waste_type" placeholder="Waste Type (e.g. Used Engine, Hydraulic, Transformer Oil)" required>
+              <input class="gw-form-control-2026" type="text" name="quantity" placeholder="Approximate Quantity (Litres / Barrels)" required>
+              <input class="gw-form-control-2026" type="text" name="location" placeholder="Facility Location / City" required>
+              <input class="gw-form-control-2026" type="text" name="frequency" placeholder="Collection Frequency (One-time, Monthly, Regular)">
+              <button class="gw-btn-lift gw-btn-green-2026" type="submit" style="width:100%;border:none;margin-top:6px;">
+                <i class="fa fa-paper-plane"></i> Request Waste Oil Collection
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php include('footer.php'); ?>
+
+<!-- Core JavaScript Libraries -->
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="js/jquery.meanmenu.js"></script>
+<script src="js/main.js"></script>
+<!-- 2026 Interactive Motion & Anti-Gravity Engine -->
+<script src="js/service-modern.js"></script>
+
+</body>
+</html>

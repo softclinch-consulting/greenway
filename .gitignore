@@ -1,0 +1,54 @@
+# Ignore large backup archives (exceeds GitHub 100MB limit)
+*.zip
+*.tar.gz
+*.tar
+
+# Local development runtime & scratch scripts
+.local-mysql/
+php-local-error.log
+php-local.log
+scratch/
+homedir/public_html/scratch/
+
+# Sensitive cPanel system files & credentials
+shadow
+digestshadow
+proftpdpasswd
+mysql.sql-auth.json
+autossl.json
+bandwidth_db*
+nobodyfiles
+has_sslstorage
+homedir_paths
+packaged_in_version
+quota
+shell
+version
+ips/
+meta/
+logs/
+dnszones/
+domainkeys/
+apache_tls/
+resellerconfig/
+resellerfeatures/
+resellerpackages/
+userdata/
+va/
+vad/
+vf/
+cp/
+pds
+sds
+sds2
+mysql-timestamps/
+addons
+
+# cPanel user home internal directories
+homedir/.*
+homedir/etc/
+homedir/logs/
+homedir/mail/
+homedir/public_ftp/
+homedir/ssl/
+homedir/tmp/

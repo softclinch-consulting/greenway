@@ -1,0 +1,414 @@
+<style>
+.hwr{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
+.hwr h1,.hwr h2,.hwr h3,.hwr h4{color:var(--deep);font-weight:700;line-height:1.25}
+.hwr h1{font-size:36px;margin:0 0 16px;color:#fff}
+.hwr h2{font-size:26px;margin:0 0 14px}
+.hwr h3{font-size:18px;margin:0 0 8px}
+.hwr p{margin:0 0 14px}
+.hwr-label{color:var(--lime);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;display:inline-block}
+.hwr-label--dark{color:var(--green)}
+.hwr-hero{padding:48px 0 36px;background:linear-gradient(115deg,rgba(16,58,42,.96),rgba(25,107,69,.88)),url('service_one/24_6.jpg') center/cover;color:#edf7f0}
+.hwr-hero h1{max-width:850px}
+.hwr-hero p{max-width:780px;font-size:18px;color:#e8f4ed;margin-bottom:20px}
+.hwr-btn{display:inline-block;padding:12px 24px;background:var(--lime);color:var(--deep)!important;font-weight:700;text-decoration:none;border-radius:2px;transition:.25s ease}
+.hwr-btn:hover{background:#a3db4b;text-decoration:none}
+.hwr-btn--outline{background:transparent;border:2px solid var(--lime);color:#fff!important;margin-left:12px}
+.hwr-btn--outline:hover{background:var(--lime);color:var(--deep)!important}
+.hwr-section{padding:54px 0}
+.hwr-soft{background:var(--soft)}
+.hwr-lead{font-size:18px;color:#495d52;font-weight:500}
+.hwr-card{height:100%;padding:26px 24px;background:#fff;border:1px solid var(--border);border-top:4px solid var(--lime);transition:.25s ease;margin-bottom:24px}
+.hwr-card:hover{transform:translateY(-5px);box-shadow:0 12px 24px rgba(16,58,42,.12)}
+.hwr-card i{color:var(--green);font-size:26px;margin-bottom:12px}
+.hwr-step{position:relative;padding:0 10px 24px 62px}
+.hwr-step b{position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;line-height:42px;text-align:center;font-size:16px;font-weight:700}
+.hwr-step h3{font-size:18px;margin:0 0 6px}
+.hwr-step p{margin:0;font-size:15px;color:#4f6157}
+.hwr-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.hwr-box{padding:30px 26px;background:#fff;border:1px solid var(--border);box-shadow:0 8px 20px rgba(16,58,42,.06);height:100%}
+.hwr-box-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;margin-bottom:14px;background:#e9f2e9;color:var(--green);font-size:22px;border-radius:50%}
+.hwr-check-list{list-style:none;padding:0;margin:16px 0 0}
+.hwr-check-list li{position:relative;padding:8px 0 8px 26px;border-bottom:1px solid #e7eee7;font-size:15px}
+.hwr-check-list li:last-child{border-bottom:none}
+.hwr-check-list li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+.hwr-faq{padding:20px 22px;margin-bottom:16px;background:#fff;border-left:4px solid var(--green);border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.hwr-faq h3{font-size:17px;margin:0 0 8px;color:var(--deep)}
+.hwr-faq p{margin:0;font-size:14.5px;color:#506158;line-height:1.65}
+.hwr-cta{padding:38px 34px;background:var(--deep);color:#eaf4ec;border-radius:3px}
+.hwr-cta h2{color:#fff;margin-top:0}
+.hwr-cta a{color:var(--lime);font-weight:700}
+.hwr-links-bar{padding:18px 20px;background:#eaf2e7;border:1px solid #d5e5d3;margin-top:28px}
+.hwr-links-bar a{display:inline-block;margin:4px 8px 4px 0;padding:5px 12px;background:#fff;border:1px solid var(--border);color:var(--green);font-weight:600;font-size:14px;border-radius:2px;text-decoration:none}
+.hwr-links-bar a:hover{background:var(--green);color:#fff;text-decoration:none}
+@media(max-width:991px){
+  .hwr-hero h1{font-size:30px}
+  .hwr-grid-2{grid-template-columns:1fr}
+}
+@media(max-width:767px){
+  .hwr h1{font-size:26px}
+  .hwr h2{font-size:22px}
+  .hwr-section{padding:38px 0}
+  .hwr-hero{padding:32px 0 26px}
+  .hwr-btn--outline{margin-left:0;margin-top:10px;display:block;text-align:center}
+  .hwr-btn{display:block;text-align:center}
+}
+</style>
+
+<main class="hwr">
+  <!-- HERO SECTION -->
+  <section class="gw-hero" style="background-image: url('service_one/24_6.jpg');">
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+      <div class="gw-hero-badge">
+        <span class="gw-live-dot"></span> Authorized Hazardous Resource Recovery
+      </div>
+      <h1>Hazardous Waste Recycler Services in Tamil Nadu</h1>
+      <p class="gw-hero-lead">Authorized recycling, safe neutralization, and resource recovery for industrial hazardous waste streams, oily residues, and chemical byproducts under strict TNPCB regulations.</p>
+      
+      <!-- Modern Floating Trust Chips -->
+      <div class="gw-hero-chips">
+        <span class="gw-chip"><i class="fa fa-exclamation-triangle"></i> Schedule I Waste Streams</span>
+        <span class="gw-chip"><i class="fa fa-tint"></i> Category 5.2 Oily Sludges</span>
+        <span class="gw-chip"><i class="fa fa-archive"></i> Contaminated Barrel Recovery</span>
+        <span class="gw-chip"><i class="fa fa-file-code-o"></i> Annual Form 4 Filing Support</span>
+      </div>
+
+      <div>
+        <a class="gw-btn-primary" href="contact-us.php">
+          Enquire Now for Service <i class="fa fa-arrow-right"></i>
+        </a>
+        <a class="gw-btn-secondary" href="tel:+919360036055">
+          <i class="fa fa-phone"></i> Call +91 93600 36055
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULAR BLOCK LAYOUT WITH DEFINED OUTLINES -->
+  <div class="gw-page-body">
+    <div class="container">
+      <!-- BLOCK 1: QUICK ANSWER OVERVIEW -->
+      <div class="gw-block">
+        <div class="row gw-flex-row">
+          <div class="col-md-5 col-sm-12">
+            <div class="gw-visual-frame">
+              <img class="img-responsive center-block" src="service_one/24_6.jpg" alt="Hazardous Waste Recycler Services in Tamil Nadu">
+              <div class="gw-visual-badge">
+                <span><i class="fa fa-shield"></i> SIDCO Tindivanam Plant</span>
+                <span style="color:var(--gw-lime)"><i class="fa fa-check"></i> Licensed Operations</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="hwr-label hwr-label--dark">Quick Answer</div>
+            <h2>What Does an Industrial Hazardous Waste Recycler Do?</h2>
+            <p class="gw-lead-text">An authorized hazardous waste recycler collects, neutralizes, and processes regulated industrial waste streams to recover usable material resources while reducing the volume sent to hazardous landfills (TSDFs).</p>
+            <p>Governed by the Hazardous and Other Wastes (Management and Transboundary Movement) Rules 2016, industrial byproducts such as oily sludges, spent hydrocarbons, chemical process residues, and contaminated containers require specialized treatment. Green Way Industries provides an authorized, environmentally sound recycling pathway with complete Form-10 tracking, helping industrial plants manage their hazardous liabilities responsibly.</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- WHY THIS SERVICE MATTERS -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="hwr-label hwr-label--dark">Environmental &amp; Legal Protection</div>
+        <h2>Why Specialized Hazardous Waste Recycling Matters</h2>
+        <p class="center-block" style="max-width:720px">Improper handling of hazardous waste carries catastrophic environmental consequences and severe legal penalties under the Environment Protection Act.</p></div>
+      <div class="gw-card-grid-3"><div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-shield"></i></div>
+            <h3>Strict Regulatory Compliance</h3>
+            <p>Ensure total conformity with TNPCB parameters and Hazardous Waste Management Rules, avoiding closure notices and statutory liabilities.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-cubes"></i></div>
+            <h3>Reduce Landfill Dependency</h3>
+            <p>Diverting recyclable hazardous fractions from common hazardous waste landfill sites (TSDFs) conserves capacity and cuts long-term costs.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-file-text-o"></i></div>
+            <h3>Statutory Manifest Tracking</h3>
+            <p>Every consignment is documented with signed Form-10 manifests, providing complete chain-of-custody verification for regulatory audits.</p>
+          </div>
+      </div>
+    </div>
+
+  <!-- SERVICE PROCESS -->
+  <div class="gw-block">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="hwr-label hwr-label--dark">Controlled Protocol</div>
+          <h2>Our Hazardous Waste Recycling Protocol</h2>
+          <p>We apply rigorous testing, safe containment, and authorized processing across every hazardous waste batch.</p>
+          <div style="margin-top:24px">
+            <a class="gw-btn-primary" href="contact-us.php">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <div style="margin-top:30px">
+            <div class="gw-proc-frame"><img src="gallery/74_4.jpg" alt="Operations Facility"><div class="gw-visual-badge">
+                <span><i class="fa fa-check-circle"></i> On-Site Operational Control</span>
+              </div></div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="gw-step-pipeline">
+            <div class="gw-step-item">
+              <div class="gw-step-marker">01</div>
+              <div class="gw-step-content">
+                <h3>Waste Characterization &amp; Profiling</h3>
+                <p>We review your Material Safety Data Sheets (MSDS), test waste samples, and determine the exact Hazardous Waste Schedule category.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">02</div>
+              <div class="gw-step-content">
+                <h3>Compliant Packaging &amp; Labelling</h3>
+                <p>Wastes are verified for appropriate packaging, secure sealing, and mandatory statutory hazardous warning labelling.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">03</div>
+              <div class="gw-step-content">
+                <h3>Authorized Transportation</h3>
+                <p>Transport is conducted using licensed hazardous waste vehicles equipped with emergency response kits and Form-10 transit manifests.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">04</div>
+              <div class="gw-step-content">
+                <h3>Facility Treatment &amp; Recovery</h3>
+                <p>Material undergoes physicochemical separation, thermal distillation, or authorized neutralization to recover reusable fractions.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">05</div>
+              <div class="gw-step-content">
+                <h3>Documentation &amp; Certificate of Recycling</h3>
+                <p>Clients receive completed Form-10 copies and recycling certificates to record in their plant environmental registers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- MATERIALS & INDUSTRIES -->
+  <div class="gw-block">
+      <div class="gw-card-grid-2">
+        <div class="gw-sub-card" style="border-top:3px solid var(--gw-green);">
+          <div class="hwr-box-icon"><i class="fa fa-exclamation-triangle"></i></div>
+          <div class="hwr-label hwr-label--dark">Hazardous Streams Handled</div>
+          <h2>Waste Streams Managed Under Rules</h2>
+          <p>We evaluate and manage a defined scope of recyclable hazardous industrial streams:</p>
+          <ul class="hwr-check-list">
+            <li>Used oil and spent lubricating residues (Schedule I, Category 5.1)</li>
+            <li>Wastes and residues containing oil or petroleum hydrocarbons (Category 5.2)</li>
+            <li>Contaminated metal and plastic drums/containers (Category 33.1)</li>
+            <li>Oily rags, filter media, and absorbent material contaminated with oil</li>
+            <li>Industrial oil-water separator sludges and interceptor residues</li>
+          </ul>
+        </div>
+        
+        <div class="gw-sub-card" style="border-top:3px solid var(--gw-green);">
+          <div class="hwr-box-icon"><i class="fa fa-industry"></i></div>
+          <div class="hwr-label hwr-label--dark">Industrial Sectors</div>
+          <h2>Key Industries Serviced</h2>
+          <p>Providing compliant hazardous waste recycling to major industrial sectors:</p>
+          <ul class="hwr-check-list">
+            <li>Automotive, auto-component, and precision engineering plants</li>
+            <li>Chemical, resin, dye, and specialty process manufacturers</li>
+            <li>Heavy machinery, fabrication, and structural engineering units</li>
+            <li>Electronics manufacturing, plating, and surface treatment facilities</li>
+            <li>Pharmaceutical manufacturing and process ancillary units</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Real Industrial Photo Showcase Grid -->
+      <div class="text-center" style="margin-top:40px">
+        <div class="hwr-label hwr-label--dark">Facility Operations</div>
+        <h3 style="font-size:22px;margin:0 0 16px">Our Infrastructure &amp; Logistics Capabilities</h3>
+      </div>
+      <div class="gw-photo-grid">
+        <div class="gw-photo-item">
+          <img src="gallery/71_1.jpg" alt="Green Way Distillation Towers">
+          <div class="gw-photo-label">High-Vacuum Refining Towers</div>
+        </div>
+        <div class="gw-photo-item">
+          <img src="service_one/28_10.jpg" alt="Dedicated Vacuum Tanker Fleet">
+          <div class="gw-photo-label">Authorized Vacuum Suction Fleet</div>
+        </div>
+        <div class="gw-photo-item">
+          <img src="gallery/75_5.jpg" alt="Quality Testing Laboratory">
+          <div class="gw-photo-label">In-House QA Testing Lab</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- LOCAL SEO SECTION -->
+  <div class="gw-block">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="hwr-label hwr-label--dark">Tamil Nadu Industrial Reach</div>
+          <h2>Hazardous Waste Recycling in Tamil Nadu</h2>
+          <p class="gw-lead-text">Green Way Industries provides responsive hazardous waste recycling solutions across key industrial corridors in Tamil Nadu.</p>
+          <p>Supported by our corporate headquarters in Ashok Nagar, Chennai, and our authorized processing facility in the SIDCO Industrial Estate, Tindivanam/Villupuram District, we support manufacturing units located in Sriperumbudur, Oragadam, Ambattur, Guindy, Maraimalai Nagar, Ranipet, Gummidipoondi, Tiruvallur, Hosur, and Coimbatore.</p>
+          <p>Our regulatory team assists industrial EHS managers in maintaining seamless compliance with state pollution board filing requirements.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="hwr-cta">
+            <h2>Assess Your Hazardous Waste Stream</h2>
+            <p>Consult with our hazardous waste specialists to review stream characteristics and schedule compliant collection.</p>
+            <p><strong>Corporate Office:</strong> Ashok Nagar, Chennai<br>
+            <strong>Processing Plant:</strong> SIDCO Industrial Estate, Tindivanam<br>
+            <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
+            <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
+            <a class="hwr-btn" href="contact-us.php" style="margin-top:12px">Request Hazardous Waste Review</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- WHY GREEN WAY INDUSTRIES -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="hwr-label hwr-label--dark">Regulatory Rigor</div>
+        <h2>Why Partner with Green Way Industries?</h2>
+      </div>
+      <div class="gw-card-grid-4"><div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-certificate"></i></div>
+            <h3>TNPCB Licensed</h3>
+            <p>Operating with valid consent and authorizations under Hazardous Waste Management Rules.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-file-text-o"></i></div>
+            <h3>Form-10 Verification</h3>
+            <p>Statutory manifest documentation issued for every transfer to protect plant audit records.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-truck"></i></div>
+            <h3>Authorized Logistics</h3>
+            <p>Transport arranged through licensed carriers equipped with mandatory emergency response protocols.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-leaf"></i></div>
+            <h3>Recovery First</h3>
+            <p>Prioritizing resource recovery and recycling over destructive disposal whenever technically viable.</p>
+          </div>
+      </div>
+    </div>
+
+  <!-- FAQ SECTION -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="hwr-label hwr-label--dark">Frequently Asked Questions</div>
+        <h2>Hazardous Waste Recycling FAQs</h2>
+      </div>
+      <div class="row gw-faq-wrapper">
+        <div class="col-md-6 gw-faq-col">
+          <!-- FAQ 01 -->
+          <div class="gw-faq-item is-active">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q01</span>
+                <span class="gw-faq-title">What categories of hazardous waste can be recycled?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body" style="display:block;">
+              <p>Common recyclable hazardous streams include Category 5.1 (used oil), Category 5.2 (oily residues and sludges), and Category 33.1 (contaminated containers and drums), subject to waste analysis and regulatory consent conditions.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 02 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q02</span>
+                <span class="gw-faq-title">How do we demonstrate compliance during pollution board audits?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>Retain copies of the signed Form-10 manifest, transport documentation, and our authorized recycling certificate in your annual Form-4 hazardous waste register.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 03 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q03</span>
+                <span class="gw-faq-title">Can contaminated barrels and drums be recycled?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>Yes. Contaminated industrial drums (Category 33.1) can be authorized for decontamination, reconditioning, or authorized recycling depending on their prior chemical contents.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 gw-faq-col">
+          <!-- FAQ 04 -->
+          <div class="gw-faq-item is-active">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q04</span>
+                <span class="gw-faq-title">What is the difference between a TSDF and an authorized recycler?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body" style="display:block;">
+              <p>A TSDF (Treatment, Storage, and Disposal Facility) typically immobilizes and landfills hazardous wastes permanently. An authorized recycler processes eligible wastes to extract and recover usable resources, reducing environmental burden.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 05 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q05</span>
+                <span class="gw-faq-title">What information do you need to assess our hazardous waste?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>We require the waste name, source process, estimated quantity, current storage condition, and a Material Safety Data Sheet (MSDS) or chemical analysis report.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 06 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q06</span>
+                <span class="gw-faq-title">Do you handle emergency spill cleanup residues?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>Yes, we coordinate the authorized removal and compliant disposal of oily absorbent pads, booms, and spill cleanup residues generated during factory incidents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- INTERNAL LINKS BAR -->
+      <div class="gw-block" style="padding:22px 28px;">
+        <div class="hwr-links-bar text-center">
+          <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
+          <a href="services.php?s_id=28">Hazardous Waste Transport</a>
+          <a href="services.php?s_id=30">Industrial Waste Management</a>
+          <a href="services.php?s_id=16">Waste Oil Disposal</a>
+          <a href="services.php?s_id=17">Waste Oil Recycling</a>
+          <a href="services.php?s_id=29">Hazardous Waste Disposal for Ships</a>
+        </div>
+      </div>
+
+      <!-- FINAL CTA BANNER -->
+      <div class="gw-block gw-block--deep text-center">
+        <h2>Ensure Compliant Hazardous Waste Recycling</h2>
+        <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Share your hazardous waste streams and production volume to receive an authorized recycling assessment and compliant collection plan.</p>
+        <a class="gw-btn-primary" href="contact-us.php">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Speak to Hazardous Waste Desk</a>
+      </div>
+
+    </div>
+  </div>
+</main>

@@ -1,0 +1,415 @@
+<style>
+.uod{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
+.uod h1,.uod h2,.uod h3,.uod h4{color:var(--deep);font-weight:700;line-height:1.25}
+.uod h1{font-size:36px;margin:0 0 16px;color:#fff}
+.uod h2{font-size:26px;margin:0 0 14px}
+.uod h3{font-size:18px;margin:0 0 8px}
+.uod p{margin:0 0 14px}
+.uod-label{color:var(--lime);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;display:inline-block}
+.uod-label--dark{color:var(--green)}
+.uod-hero{padding:48px 0 36px;background:linear-gradient(115deg,rgba(16,58,42,.96),rgba(25,107,69,.88)),url('service_one/22_4.jpg') center/cover;color:#edf7f0}
+.uod-hero h1{max-width:850px}
+.uod-hero p{max-width:780px;font-size:18px;color:#e8f4ed;margin-bottom:20px}
+.uod-btn{display:inline-block;padding:12px 24px;background:var(--lime);color:var(--deep)!important;font-weight:700;text-decoration:none;border-radius:2px;transition:.25s ease}
+.uod-btn:hover{background:#a3db4b;text-decoration:none}
+.uod-btn--outline{background:transparent;border:2px solid var(--lime);color:#fff!important;margin-left:12px}
+.uod-btn--outline:hover{background:var(--lime);color:var(--deep)!important}
+.uod-section{padding:54px 0}
+.uod-soft{background:var(--soft)}
+.uod-lead{font-size:18px;color:#495d52;font-weight:500}
+.uod-card{height:100%;padding:26px 24px;background:#fff;border:1px solid var(--border);border-top:4px solid var(--lime);transition:.25s ease;margin-bottom:24px}
+.uod-card:hover{transform:translateY(-5px);box-shadow:0 12px 24px rgba(16,58,42,.12)}
+.uod-card i{color:var(--green);font-size:26px;margin-bottom:12px}
+.uod-step{position:relative;padding:0 10px 24px 62px}
+.uod-step b{position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;line-height:42px;text-align:center;font-size:16px;font-weight:700}
+.uod-step h3{font-size:18px;margin:0 0 6px}
+.uod-step p{margin:0;font-size:15px;color:#4f6157}
+.uod-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.uod-box{padding:30px 26px;background:#fff;border:1px solid var(--border);box-shadow:0 8px 20px rgba(16,58,42,.06);height:100%}
+.uod-box-icon{display:inline-flex;align-items:center;justify-content:center;width:50px;height:50px;margin-bottom:14px;background:#e9f2e9;color:var(--green);font-size:22px;border-radius:50%}
+.uod-check-list{list-style:none;padding:0;margin:16px 0 0}
+.uod-check-list li{position:relative;padding:8px 0 8px 26px;border-bottom:1px solid #e7eee7;font-size:15px}
+.uod-check-list li:last-child{border-bottom:none}
+.uod-check-list li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+.uod-faq{padding:20px 22px;margin-bottom:16px;background:#fff;border-left:4px solid var(--green);border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.uod-faq h3{font-size:17px;margin:0 0 8px;color:var(--deep)}
+.uod-faq p{margin:0;font-size:14.5px;color:#506158;line-height:1.65}
+.uod-cta{padding:38px 34px;background:var(--deep);color:#eaf4ec;border-radius:3px}
+.uod-cta h2{color:#fff;margin-top:0}
+.uod-cta a{color:var(--lime);font-weight:700}
+.uod-links-bar{padding:18px 20px;background:#eaf2e7;border:1px solid #d5e5d3;margin-top:28px}
+.uod-links-bar a{display:inline-block;margin:4px 8px 4px 0;padding:5px 12px;background:#fff;border:1px solid var(--border);color:var(--green);font-weight:600;font-size:14px;border-radius:2px;text-decoration:none}
+.uod-links-bar a:hover{background:var(--green);color:#fff;text-decoration:none}
+@media(max-width:991px){
+  .uod-hero h1{font-size:30px}
+  .uod-grid-2{grid-template-columns:1fr}
+}
+@media(max-width:767px){
+  .uod h1{font-size:26px}
+  .uod h2{font-size:22px}
+  .uod-section{padding:38px 0}
+  .uod-hero{padding:32px 0 26px}
+  .uod-btn--outline{margin-left:0;margin-top:10px;display:block;text-align:center}
+  .uod-btn{display:block;text-align:center}
+}
+</style>
+
+<main class="uod">
+  <!-- HERO SECTION -->
+  <section class="gw-hero" style="background-image: url('service_one/22_4.jpg');">
+    <div class="gw-hero-overlay"></div>
+    <div class="container">
+      <div class="gw-hero-badge">
+        <span class="gw-live-dot"></span> Compliant Machinery Fluid Disposal
+      </div>
+      <h1>Used Oil Disposal Services in Tamil Nadu</h1>
+      <p class="gw-hero-lead">Safe, compliant disposal and certified management for drained engine lubricants, gear oils, and degraded industrial machinery fluids adhering to TNPCB environmental mandates.</p>
+      
+      <!-- Modern Floating Trust Chips -->
+      <div class="gw-hero-chips">
+        <span class="gw-chip"><i class="fa fa-cogs"></i> Drained Engine & Gear Oils</span>
+        <span class="gw-chip"><i class="fa fa-balance-scale"></i> Rule 18 Manifest Compliance</span>
+        <span class="gw-chip"><i class="fa fa-check-circle"></i> TNPCB Passbook Entry</span>
+        <span class="gw-chip"><i class="fa fa-shield"></i> Zero Liability Transfer</span>
+      </div>
+
+      <div>
+        <a class="gw-btn-primary" href="contact-us.php">
+          Enquire Now for Service <i class="fa fa-arrow-right"></i>
+        </a>
+        <a class="gw-btn-secondary" href="tel:+919360036055">
+          <i class="fa fa-phone"></i> Call +91 93600 36055
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULAR BLOCK LAYOUT WITH DEFINED OUTLINES -->
+  <div class="gw-page-body">
+    <div class="container">
+      <!-- BLOCK 1: QUICK ANSWER OVERVIEW -->
+      <div class="gw-block">
+        <div class="row gw-flex-row">
+          <div class="col-md-5 col-sm-12">
+            <div class="gw-visual-frame">
+              <img class="img-responsive center-block" src="service_one/22_4.jpg" alt="Used Oil Disposal Services in Tamil Nadu">
+              <div class="gw-visual-badge">
+                <span><i class="fa fa-shield"></i> SIDCO Tindivanam Plant</span>
+                <span style="color:var(--gw-lime)"><i class="fa fa-check"></i> Licensed Operations</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <div class="uod-label uod-label--dark">Quick Answer</div>
+            <h2>What is Used Oil Disposal?</h2>
+            <p class="gw-lead-text">Used oil disposal refers to the compliant collection, handling, and certified end-of-life processing of drained petroleum or synthetic oils that have fulfilled their operational service cycle in engines, gearboxes, and machinery.</p>
+            <p>Because used motor and lubricating oils accumulate carbon deposits, heavy metals (lead, cadmium), and combustion acids during equipment operation, they are classified as hazardous waste under Schedule I, Category 5.1 of India's Hazardous Waste Management Rules. Green Way Industries provides licensed pickup and authorized downstream processing, issuing legal Form-10 manifests that protect fleet owners, workshops, and plant managers from regulatory penalties.</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- WHY THIS SERVICE MATTERS -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="uod-label uod-label--dark">Risk Reduction &amp; Compliance</div>
+        <h2>Why Safe Used Oil Disposal Matters for Workshops &amp; Plants</h2>
+        <p class="center-block" style="max-width:720px">Drained engine and lube oils cannot be poured into open drains, burned in uncontrolled heaters, or sold to informal scrap collectors without violating Indian environmental statutes.</p></div>
+      <div class="gw-card-grid-3"><div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-gavel"></i></div>
+            <h3>Prevent Heavy Legal Penalties</h3>
+            <p>Unregistered transfer of used motor oil violates Hazardous Waste Rules 2016. Handing oil to our authorized facility protects your business from notices and fines.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-fire-extinguisher"></i></div>
+            <h3>Mitigate On-Site Fire Risks</h3>
+            <p>Accumulating drums of degraded lubricants in workshops poses acute combustible hazards. Planned disposal clears barrels promptly.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-file-text-o"></i></div>
+            <h3>Statutory Form-10 Records</h3>
+            <p>Every barrel collected is accompanied by a signed Form-10 hazardous waste manifest, providing verifiable audit trails for pollution inspectors.</p>
+          </div>
+      </div>
+    </div>
+
+  <!-- SERVICE PROCESS -->
+  <div class="gw-block">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="uod-label uod-label--dark">Standard Operating Protocol</div>
+          <h2>Our Used Oil Disposal Process</h2>
+          <p>We streamline used oil handover into a structured 5-step process designed for fast turnaround and absolute documentation integrity.</p>
+          <div style="margin-top:24px">
+            <a class="gw-btn-primary" href="contact-us.php">Schedule Used Oil Pickup <i class="fa fa-arrow-right"></i></a>
+          </div>
+          <div style="margin-top:30px">
+            <div class="gw-proc-frame"><img src="gallery/74_4.jpg" alt="Operations Facility"><div class="gw-visual-badge">
+                <span><i class="fa fa-check-circle"></i> On-Site Operational Control</span>
+              </div></div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="gw-step-pipeline">
+            <div class="gw-step-item">
+              <div class="gw-step-marker">01</div>
+              <div class="gw-step-content">
+                <h3>Volume &amp; Grade Verification</h3>
+                <p>Tell us your accumulated volume (number of barrels or bulk sump quantity) and source (engine maintenance, fleet drains, or machinery lube).</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">02</div>
+              <div class="gw-step-content">
+                <h3>Dedicated Collection Scheduling</h3>
+                <p>Our dispatch team assigns an authorized carrier vehicle or vacuum tanker equipped for clean, drip-free extraction.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">03</div>
+              <div class="gw-step-content">
+                <h3>Containment &amp; Safe Pumping</h3>
+                <p>Trained handlers safely evacuate barrels or tanks, utilizing spill trays and certified transfer fittings.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">04</div>
+              <div class="gw-step-content">
+                <h3>Authorized Facility Treatment</h3>
+                <p>Used oil is transported directly to our SIDCO Tindivanam plant for licensed processing, dewatering, and authorized recovery/treatment.</p>
+              </div>
+            </div>
+            <div class="gw-step-item">
+              <div class="gw-step-marker">05</div>
+              <div class="gw-step-content">
+                <h3>Manifest &amp; Compliance Sign-off</h3>
+                <p>We issue countersigned Form-10 manifests confirming legal custody transfer to maintain in your environmental register.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- MATERIALS & INDUSTRIES -->
+  <div class="gw-block">
+      <div class="gw-card-grid-2">
+        <div class="gw-sub-card" style="border-top:3px solid var(--gw-green);">
+          <div class="uod-box-icon"><i class="fa fa-tint"></i></div>
+          <div class="uod-label uod-label--dark">Drained Fluids Handled</div>
+          <h2>Used Oil Types We Accept</h2>
+          <p>We manage all varieties of drained and degraded industrial and automotive lubricants:</p>
+          <ul class="uod-check-list">
+            <li>Used motor and diesel engine crankcase oils</li>
+            <li>Drained automotive transmission fluids and gear oils</li>
+            <li>Industrial gearbox, circulating, and bearing lubricants</li>
+            <li>Degraded compressor oils and refrigeration lubricants</li>
+            <li>Non-chlorinated machine sump lubricants and drain residues</li>
+          </ul>
+        </div>
+        
+        <div class="gw-sub-card" style="border-top:3px solid var(--gw-green);">
+          <div class="uod-box-icon"><i class="fa fa-wrench"></i></div>
+          <div class="uod-label uod-label--dark">Facility Types</div>
+          <h2>Who We Provide Disposal For</h2>
+          <p>Serving automotive networks and industrial facilities across Tamil Nadu:</p>
+          <ul class="uod-check-list">
+            <li>Automotive authorized service centers and independent multi-brand garages</li>
+            <li>Commercial fleet operators, logistics companies, and bus transport depots</li>
+            <li>Heavy industrial manufacturing factories and assembly facilities</li>
+            <li>Earthmoving machinery yards and infrastructure construction sites</li>
+            <li>Genset maintenance contractors and industrial utility yards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Real Industrial Photo Showcase Grid -->
+      <div style="margin-top:34px;">
+        <div class="uod-label uod-label--dark">Facility Operations</div>
+        <h3 style="font-size:20px;font-weight:700;color:var(--gw-deep);margin:4px 0 16px;">Our Infrastructure &amp; Logistics Capabilities</h3>
+        <div class="gw-photo-grid">
+          <div class="gw-photo-item">
+            <img src="gallery/71_1.jpg" alt="Green Way Distillation Towers">
+            <div class="gw-photo-label">High-Vacuum Refining Towers</div>
+          </div>
+          <div class="gw-photo-item">
+            <img src="service_one/28_10.jpg" alt="Dedicated Vacuum Tanker Fleet">
+            <div class="gw-photo-label">Authorized Vacuum Suction Fleet</div>
+          </div>
+          <div class="gw-photo-item">
+            <img src="gallery/75_5.jpg" alt="Quality Testing Laboratory">
+            <div class="gw-photo-label">In-House QA Testing Lab</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- LOCAL SEO SECTION -->
+  <div class="gw-block">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="uod-label uod-label--dark">Tamil Nadu Coverage</div>
+          <h2>Used Oil Disposal Across Tamil Nadu</h2>
+          <p class="gw-lead-text">Green Way Industries provides responsive used oil disposal coverage tailored to the active logistics and industrial belts of Tamil Nadu.</p>
+          <p>With operational coordination from our Chennai office in Ashok Nagar and licensed recycling and disposal infrastructure in SIDCO Industrial Estate, Tindivanam/Villupuram, our fleet services Chennai, Kanchipuram, Chengalpattu, Sriperumbudur, Oragadam, Ambattur, Ranipet, Tiruvallur, Vellore, Salem, and Coimbatore.</p>
+          <p>We work with commercial workshops and plant EHS managers to establish dependable pickup cadences that keep client facilities completely compliant.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="uod-cta">
+            <h2>Dispose of Used Oil Safely</h2>
+            <p>Contact our compliance desk today to schedule your used oil collection and receive certified disposal documentation.</p>
+            <p><strong>Chennai Office:</strong> Ashok Nagar, Chennai<br>
+            <strong>Plant Location:</strong> SIDCO Industrial Estate, Tindivanam<br>
+            <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
+            <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
+            <a class="uod-btn" href="contact-us.php" style="margin-top:12px">Contact for Disposal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- WHY GREEN WAY INDUSTRIES -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="uod-label uod-label--dark">Verified Integrity</div>
+        <h2>Why Partner with Green Way Industries?</h2>
+      </div>
+      <div class="gw-card-grid-4"><div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-shield"></i></div>
+            <h3>Pollution Board Authorized</h3>
+            <p>Operating under valid authorizations ensuring your waste is handled strictly within state legal bounds.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-file-text-o"></i></div>
+            <h3>Guaranteed Form-10</h3>
+            <p>Full statutory manifest documentation provided at the time of loading to ensure complete audit compliance.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-truck"></i></div>
+            <h3>Prompt Pickup Runs</h3>
+            <p>Reliable logistics preventing dangerous on-site barrel backlog in workshops and plant storage yards.</p>
+          </div>
+        <div class="gw-sub-card">
+            <div class="gw-card-icon"><i class="fa fa-check-circle"></i></div>
+            <h3>Traceable Stewardship</h3>
+            <p>Complete traceability from site extraction to processing facility without unauthorized third-party leakage.</p>
+          </div>
+      </div>
+    </div>
+
+  <!-- FAQ SECTION -->
+  <div class="gw-block">
+      <div class="gw-block-header text-center"><div class="uod-label uod-label--dark">Frequently Asked Questions</div>
+        <h2>Used Oil Disposal FAQs</h2>
+      </div>
+      <div class="row gw-faq-wrapper">
+        <div class="col-md-6 gw-faq-col">
+          <!-- FAQ 01 -->
+          <div class="gw-faq-item is-active">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q01</span>
+                <span class="gw-faq-title">Is used engine oil classified as hazardous waste in India?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body" style="display:block;">
+              <p>Yes. Under the Hazardous and Other Wastes Management Rules (Schedule I, Category 5.1), used motor and lubricating oils are regulated hazardous wastes that must be transferred exclusively to authorized recyclers.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 02 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q02</span>
+                <span class="gw-faq-title">Can workshops give used oil to local informal scrap vendors?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>No. Handing used oil to unregistered buyers is illegal in India, risking heavy pollution fines and cancellation of workshop municipal trade licenses.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 03 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q03</span>
+                <span class="gw-faq-title">What documentation is provided when used oil is picked up?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>We provide the statutory Form-10 Hazardous Waste Manifest, which documents the exact quantity transferred, the vehicle registration number, and the authorized receiving facility.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 gw-faq-col">
+          <!-- FAQ 04 -->
+          <div class="gw-faq-item is-active">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q04</span>
+                <span class="gw-faq-title">Can we mix used gear oil and engine oil in the same drum?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body" style="display:block;">
+              <p>Generally, compatible petroleum lubricating oils (engine oil, gear oil) can be co-stored for disposal. However, do not contaminate used oil with solvents, petrol, battery acid, or coolants.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 05 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q05</span>
+                <span class="gw-faq-title">How should used oil barrels be stored before collection?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>Store barrels upright with bungs tightly sealed in a covered, bunded area to shield them from rain and prevent accidental ground seepage.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 06 -->
+          <div class="gw-faq-item">
+            <button class="gw-faq-header" type="button">
+              <div class="gw-faq-title-wrap">
+                <span class="gw-faq-badge">Q06</span>
+                <span class="gw-faq-title">Do you collect used oil in small quantities from garages?</span>
+              </div>
+              <span class="gw-faq-icon"><i class="fa fa-chevron-down"></i></span>
+            </button>
+            <div class="gw-faq-body">
+              <p>Yes. We service commercial automobile service centers and workshops with multi-barrel pickups across our regular collection routes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- INTERNAL LINKS BAR -->
+      <div class="gw-block" style="padding:22px 28px;">
+        <div class="uod-links-bar text-center">
+          <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
+          <a href="services.php?s_id=23">Used Oil Recycler</a>
+          <a href="services.php?s_id=16">Waste Oil Disposal</a>
+          <a href="services.php?s_id=21">Waste Oil Collection</a>
+          <a href="services.php?s_id=17">Waste Oil Recycling</a>
+          <a href="services.php?s_id=28">Hazardous Waste Transport</a>
+        </div>
+      </div>
+
+      <!-- FINAL CTA BANNER -->
+      <div class="gw-block gw-block--deep text-center">
+        <h2>Safely Dispose of Your Accumulated Used Lubricants</h2>
+        <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Connect with our team to arrange compliant used oil collection and secure statutory Form-10 manifests for your facility.</p>
+        <a class="gw-btn-primary" href="contact-us.php">Schedule Used Oil Disposal <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Call Compliance Coordinator</a>
+      </div>
+
+    </div>
+  </div>
+</main>
