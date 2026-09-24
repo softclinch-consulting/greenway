@@ -1,0 +1,100 @@
+<section class="facilities">
+  <h2>Our Facilities</h2>
+  <div class="facility-grid">
+    <!-- Chennai Office -->
+    <div class="facility-card">
+      <img src="chennai-office.jpg" alt="Corporate Office - Chennai">
+      <div class="info">
+        <h3>Corporate Office - Chennai</h3>
+        <p><strong>Greenway Industries</strong><br>
+        79/30 Suzoon Builder, 3rd Street<br>
+        Kamaraj Nagar, Anjeenear Kovil Opp<br>
+        Chennai - 600083</p>
+        <ul>
+          <li>Administrative Operations</li>
+          <li>Customer Support</li>
+          <li>Quality Assurance</li>
+          <li>Accounting</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Villupuram Plant -->
+    <div class="facility-card">
+      <img src="villupuram-plant.jpg" alt="Processing Plant - Villupuram">
+      <div class="info">
+        <h3>Processing Plant - Villupuram</h3>
+        <p><strong>Greenway Industries</strong><br>
+        No. 108, 109 & 110, Shree Industrial Estate<br>
+        Vikravandi Taluk, Marai Malai Nagar Village<br>
+        Tindivanam High Road, Villupuram - 605652</p>
+        <ul>
+          <li>Used Oil Processing</li>
+          <li>Used Oil Collection</li>
+          <li>Quality Control</li>
+          <li>On-Site Sampling & Lab Testing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.facilities {
+  padding: 40px 20px;
+  background: #f0fdf4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.facilities h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.facility-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.facility-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 480px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+}
+
+.facility-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.info ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .facility-card {
+    width: 100%;
+  }
+}
+</style>
