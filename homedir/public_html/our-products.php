@@ -139,6 +139,82 @@ if (empty($product_list)) {
     <meta name="twitter:description" content="High-quality re-refined petroleum products and industrial containers in Tamil Nadu &amp; pan-India.">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
+
+    <!-- JSON-LD Structured Data: Product CollectionPage & BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://wasteoil.in/our-products.php#webpage",
+          "url": "https://wasteoil.in/our-products.php",
+          "name": "Re-Refined Base Oils, Secondary Fuels & Industrial Containers | Green Way",
+          "description": "TNPCB-authorized supplier of quality re-refined base oils, furnace oils, and certified UN-rated barrels across Tamil Nadu and India.",
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/our-products.php#breadcrumb"
+          },
+          "mainEntity": {
+            "@type": "ItemList",
+            "name": "Recovered Products",
+            "itemListElement": [
+              {
+                "@type": "Product",
+                "position": 1,
+                "name": "Re-Refined Base Oil (SN 150 / SN 500)",
+                "description": "Vacuum-distilled high-viscosity-index base oil suitable for industrial lubricant blending and hydraulic applications.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Green Way"
+                }
+              },
+              {
+                "@type": "Product",
+                "position": 2,
+                "name": "Industrial Furnace Fuel Oil",
+                "description": "Dehydrated, sediment-free secondary fuel oil for industrial burners, boilers, hot-mix plants, and kilns.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Green Way"
+                }
+              },
+              {
+                "@type": "Product",
+                "position": 3,
+                "name": "Reconditioned Industrial Steel Drums & Barrels",
+                "description": "Cleaned, leak-tested, and UN-rated 210-liter steel barrels and HDPE drums for hazardous and non-hazardous chemical storage.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Green Way"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/our-products.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Products",
+              "item": "https://wasteoil.in/our-products.php"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
 

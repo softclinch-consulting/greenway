@@ -101,6 +101,46 @@ if (empty($gallery_list)) {
     <meta name="twitter:description" content="Explore Green Way Industries state-of-the-art oil recycling facility in Tamil Nadu.">
     <meta name="twitter:image" content="https://wasteoil.in/gallery/71_1.jpg">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
+
+    <!-- JSON-LD Structured Data: ImageGallery & BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ImageGallery",
+          "@id": "https://wasteoil.in/our-gallery.php#webpage",
+          "url": "https://wasteoil.in/our-gallery.php",
+          "name": "Infrastructure & Facility Operations Gallery | Green Way Industries",
+          "description": "View our TNPCB-authorized vacuum distillation facility, bulk storage tanks, and hazardous waste logistics fleet in Tamil Nadu, India.",
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/our-gallery.php#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/our-gallery.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Gallery",
+              "item": "https://wasteoil.in/our-gallery.php"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
 

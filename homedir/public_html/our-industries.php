@@ -42,6 +42,82 @@ if ($hasDatabase) {
     <meta name="twitter:description" content="TNPCB authorized recycling and hazardous waste handling engineered for industrial plants across Tamil Nadu and India.">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
+
+    <!-- JSON-LD Structured Data: CollectionPage & BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://wasteoil.in/our-industries.php#webpage",
+          "url": "https://wasteoil.in/our-industries.php",
+          "name": "Waste Oil & Industrial Waste Solutions by Industry | Green Way Industries",
+          "description": "Sector-specific waste oil collection, recycling, and hazardous waste disposal across automotive, power, and manufacturing hubs in Tamil Nadu & India.",
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/our-industries.php#breadcrumb"
+          },
+          "mainEntity": {
+            "@type": "ItemList",
+            "name": "Industries Supported",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Automotive & Auto-Component Manufacturing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Heavy Engineering & Metal Working"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Power Generation, Sub-Stations & Electrical Utilities"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Marine & Port Operations (MARPOL Annex I)"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Chemical & Process Industries"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Construction & Infrastructure Projects"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/our-industries.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Industries",
+              "item": "https://wasteoil.in/our-industries.php"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
 

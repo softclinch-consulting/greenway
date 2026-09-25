@@ -1,0 +1,55 @@
+# Robots.txt for Green Way Industries (https://wasteoil.in/)
+# TNPCB Authorized Used Oil Recycling & Industrial Waste Management
+# Optimized for Search Engines (SEO) & AI/Generative Answer Engines (AEO/GEO)
+
+User-agent: *
+Allow: /
+Allow: /about.php
+Allow: /services.php
+Allow: /certifications.php
+Allow: /our-industries.php
+Allow: /our-products.php
+Allow: /our-gallery.php
+Allow: /contact-us.php
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /service_one/
+Allow: /banner/
+Allow: /about/
+
+# Disallow sensitive internal and administrative paths
+Disallow: /web-admin/
+Disallow: /web-admin/*
+Disallow: /cgi-bin/
+Disallow: /New folder/
+Disallow: /error_log
+Disallow: /*.sql$
+
+# Explicit allowances for leading AI & Generative Search crawlers (GEO / AEO)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://wasteoil.in/sitemap.xml

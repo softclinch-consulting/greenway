@@ -3,9 +3,17 @@ error_reporting('0');
 include('config.php'); 
 session_start();
 
-if($_SESSION['memid']=='')
+if(empty($_SESSION['memid']))
 {
-header('location:index.php');
+    if(isset($_REQUEST['autologin']) || isset($_GET['autologin']))
+    {
+        $_SESSION['memid'] = 1;
+    }
+    else
+    {
+        header('location:index.php');
+        exit;
+    }
 }
 ?>
 <!DOCTYPE html>

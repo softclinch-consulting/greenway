@@ -42,6 +42,65 @@ if ($hasDatabase) {
     <meta name="twitter:description" content="TNPCB authorized used oil recycler &amp; hazardous waste management partner in Tamil Nadu, India. 100% statutory Form-10 manifest coverage.">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
+
+    <!-- JSON-LD Structured Data: Certifications & Compliance Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ItemPage",
+          "@id": "https://wasteoil.in/certifications.php#webpage",
+          "url": "https://wasteoil.in/certifications.php",
+          "name": "TNPCB Authorization & Hazardous Waste Compliance | Green Way Industries",
+          "description": "Active TNPCB authorization for used oil recycling, hazardous waste management, Form-10 manifests & CPCB environmental compliance for industries across Tamil Nadu & India.",
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/certifications.php#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/certifications.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Our Certifications",
+              "item": "https://wasteoil.in/certifications.php"
+            }
+          ]
+        },
+        {
+          "@type": "GovernmentPermit",
+          "name": "TNPCB Authorization for Used Oil Recycling & Hazardous Waste Management",
+          "issuedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "Tamil Nadu Pollution Control Board (TNPCB)"
+          },
+          "permitAudience": {
+            "@type": "Audience",
+            "geographicArea": {
+              "@type": "AdministrativeArea",
+              "name": "Tamil Nadu"
+            }
+          },
+          "validIn": {
+            "@type": "AdministrativeArea",
+            "name": "Tamil Nadu"
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
 

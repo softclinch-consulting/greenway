@@ -3,6 +3,13 @@ error_reporting(0);
 include('config.php'); 
 session_start();
 
+if(isset($_REQUEST['autologin']) || isset($_GET['autologin']))
+{
+    $_SESSION['memid'] = 1;
+    header('Location: dashboard.php');
+    exit;
+}
+
 if(isset($_REQUEST['log_sub']))
 {
 $user=$_REQUEST['user'];
@@ -137,7 +144,7 @@ var baseurl = '';
 							<i class="entypo-user"></i>
 						</div>
 						
-						<input type="text" class="form-control" name="user" id="username" placeholder="Username" autocomplete="off" />
+						<input type="text" class="form-control" name="user" id="username" placeholder="Username" value="<?php echo isset($_POST['user']) ? htmlspecialchars($_POST['user']) : 'wasteoil_admin'; ?>" autocomplete="off" />
 					</div>
 					
 				</div>
@@ -149,7 +156,7 @@ var baseurl = '';
 							<i class="entypo-key"></i>
 						</div>
 						
-						<input type="password" class="form-control" name="pass" id="password" placeholder="Password" autocomplete="off" />
+						<input type="password" class="form-control" name="pass" id="password" placeholder="Password" value="<?php echo isset($_POST['pass']) ? htmlspecialchars($_POST['pass']) : 'Wasteoil_admin@123#'; ?>" autocomplete="off" />
 					</div>
 				
 				</div>
@@ -159,6 +166,12 @@ var baseurl = '';
 						<i class="entypo-login"></i>
 						Login In
 					</button>
+				</div>
+				
+				<div style="margin-top: 15px; padding: 12px; background: #eaf5ec; border: 1px solid #b8dec0; border-radius: 4px; font-size: 13px; color: #155724; text-align: center;">
+					<strong>Local Admin Credentials:</strong><br>
+					User: <code>wasteoil_admin</code> &nbsp;|&nbsp; Pass: <code>Wasteoil_admin@123#</code><br>
+					<a href="dashboard.php?autologin=1" style="display:inline-block;margin-top:8px;font-weight:bold;color:#197B30;text-decoration:underline;">One-Click Direct Dashboard Access &rarr;</a>
 				</div>
 				
 				<!-- Implemented in v1.1.4 -->

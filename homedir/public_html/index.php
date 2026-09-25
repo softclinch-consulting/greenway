@@ -12,6 +12,8 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://wasteoil.in/">
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="google71644dabd58cdac1">
 
   <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
   <meta name="geo.region" content="IN-TN">
@@ -82,6 +84,79 @@
       "https://www.linkedin.com/company/green-way-industries-tnpcb-authorized-recycler/",
       "https://www.instagram.com/green_wayindustries/",
       "https://www.youtube.com/channel/UCt_oegAiIuHzagDOdyA7qSg"
+    ]
+  }
+  </script>
+
+  <!-- WebSite & SearchAction Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Green Way Industries",
+    "url": "https://wasteoil.in/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://wasteoil.in/services.php?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema for AI Search & Rich Snippets (AEO / GEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of waste oil does Green Way Industries manage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Green Way Industries manages used engine and motor oils, hydraulic fluids, transformer and dielectric oils, cutting oils, metalworking fluids, turbine oils, gear lubricants, and marine bilge sludge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Green Way Industries provide waste oil collection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Green Way Industries provides on-site waste oil collection across Tamil Nadu using specialized vacuum tankers equipped with digital flow meters, spill-containment equipment, and GPS tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Green Way Industries provide waste oil recycling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Green Way Industries operates a modern vacuum distillation and dehydration processing plant in the SIDCO Industrial Estate in Tindivanam, converting waste oils into reusable base oils and secondary fuels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does Green Way Industries operate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Green Way Industries operates across all major industrial clusters in Tamil Nadu—including Chennai, Sriperumbudur, Oragadam, Maraimalai Nagar, Hosur, Coimbatore, Tiruppur, Salem, Cuddalore, and Villupuram—with nationwide compliance support across India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can a business request waste oil collection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Businesses can request collection by calling +91 93600 36055, emailing admin@usedoil.in, or submitting an online request with waste type, approximate volume, and pickup location."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Green Way Industries manage industrial waste other than used oil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. In addition to waste oil, Green Way Industries handles industrial hazardous waste, contaminated packaging and barrels, oily rags, chemical residues, and MARPOL Annex I vessel wastes."
+        }
+      }
     ]
   }
   </script>

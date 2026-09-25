@@ -151,6 +151,8 @@ if (isset($service_registry[$service_id])) {
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -177,34 +179,70 @@ if (isset($service_registry[$service_id])) {
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "<?php echo htmlspecialchars($display_name); ?>",
-      "provider": {
-        "@type": "RecyclingCenter",
-        "name": "Green Way Industries",
-        "telephone": "+919360036055",
-        "email": "admin@usedoil.in",
-        "image": "https://wasteoil.in/img/logo/logo.png",
-        "url": "https://wasteoil.in/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar",
-          "addressLocality": "Chennai",
-          "addressRegion": "Tamil Nadu",
-          "postalCode": "600083",
-          "addressCountry": "IN"
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "<?php echo htmlspecialchars($canonical_url); ?>#service",
+          "name": "<?php echo htmlspecialchars($display_name); ?>",
+          "serviceType": "<?php echo htmlspecialchars($display_name); ?>",
+          "description": "<?php echo htmlspecialchars($meta_desc); ?>",
+          "url": "<?php echo htmlspecialchars($canonical_url); ?>",
+          "provider": {
+            "@type": "RecyclingCenter",
+            "@id": "https://wasteoil.in/#organization",
+            "name": "Green Way Industries",
+            "telephone": "+919360036055",
+            "email": "admin@usedoil.in",
+            "image": "https://wasteoil.in/img/logo/logo.png",
+            "url": "https://wasteoil.in/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar",
+              "addressLocality": "Chennai",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "600083",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 13.0336,
+              "longitude": 80.2117
+            }
+          },
+          "areaServed": [
+            { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+            { "@type": "City", "name": "Chennai" },
+            { "@type": "City", "name": "Coimbatore" },
+            { "@type": "City", "name": "Hosur" },
+            { "@type": "City", "name": "Sriperumbudur" },
+            { "@type": "Country", "name": "India" }
+          ]
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 13.0336,
-          "longitude": 80.2117
+        {
+          "@type": "BreadcrumbList",
+          "@id": "<?php echo htmlspecialchars($canonical_url); ?>#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Services",
+              "item": "https://wasteoil.in/services.php"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "<?php echo htmlspecialchars($display_name); ?>",
+              "item": "<?php echo htmlspecialchars($canonical_url); ?>"
+            }
+          ]
         }
-      },
-      "areaServed": [
-        { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
-        { "@type": "Country", "name": "India" }
-      ],
-      "description": "<?php echo htmlspecialchars($meta_desc); ?>"
+      ]
     }
     </script>
 

@@ -20,6 +20,8 @@ if ($hasDatabase) {
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://wasteoil.in/about.php">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -41,6 +43,102 @@ if ($hasDatabase) {
     <meta name="twitter:title" content="About Green Way Industries | Waste Oil Recycler Tamil Nadu">
     <meta name="twitter:description" content="TNPCB-authorized used oil recycling, vacuum distillation re-refining, and industrial waste management across Tamil Nadu &amp; India.">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
+
+    <!-- JSON-LD Structured Data: AboutPage, Organization & BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://wasteoil.in/about.php#webpage",
+          "url": "https://wasteoil.in/about.php",
+          "name": "About Green Way Industries | Authorized Waste Oil & Hazardous Waste Recycler in Tamil Nadu",
+          "description": "Discover Green Way Industries: TNPCB-authorized used oil recycling facility in Tindivanam, vacuum distillation plant, GPS tanker fleet & Form-10 manifests across India.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "@id": "https://wasteoil.in/#website",
+            "name": "Green Way Industries",
+            "url": "https://wasteoil.in/"
+          },
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/about.php#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/about.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us",
+              "item": "https://wasteoil.in/about.php"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://wasteoil.in/#organization",
+          "name": "Green Way Industries",
+          "url": "https://wasteoil.in/",
+          "logo": "https://wasteoil.in/img/logo/logo.png",
+          "telephone": "+919360036055",
+          "email": "admin@usedoil.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600083",
+            "addressCountry": "IN"
+          },
+          "location": [
+            {
+              "@type": "Place",
+              "name": "Green Way Industries - Chennai Corporate Office",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar, Anjenear Kovil Opp",
+                "addressLocality": "Chennai",
+                "addressRegion": "Tamil Nadu",
+                "postalCode": "600083",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 13.0336,
+                "longitude": 80.2117
+              }
+            },
+            {
+              "@type": "Place",
+              "name": "Green Way Industries - Tindivanam Recycling Plant",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Plot No. 101, 102, 103 & 104, SIDCO Industrial Estate, Venmaniathur & Pattanam Village, Tindivanam Taluk",
+                "addressLocality": "Villupuram",
+                "addressRegion": "Tamil Nadu",
+                "postalCode": "604207",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 12.2312,
+                "longitude": 79.6508
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">

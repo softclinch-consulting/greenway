@@ -93,6 +93,81 @@ $msg_disply ="Something went wrong!";
     <meta name="twitter:description" content="Request on-site waste oil pickup, laboratory testing, and certified hazardous waste recycling across Tamil Nadu &amp; India.">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
+
+    <!-- JSON-LD Structured Data: ContactPage, LocalBusiness & BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://wasteoil.in/contact-us.php#webpage",
+          "url": "https://wasteoil.in/contact-us.php",
+          "name": "Contact Green Way Industries | Waste Oil Pickup & Recycler in Tamil Nadu, India",
+          "description": "Request scheduled on-site waste oil pickup, tanker dispatch, bulk re-refined oil quotes, or facility audits across Tamil Nadu and India. Call +91 93600 36055.",
+          "breadcrumb": {
+            "@id": "https://wasteoil.in/contact-us.php#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/contact-us.php#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact Us",
+              "item": "https://wasteoil.in/contact-us.php"
+            }
+          ]
+        },
+        {
+          "@type": "RecyclingCenter",
+          "@id": "https://wasteoil.in/#organization",
+          "name": "Green Way Industries",
+          "url": "https://wasteoil.in/",
+          "logo": "https://wasteoil.in/img/logo/logo.png",
+          "telephone": "+919360036055",
+          "email": "admin@usedoil.in",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "78/30 Suscon Builder, 53rd Street, Ashok Nagar, Anjenear Kovil Opp",
+            "addressLocality": "Chennai",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600083",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 13.0336,
+            "longitude": 80.2117
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:00",
+            "closes": "18:30"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+919360036055",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": ["en", "ta"]
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
 

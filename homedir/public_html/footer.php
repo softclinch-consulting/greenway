@@ -126,9 +126,8 @@
                         <div class="footer-content last-item">
                             <div class="footer-head">
                                 <h4>Contact Us</h4>
-                                <p>
-                                    <b>Phone:</b> <?php echo htmlspecialchars($footer1['mobile']);?> <br>
-                                    <b>Email:</b> <?php echo htmlspecialchars($footer1['email']);?> <br>
+                                    <b>Phone:</b> <a href="tel:<?php echo htmlspecialchars($footer1['mobile']);?>" style="color:#15693c;font-weight:700;"><i class="fa fa-phone"></i> <?php echo htmlspecialchars($footer1['mobile']);?></a> <span style="font-size:12px;color:#666;">(TN &amp; All-India)</span><br>
+                                    <b>Email:</b> <a href="mailto:<?php echo htmlspecialchars($footer1['email']);?>" style="color:inherit;"><?php echo htmlspecialchars($footer1['email']);?></a> <br>
                                     <b>Corporate Office:</b> <?php echo $footer1['address1'];?> <br>
                                     <b>Factory Address:</b> <?php echo $footer1['address2'];?>
                                 </p>
