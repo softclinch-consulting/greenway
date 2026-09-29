@@ -3,13 +3,6 @@ error_reporting(0);
 include('config.php'); 
 session_start();
 
-if(isset($_REQUEST['autologin']) || isset($_GET['autologin']))
-{
-    $_SESSION['memid'] = 1;
-    header('Location: dashboard.php');
-    exit;
-}
-
 if(isset($_REQUEST['log_sub']))
 {
 $user=$_REQUEST['user'];
@@ -170,8 +163,7 @@ var baseurl = '';
 				
 				<div style="margin-top: 15px; padding: 12px; background: #eaf5ec; border: 1px solid #b8dec0; border-radius: 4px; font-size: 13px; color: #155724; text-align: center;">
 					<strong>Local Admin Credentials:</strong><br>
-					User: <code>wasteoil_admin</code> &nbsp;|&nbsp; Pass: <code>Wasteoil_admin@123#</code><br>
-					<a href="dashboard.php?autologin=1" style="display:inline-block;margin-top:8px;font-weight:bold;color:#197B30;text-decoration:underline;">One-Click Direct Dashboard Access &rarr;</a>
+					User: <code>wasteoil_admin</code> &nbsp;|&nbsp; Pass: <code>Wasteoil_admin@123#</code>
 				</div>
 				
 				<!-- Implemented in v1.1.4 -->

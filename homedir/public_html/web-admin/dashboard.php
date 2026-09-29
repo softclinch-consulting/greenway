@@ -5,15 +5,8 @@ session_start();
 
 if(empty($_SESSION['memid']))
 {
-    if(isset($_REQUEST['autologin']) || isset($_GET['autologin']))
-    {
-        $_SESSION['memid'] = 1;
-    }
-    else
-    {
-        header('location:index.php');
-        exit;
-    }
+    header('location:index.php');
+    exit;
 }
 ?>
 <!DOCTYPE html>
