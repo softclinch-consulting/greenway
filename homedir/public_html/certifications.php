@@ -483,6 +483,32 @@ if ($hasDatabase) {
                 </p>
             </div>
 
+            <!-- Featured EPR Used Oil & Regulatory Compliance Support -->
+            <div class="gw-compliance-card gw-reveal" style="margin-top:36px;padding:36px 34px;border:1.5px solid #b5e85f;background:linear-gradient(135deg, #ffffff 0%, #f4f9f5 100%);">
+                <div class="row" style="display:flex;align-items:center;flex-wrap:wrap;">
+                    <div class="col-md-4 col-sm-12 text-center" style="margin-bottom:16px;">
+                        <div style="background:#ffffff;border:1px solid #dce8dd;border-radius:14px;padding:20px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(16,58,42,0.08);">
+                            <img src="img/epr-used-oil-compliance.png" alt="EPR Used oil &amp; Regulatory Compliance Support" style="max-width:220px;width:100%;height:auto;object-fit:contain;">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="gw-compliance-card-header" style="margin-bottom:14px;justify-content:flex-start;gap:12px;flex-wrap:wrap;">
+                            <span class="gw-status-badge active"><i class="fa fa-check-circle"></i> EPR &amp; Regulatory Support</span>
+                            <span class="gw-status-badge active" style="background:#eef7f0;color:#103a2a;border-color:#c5dfd0;"><i class="fa fa-file-text-o"></i> Seamless Documentation</span>
+                        </div>
+                        <h3 style="font-size:26px;font-weight:800;color:var(--gw-deep);margin:0 0 12px;">EPR Used oil &amp; Regulatory Compliance Support</h3>
+                        <p style="font-size:16px;line-height:1.75;color:#384d41;margin:0 0 18px;">
+                            We assist our clients with the necessary documentation and procedures for Extended Producer Responsibility (EPR) and other regulatory requirements, making the process of responsible waste management seamless and transparent.
+                        </p>
+                        <div style="display:flex;flex-wrap:wrap;gap:16px;">
+                            <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#103a2a;"><i class="fa fa-check-circle" style="color:#196b45;"></i> EPR Documentation &amp; Procedures</span>
+                            <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#103a2a;"><i class="fa fa-check-circle" style="color:#196b45;"></i> End-to-End Regulatory Guidance</span>
+                            <span style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#103a2a;"><i class="fa fa-check-circle" style="color:#196b45;"></i> Transparent Waste Traceability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="gw-compliance-grid">
                 <!-- Column 1: TNPCB Authorization -->
                 <div class="gw-compliance-card gw-reveal">
