@@ -849,7 +849,7 @@
 
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
+.container {width:100%}
 .layer-1-2 h1 {
     font-size: 24px;
     line-height: 32px;
@@ -867,9 +867,11 @@
 .project-area .container-full .section-headline p {
     max-width: 360px;
 }	
-	
-	
-	
-    
 }
- 
+
+/* Fallback Mobile Nav Protection */
+@media (max-width: 991px) {
+    nav#dropdown {
+        display: none;
+    }
+}
