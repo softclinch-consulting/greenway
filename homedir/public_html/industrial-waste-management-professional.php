@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 30; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .iwm{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .iwm h1,.iwm h2,.iwm h3,.iwm h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -74,7 +75,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Service <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -139,7 +140,7 @@
           <h2>Our Industrial Waste Management Workflow</h2>
           <p>We tailor our waste management architecture around your manufacturing layout, generation volumes, and shift schedules.</p>
           <div style="margin-top:24px">
-            <a class="gw-btn-primary" href="contact-us.php">Request Facility Consultation <i class="fa fa-arrow-right"></i></a>
+            <a class="gw-btn-primary" href="contact-us">Request Facility Consultation <i class="fa fa-arrow-right"></i></a>
           </div>
           <div style="margin-top:30px">
             <div class="gw-proc-frame"><img src="gallery/74_4.jpg" alt="Operations Facility"><div class="gw-visual-badge">
@@ -259,7 +260,7 @@
             <strong>Refining Facility:</strong> SIDCO Industrial Estate, Tindivanam<br>
             <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
             <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
-            <a class="iwm-btn" href="contact-us.php" style="margin-top:12px">Schedule Plant Waste Audit</a>
+            <a class="iwm-btn" href="contact-us" style="margin-top:12px">Schedule Plant Waste Audit</a>
           </div>
         </div>
       </div>
@@ -393,11 +394,11 @@
       <div class="gw-block" style="padding:22px 28px;">
         <div class="iwm-links-bar text-center">
           <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Core Service Pillars:</span>
-          <a href="services.php?s_id=16">Waste Oil Disposal</a>
-          <a href="services.php?s_id=17">Waste Oil Recycling</a>
-          <a href="services.php?s_id=21">Waste Oil Collection</a>
-          <a href="services.php?s_id=24">Hazardous Waste Recycler</a>
-          <a href="services.php?s_id=28">Hazardous Waste Transport</a>
+          <a href="waste-oil-disposal">Waste Oil Disposal</a>
+          <a href="waste-oil-recycling">Waste Oil Recycling</a>
+          <a href="waste-oil-collection">Waste Oil Collection</a>
+          <a href="hazardous-waste-recycler">Hazardous Waste Recycler</a>
+          <a href="hazardous-waste-transport">Hazardous Waste Transport</a>
         </div>
       </div>
 
@@ -405,7 +406,7 @@
       <div class="gw-block gw-block--deep text-center">
         <h2>Transform Your Plant Waste Management Today</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Partner with an authorized industrial environmental leader to simplify compliance, maximize resource recovery, and eliminate multi-vendor friction.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Factory Waste Audit <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Factory Waste Audit <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Speak to Our Industrial Solutions Team</a>
       </div>
 

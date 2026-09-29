@@ -19,7 +19,7 @@ if ($hasDatabase) {
     <meta name="keywords" content="TNPCB authorization used oil, hazardous waste authorization Tamil Nadu, Form 10 manifest waste oil, CPCB compliant waste oil recycler, environmental compliance certificate India, authorized used oil recycling company, hazardous waste management rules India, waste oil statutory manifest, safe disposal certificate Tamil Nadu">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/certifications.php">
+    <link rel="canonical" href="https://wasteoil.in/certifications">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -32,7 +32,7 @@ if ($hasDatabase) {
     <meta property="og:site_name" content="Green Way Industries">
     <meta property="og:title" content="TNPCB Authorization &amp; Environmental Compliance | Green Way Industries">
     <meta property="og:description" content="Active TNPCB authorization for used oil recycling, hazardous waste manifests, and environmental compliance for industrial facilities across Tamil Nadu &amp; India.">
-    <meta property="og:url" content="https://wasteoil.in/certifications.php">
+    <meta property="og:url" content="https://wasteoil.in/certifications">
     <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
     <meta property="og:locale" content="en_IN">
 
@@ -52,17 +52,17 @@ if ($hasDatabase) {
       "@graph": [
         {
           "@type": "ItemPage",
-          "@id": "https://wasteoil.in/certifications.php#webpage",
-          "url": "https://wasteoil.in/certifications.php",
+          "@id": "https://wasteoil.in/certifications#webpage",
+          "url": "https://wasteoil.in/certifications",
           "name": "TNPCB Authorization & Hazardous Waste Compliance | Green Way Industries",
           "description": "Active TNPCB authorization for used oil recycling, hazardous waste management, Form-10 manifests & CPCB environmental compliance for industries across Tamil Nadu & India.",
           "breadcrumb": {
-            "@id": "https://wasteoil.in/certifications.php#breadcrumb"
+            "@id": "https://wasteoil.in/certifications#breadcrumb"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://wasteoil.in/certifications.php#breadcrumb",
+          "@id": "https://wasteoil.in/certifications#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -74,7 +74,7 @@ if ($hasDatabase) {
               "@type": "ListItem",
               "position": 2,
               "name": "Our Certifications",
-              "item": "https://wasteoil.in/certifications.php"
+              "item": "https://wasteoil.in/certifications"
             }
           ]
         },
@@ -415,7 +415,7 @@ if ($hasDatabase) {
                             <h3>Certifications &amp; Compliance</h3>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
                             <li>Certifications &amp; Compliance</li>
                         </ul>
                     </div>
@@ -851,7 +851,7 @@ if ($hasDatabase) {
                         If your business generates used oil, waste oil, hydraulic oil, transformer oil, spent oil, or other applicable industrial waste, our team can help you understand the appropriate collection and recycling or disposal process. Speak with Green Way Industries about your waste oil and industrial waste management requirements.
                     </p>
                     <div style="display:flex;flex-wrap:wrap;gap:12px;">
-                        <a href="contact-us.php" class="gw-btn-lift gw-btn-green-2026" style="display:inline-block;padding:14px 26px;">
+                        <a href="contact-us" class="gw-btn-lift gw-btn-green-2026" style="display:inline-block;padding:14px 26px;">
                             Enquire Now <i class="fa fa-paper-plane"></i>
                         </a>
                         <a href="tel:+919360036055" class="gw-btn-lift gw-btn-outline-2026" style="display:inline-block;padding:13px 22px;">

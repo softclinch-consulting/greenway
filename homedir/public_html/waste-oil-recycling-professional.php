@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 17; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .wor{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .wor h1,.wor h2,.wor h3,.wor h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -74,7 +75,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Service <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -139,7 +140,7 @@
           <h2>Our Waste Oil Recycling Process</h2>
           <p>Our re-refining protocol systematically purifies feedstocks through multiple quality stages to produce consistent recovery outputs.</p>
           <div style="margin-top:24px">
-            <a class="gw-btn-primary" href="contact-us.php">Request Recycling Assessment <i class="fa fa-arrow-right"></i></a>
+            <a class="gw-btn-primary" href="contact-us">Request Recycling Assessment <i class="fa fa-arrow-right"></i></a>
           </div>
           <div style="margin-top:30px">
             <div class="gw-proc-frame"><img src="gallery/76_6.jpg" alt="Operations Facility"><div class="gw-visual-badge">
@@ -257,7 +258,7 @@
             <strong>Refining Facility:</strong> SIDCO Industrial Estate, Tindivanam<br>
             <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
             <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
-            <a class="wor-btn" href="contact-us.php" style="margin-top:12px">Enquire for Recycling</a>
+            <a class="wor-btn" href="contact-us" style="margin-top:12px">Enquire for Recycling</a>
           </div>
         </div>
       </div>
@@ -391,11 +392,11 @@
       <div class="gw-block" style="padding:22px 28px;">
         <div class="wor-links-bar text-center">
           <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
-          <a href="services.php?s_id=23">Used Oil Recycler</a>
-          <a href="services.php?s_id=21">Waste Oil Collection</a>
-          <a href="services.php?s_id=16">Waste Oil Disposal</a>
-          <a href="services.php?s_id=25">Used Transformer Oil Recycling</a>
-          <a href="services.php?s_id=26">Used Hydraulic Oil</a>
+          <a href="used-oil-recycler">Used Oil Recycler</a>
+          <a href="waste-oil-collection">Waste Oil Collection</a>
+          <a href="waste-oil-disposal">Waste Oil Disposal</a>
+          <a href="used-transformer-oil-recycling">Used Transformer Oil Recycling</a>
+          <a href="used-hydraulic-oil">Used Hydraulic Oil</a>
         </div>
       </div>
 
@@ -403,7 +404,7 @@
       <div class="gw-block gw-block--deep text-center">
         <h2>Partner with an Authorized Waste Oil Recycler</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Send us your waste oil volume and facility location to receive technical consultation and establish a reliable recycling schedule.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Recycling Quote <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Recycling Quote <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Speak to Our Recycler Team</a>
       </div>
 

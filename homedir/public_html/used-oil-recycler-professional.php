@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 23; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .uor{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .uor h1,.uor h2,.uor h3,.uor h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -74,7 +75,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Service <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -139,7 +140,7 @@
           <h2>Our Recycler Engagement Process</h2>
           <p>We make vendor onboarding straightforward, professional, and fully transparent for corporate procurement and EHS teams.</p>
           <div style="margin-top:24px">
-            <a class="gw-btn-primary" href="contact-us.php">Request Vendor Credentials <i class="fa fa-arrow-right"></i></a>
+            <a class="gw-btn-primary" href="contact-us">Request Vendor Credentials <i class="fa fa-arrow-right"></i></a>
           </div>
           <div style="margin-top:30px">
             <div class="gw-proc-frame"><img src="gallery/76_6.jpg" alt="Operations Facility"><div class="gw-visual-badge">
@@ -259,7 +260,7 @@
             <strong>Refining Facility:</strong> SIDCO Industrial Estate, Tindivanam<br>
             <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
             <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
-            <a class="uor-btn" href="contact-us.php" style="margin-top:12px">Request Vendor Onboarding</a>
+            <a class="uor-btn" href="contact-us" style="margin-top:12px">Request Vendor Onboarding</a>
           </div>
         </div>
       </div>
@@ -393,11 +394,11 @@
       <div class="gw-block" style="padding:22px 28px;">
         <div class="uor-links-bar text-center">
           <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
-          <a href="services.php?s_id=17">Waste Oil Recycling</a>
-          <a href="services.php?s_id=22">Used Oil Disposal</a>
-          <a href="services.php?s_id=21">Waste Oil Collection</a>
-          <a href="services.php?s_id=24">Hazardous Waste Recycler</a>
-          <a href="services.php?s_id=30">Industrial Waste Management</a>
+          <a href="waste-oil-recycling">Waste Oil Recycling</a>
+          <a href="used-oil-disposal">Used Oil Disposal</a>
+          <a href="waste-oil-collection">Waste Oil Collection</a>
+          <a href="hazardous-waste-recycler">Hazardous Waste Recycler</a>
+          <a href="industrial-waste-management">Industrial Waste Management</a>
         </div>
       </div>
 
@@ -405,7 +406,7 @@
       <div class="gw-block gw-block--deep text-center">
         <h2>Appoint an Authorized Used Oil Recycler Today</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Contact our corporate desk to request our compliance credentials, discuss contract terms, or schedule an immediate collection.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Vendor Proposal <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Vendor Proposal <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Speak to Corporate Desk</a>
       </div>
 

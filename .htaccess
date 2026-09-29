@@ -1,0 +1,29 @@
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Clean SEO Slugs for 12 Industrial Services
+    RewriteRule ^waste-oil-disposal/?$ services.php?s_id=16 [L,QSA]
+    RewriteRule ^waste-oil-recycling/?$ services.php?s_id=17 [L,QSA]
+    RewriteRule ^waste-oil-collection/?$ services.php?s_id=21 [L,QSA]
+    RewriteRule ^used-oil-disposal/?$ services.php?s_id=22 [L,QSA]
+    RewriteRule ^used-oil-recycler/?$ services.php?s_id=23 [L,QSA]
+    RewriteRule ^hazardous-waste-recycler/?$ services.php?s_id=24 [L,QSA]
+    RewriteRule ^used-transformer-oil-recycling/?$ services.php?s_id=25 [L,QSA]
+    RewriteRule ^used-hydraulic-oil/?$ services.php?s_id=26 [L,QSA]
+    RewriteRule ^spent-oil/?$ services.php?s_id=27 [L,QSA]
+    RewriteRule ^hazardous-waste-transport/?$ services.php?s_id=28 [L,QSA]
+    RewriteRule ^hazardous-waste-disposal-for-ships/?$ services.php?s_id=29 [L,QSA]
+    RewriteRule ^industrial-waste-management/?$ services.php?s_id=30 [L,QSA]
+
+    # Clean SEO Slugs for Core Pages
+    RewriteRule ^about/?$ about.php [L,QSA]
+    RewriteRule ^services/?$ services.php [L,QSA]
+    RewriteRule ^certifications/?$ certifications.php [L,QSA]
+    RewriteRule ^our-industries/?$ our-industries.php [L,QSA]
+    RewriteRule ^our-products/?$ our-products.php [L,QSA]
+    RewriteRule ^our-gallery/?$ our-gallery.php [L,QSA]
+    RewriteRule ^contact-us/?$ contact-us.php [L,QSA]
+</IfModule>

@@ -78,7 +78,7 @@ if (empty($gallery_list)) {
     <meta name="keywords" content="used oil recycling plant photos, waste oil distillation facility Tamil Nadu, hazardous waste tanker fleet India, Green Way Industries Tindivanam, industrial waste infrastructure gallery, used oil tank farm Chennai, recycling facility Tamil Nadu">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/our-gallery.php">
+    <link rel="canonical" href="https://wasteoil.in/our-gallery">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -91,7 +91,7 @@ if (empty($gallery_list)) {
     <meta property="og:site_name" content="Green Way Industries">
     <meta property="og:title" content="Infrastructure &amp; Facility Operations Gallery | Green Way Industries">
     <meta property="og:description" content="View our TNPCB-authorized vacuum distillation facility, bulk storage tanks, and hazardous waste logistics fleet in Tamil Nadu, India.">
-    <meta property="og:url" content="https://wasteoil.in/our-gallery.php">
+    <meta property="og:url" content="https://wasteoil.in/our-gallery">
     <meta property="og:image" content="https://wasteoil.in/gallery/71_1.jpg">
     <meta property="og:locale" content="en_IN">
 
@@ -111,17 +111,17 @@ if (empty($gallery_list)) {
       "@graph": [
         {
           "@type": "ImageGallery",
-          "@id": "https://wasteoil.in/our-gallery.php#webpage",
-          "url": "https://wasteoil.in/our-gallery.php",
+          "@id": "https://wasteoil.in/our-gallery#webpage",
+          "url": "https://wasteoil.in/our-gallery",
           "name": "Infrastructure & Facility Operations Gallery | Green Way Industries",
           "description": "View our TNPCB-authorized vacuum distillation facility, bulk storage tanks, and hazardous waste logistics fleet in Tamil Nadu, India.",
           "breadcrumb": {
-            "@id": "https://wasteoil.in/our-gallery.php#breadcrumb"
+            "@id": "https://wasteoil.in/our-gallery#breadcrumb"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://wasteoil.in/our-gallery.php#breadcrumb",
+          "@id": "https://wasteoil.in/our-gallery#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -133,7 +133,7 @@ if (empty($gallery_list)) {
               "@type": "ListItem",
               "position": 2,
               "name": "Our Gallery",
-              "item": "https://wasteoil.in/our-gallery.php"
+              "item": "https://wasteoil.in/our-gallery"
             }
           ]
         }
@@ -179,80 +179,7 @@ if (empty($gallery_list)) {
     <div id="preloader"></div>
     
     <!-- header start -->
-    <?php 
-    if ($con) {
-        include('header.php');
-    } else {
-    ?>
-    <header class="header-one">
-        <div class="topbar-area fix hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-sm-9">
-                        <div class="topbar-left">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-map-marker"></i> Chennai, India</a></li>
-                                <li><a href="mailto:admin@usedoil.in"><i class="fa fa-envelope"></i> admin@usedoil.in</a></li>
-                                <li><a href="tel:+919360036055"><i class="fa fa-phone"></i> +91 93600 36055</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3">
-                        <div class="quote-button top-btn">
-                            <a href="contact-us.php" class="quote-btn">Quick Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="sticker" class="header-area header-area-4 hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2">
-                        <div class="logo">
-                            <a class="navbar-brand page-scroll sticky-logo" href="index.php">
-                                <img style="max-width: 280px;margin-top: 12px;" src="img/logo/logo.png" alt="Green Way Industries">
-                            </a>
-                        </div>
-                    </div>
-                    <div style="margin-top: 10px;" class="col-md-10 col-sm-10">
-                        <nav class="navbar navbar-default">
-                            <div class="collapse navbar-collapse">
-                                <div class="main-menu">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About us</a></li>
-                                        <li><a class="pagess" href="services.php?s_id=16">Our Services</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services.php?s_id=16">Waste Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=17">Waste Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=21">Waste Oil Collection</a></li>
-                                                <li><a href="services.php?s_id=22">Used Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=23">Used Oil Recycler</a></li>
-                                                <li><a href="services.php?s_id=24">Hazardous Waste Recycler</a></li>
-                                                <li><a href="services.php?s_id=25">Used Transformer Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=26">Used Hydraulic Oil</a></li>
-                                                <li><a href="services.php?s_id=27">Spent Oil</a></li>
-                                                <li><a href="services.php?s_id=28">Hazardous Waste Transport</a></li>
-                                                <li><a href="services.php?s_id=29">Hazardous Waste Disposal for Ships</a></li>
-                                                <li><a href="services.php?s_id=30">Industrial Waste Management</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="certifications.php">Our Certifications</a></li>
-                                        <li><a href="our-industries.php">Our Industries</a></li>
-                                        <li><a href="our-products.php">Our Products</a></li>
-                                        <li class="active"><a href="our-gallery.php">Our Gallery</a></li>
-                                        <li><a href="contact-us.php">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <?php } ?>
+    <?php include('header.php'); ?>
     <!-- header end -->
     
     <!-- Start Slider Area -->
@@ -266,7 +193,7 @@ if (empty($gallery_list)) {
                             <h3>Our Gallery</h3>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff;">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff;">Home</a></li>
                             <li>Our Gallery</li>
                         </ul>
                     </div>
@@ -367,7 +294,7 @@ if (empty($gallery_list)) {
                         </p>
                     </div>
                     <div class="col-md-4 col-sm-12 text-right" style="margin-top:15px;">
-                        <a href="contact-us.php" class="gw-btn-lime" style="display:inline-block;padding:12px 26px;border-radius:6px;background:var(--gw-lime);color:var(--gw-deep);font-weight:700;text-decoration:none;margin-right:10px;">
+                        <a href="contact-us" class="gw-btn-lime" style="display:inline-block;padding:12px 26px;border-radius:6px;background:var(--gw-lime);color:var(--gw-deep);font-weight:700;text-decoration:none;margin-right:10px;">
                             Contact Facility Desk
                         </a>
                         <a href="tel:+919360036055" style="display:inline-block;padding:12px 20px;border-radius:6px;background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);font-weight:700;text-decoration:none;">
@@ -382,20 +309,7 @@ if (empty($gallery_list)) {
     <!-- End Gallery Content Area -->
 
     <!-- Start Footer bottom Area -->
-    <?php 
-    if ($con) {
-        include('footer.php');
-    } else {
-    ?>
-    <footer style="background:#103a2a;color:#fff;padding:40px 0;">
-        <div class="container text-center">
-            <p><strong>Green Way Industries</strong> • Authorized Waste Oil Collection &amp; Recycling Solutions in Tamil Nadu</p>
-            <p style="font-size:14px;color:#a8c4b2;">Corporate Office: 78/30 Suscon Builder, 53rd Street, Ashok Nagar, Chennai - 600083<br>
-            Processing Facility: SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam, Villupuram - 604207</p>
-            <p style="font-size:14px;"><a href="tel:+919360036055" style="color:#b5e85f;">+91 93600 36055</a> | <a href="mailto:admin@usedoil.in" style="color:#b5e85f;">admin@usedoil.in</a></p>
-        </div>
-    </footer>
-    <?php } ?>
+    <?php include('footer.php'); ?>
 
     <!-- all js here -->
     <!-- jquery latest version -->

@@ -1,4 +1,8 @@
 <?php 
+if (!defined('GW_SERVICE_WRAPPER')) {
+    define('GW_SERVICE_WRAPPER', true);
+}
+
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -8,19 +12,10 @@ if ($hasDatabase) {
     @include('web-admin/config.php');
 }
 
-$service_id = isset($_REQUEST['s_id']) ? (int)$_REQUEST['s_id'] : 0;
-$service_dtl1 = null;
-
-if ($con && $service_id > 0) {
-    $service_dtl = mysqli_query($con, "SELECT * FROM `service` WHERE `id`='$service_id'");
-    if ($service_dtl && mysqli_num_rows($service_dtl) > 0) {
-        $service_dtl1 = mysqli_fetch_array($service_dtl);
-    }
-}
-
 // Master Metadata & Routing Configuration for all 12 Green Way Services
 $service_registry = [
     16 => [
+        'slug' => 'waste-oil-disposal',
         'name' => 'Waste Oil Disposal',
         'title' => 'Industrial Waste Oil Disposal Services in Tamil Nadu, India | TNPCB Authorized',
         'meta_desc' => 'TNPCB authorized industrial waste oil disposal across Tamil Nadu & India. Safe on-site vacuum tanker collection, Form-10 manifests, and certified disposal. Call +91 93600 36055.',
@@ -29,6 +24,7 @@ $service_registry = [
         'image' => '16_1.jpg'
     ],
     17 => [
+        'slug' => 'waste-oil-recycling',
         'name' => 'Waste Oil Recycling',
         'title' => 'Industrial Waste Oil Recycling & Re-Refining Services in Tamil Nadu, India',
         'meta_desc' => 'TNPCB-authorized waste oil recycling and vacuum re-refining company in Tamil Nadu. Convert used oils into reusable base oils and secondary fuels across India.',
@@ -37,6 +33,7 @@ $service_registry = [
         'image' => '17_2.jpg'
     ],
     21 => [
+        'slug' => 'waste-oil-collection',
         'name' => 'Waste Oil Collection',
         'title' => 'On-Site Waste Oil Collection & Tanker Pickup in Tamil Nadu | GPS Fleet',
         'meta_desc' => 'Scheduled & emergency on-site waste oil collection across Tamil Nadu. Dedicated GPS vacuum suction tankers, spill prevention, and digital Form-10 tracking statewide.',
@@ -45,6 +42,7 @@ $service_registry = [
         'image' => '21_3.jpg'
     ],
     22 => [
+        'slug' => 'used-oil-disposal',
         'name' => 'Used Oil Disposal',
         'title' => 'Used Oil Disposal & Drained Lubricant Management in Tamil Nadu, India',
         'meta_desc' => 'Compliant used oil disposal for drained engine oils, gear oils, and machine lubricants across Tamil Nadu. Certified safe disposal with statutory Form-10 records.',
@@ -53,6 +51,7 @@ $service_registry = [
         'image' => '22_4.jpg'
     ],
     23 => [
+        'slug' => 'used-oil-recycler',
         'name' => 'Used Oil Recycler',
         'title' => 'TNPCB Authorized Used Oil Recycler in Tamil Nadu | Re-Refining India',
         'meta_desc' => 'Looking for an authorized used oil recycler in Tamil Nadu? Green Way Industries offers direct industrial procurement, vacuum refining, and complete compliance tracking across India.',
@@ -61,6 +60,7 @@ $service_registry = [
         'image' => '23_5.jpg'
     ],
     24 => [
+        'slug' => 'hazardous-waste-recycler',
         'name' => 'Hazardous Waste Recycler',
         'title' => 'Hazardous Waste Recycler & Resource Recovery in Tamil Nadu, India | CPCB/TNPCB',
         'meta_desc' => 'Authorized industrial hazardous waste recycling and resource recovery in Tamil Nadu. Compliant handling for oily sludges, contaminated containers, and chemical residues across India.',
@@ -69,6 +69,7 @@ $service_registry = [
         'image' => '24_6.jpg'
     ],
     25 => [
+        'slug' => 'used-transformer-oil-recycling',
         'name' => 'Used Transformer oil recycling',
         'title' => 'Used Transformer Oil Recycling & Dehydration Services in Tamil Nadu, India',
         'meta_desc' => 'Authorized used transformer oil recycling, moisture stripping, and dielectric re-refining across Tamil Nadu and India. Compliant substation and power grid oil disposal.',
@@ -77,6 +78,7 @@ $service_registry = [
         'image' => '25_7.jpg'
     ],
     26 => [
+        'slug' => 'used-hydraulic-oil',
         'name' => 'Used Hydraulic Oil',
         'title' => 'Used Hydraulic Oil Recycling & Fluid Management in Tamil Nadu, India',
         'meta_desc' => 'Specialized collection, water separation, multi-stage filtration, and recycling for spent hydraulic fluids from manufacturing plants and heavy machinery across Tamil Nadu.',
@@ -85,6 +87,7 @@ $service_registry = [
         'image' => '26_8.jpg'
     ],
     27 => [
+        'slug' => 'spent-oil',
         'name' => 'Spent Oil',
         'title' => 'Spent Oil Management & Industrial Process Oil Recycling in Tamil Nadu, India',
         'meta_desc' => 'Authorized collection, chemical assessment, recycling, and certified disposal for spent metalworking fluids, quenching oils, and process oils in Tamil Nadu & India.',
@@ -93,6 +96,7 @@ $service_registry = [
         'image' => '27_9.jpg'
     ],
     28 => [
+        'slug' => 'hazardous-waste-transport',
         'name' => 'Hazardous Waste Transport',
         'title' => 'Authorized Hazardous Waste Transport Services in Tamil Nadu | GPS Tankers',
         'meta_desc' => 'Statewide authorized hazardous waste transportation. Certified containment vehicles, vacuum tankers, trained hazmat drivers, and Form-10 manifests in Tamil Nadu & interstate.',
@@ -101,6 +105,7 @@ $service_registry = [
         'image' => '28_10.jpg'
     ],
     29 => [
+        'slug' => 'hazardous-waste-disposal-for-ships',
         'name' => 'Hazardous Waste Disposal for Ships',
         'title' => 'Ship Hazardous Waste Disposal & MARPOL Annex I Bilge Sludge Reception Chennai',
         'meta_desc' => 'MARPOL Annex I port reception & disposal for oily bilge water, sludge, and marine hazardous waste at Chennai Port, Kamarajar (Ennore), and Kattupalli Port with official receipts.',
@@ -109,6 +114,7 @@ $service_registry = [
         'image' => '29_11.jpg'
     ],
     30 => [
+        'slug' => 'industrial-waste-management',
         'name' => 'Industrial Waste Management',
         'title' => 'Comprehensive Industrial Waste Management Contracts in Tamil Nadu, India',
         'meta_desc' => 'End-to-end industrial waste management contracts for factories and SEZs across Tamil Nadu. Waste audit, hazardous & non-hazardous collection, and TNPCB compliance filing.',
@@ -118,25 +124,44 @@ $service_registry = [
     ]
 ];
 
-// Determine Page Title, Meta Description, Keywords, and Canonical URL
+$service_id = isset($_REQUEST['s_id']) ? (int)$_REQUEST['s_id'] : 0;
+if ($service_id === 0 && !empty($_REQUEST['slug'])) {
+    $req_slug = strtolower(trim($_REQUEST['slug'], '/'));
+    foreach ($service_registry as $sid => $smeta) {
+        if ($smeta['slug'] === $req_slug) {
+            $service_id = $sid;
+            break;
+        }
+    }
+}
+
+$service_dtl1 = null;
+if ($con && $service_id > 0) {
+    $service_dtl = mysqli_query($con, "SELECT * FROM `service` WHERE `id`='$service_id'");
+    if ($service_dtl && mysqli_num_rows($service_dtl) > 0) {
+        $service_dtl1 = mysqli_fetch_array($service_dtl);
+    }
+}
+
+// Determine Page Title, Meta Description, Keywords, and Clean Canonical URL
 if (isset($service_registry[$service_id])) {
     $page_title = $service_registry[$service_id]['title'];
     $meta_desc = $service_registry[$service_id]['meta_desc'];
     $meta_keywords = $service_registry[$service_id]['keywords'];
     $display_name = !empty($service_dtl1['name']) ? $service_dtl1['name'] : $service_registry[$service_id]['name'];
-    $canonical_url = "https://wasteoil.in/services.php?s_id=" . $service_id;
+    $canonical_url = "https://wasteoil.in/" . $service_registry[$service_id]['slug'];
 } elseif (!empty($service_dtl1['name'])) {
     $display_name = $service_dtl1['name'];
     $page_title = htmlspecialchars($display_name) . " in Tamil Nadu, India | Green Way Industries";
     $meta_desc = "Green Way Industries provides authorized " . htmlspecialchars($display_name) . ", waste oil collection, used oil recycling, and industrial waste management solutions in Tamil Nadu and across India.";
     $meta_keywords = htmlspecialchars($display_name) . ", waste oil recycling Tamil Nadu, industrial waste management Chennai, TNPCB authorized recycler, waste oil collection India";
-    $canonical_url = "https://wasteoil.in/services.php?s_id=" . $service_id;
+    $canonical_url = "https://wasteoil.in/services?s_id=" . $service_id;
 } else {
     $display_name = "Our Services";
     $page_title = "Waste Oil Recycling & Industrial Waste Services in Tamil Nadu, India | Green Way";
     $meta_desc = "Explore specialized waste oil collection, used oil recycling, certified disposal, and hazardous waste management services across Tamil Nadu and India by Green Way Industries.";
     $meta_keywords = "waste oil collection Tamil Nadu, used oil recycling India, hazardous waste disposal Chennai, TNPCB authorized recycler, industrial waste management";
-    $canonical_url = "https://wasteoil.in/services.php";
+    $canonical_url = "https://wasteoil.in/services";
 }
 ?>
 <!doctype html>
@@ -232,7 +257,7 @@ if (isset($service_registry[$service_id])) {
               "@type": "ListItem",
               "position": 2,
               "name": "Services",
-              "item": "https://wasteoil.in/services.php"
+              "item": "https://wasteoil.in/services"
             },
             {
               "@type": "ListItem",
@@ -286,80 +311,7 @@ if (isset($service_registry[$service_id])) {
     <div id="preloader"></div>
     
     <!-- header -->
-    <?php 
-    if ($con) {
-        include('header.php');
-    } else {
-    ?>
-    <header class="header-one">
-        <div class="topbar-area fix hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-sm-9">
-                        <div class="topbar-left">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-map-marker"></i> Chennai, India</a></li>
-                                <li><a href="mailto:admin@usedoil.in"><i class="fa fa-envelope"></i> admin@usedoil.in</a></li>
-                                <li><a href="tel:+919360036055"><i class="fa fa-phone"></i> +91 93600 36055</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3">
-                        <div class="quote-button">
-                            <a href="contact-us.php" class="quote-btn">Get a quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="sticker" class="header-area header-area-4 hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2">
-                        <div class="logo">
-                            <a class="navbar-brand page-scroll sticky-logo" href="index.php">
-                                <img style="max-width: 280px;margin-top: 12px;" src="img/logo/logo.png" alt="Green Way Industries">
-                            </a>
-                        </div>
-                    </div>
-                    <div style="margin-top: 10px;" class="col-md-10 col-sm-10">
-                        <nav class="navbar navbar-default">
-                            <div class="collapse navbar-collapse">
-                                <div class="main-menu">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About us</a></li>
-                                        <li class="active"><a class="pagess" href="#">Our Services</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services.php?s_id=16">Waste Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=17">Waste Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=21">Waste Oil Collection</a></li>
-                                                <li><a href="services.php?s_id=22">Used Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=23">Used Oil Recycler</a></li>
-                                                <li><a href="services.php?s_id=24">Hazardous Waste Recycler</a></li>
-                                                <li><a href="services.php?s_id=25">Used Transformer Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=26">Used Hydraulic Oil</a></li>
-                                                <li><a href="services.php?s_id=27">Spent Oil</a></li>
-                                                <li><a href="services.php?s_id=28">Hazardous Waste Transport</a></li>
-                                                <li><a href="services.php?s_id=29">Hazardous Waste Disposal for Ships</a></li>
-                                                <li><a href="services.php?s_id=30">Industrial Waste Management</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="certifications.php">Our Certifications</a></li>
-                                        <li><a href="our-industries.php">Our Industries</a></li>
-                                        <li><a href="our-products.php">Our Products</a></li>
-                                        <li><a href="our-gallery.php">Our Gallery</a></li>
-                                        <li><a href="contact-us.php">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <?php } ?>
+    <?php include('header.php'); ?>
     
     <!-- Start Slider Area -->
     <div class="page-area">
@@ -372,7 +324,7 @@ if (isset($service_registry[$service_id])) {
                             <h3><?php echo htmlspecialchars($display_name);?></h3>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
                             <li><?php echo htmlspecialchars($display_name);?></li>
                         </ul>
                     </div>
@@ -409,26 +361,13 @@ if (isset($service_registry[$service_id])) {
     <div class="video-area bg-color area-padding text-center">
         <div class="container">
             <h2>Select a Service</h2>
-            <p>Please browse our industrial services from the navigation menu above or explore <a href="index.php#services">all services on our homepage</a>.</p>
+            <p>Please browse our industrial services from the navigation menu above or explore <a href="./#services">all services on our homepage</a>.</p>
         </div>
     </div>
     <?php } ?>
 
     <!-- Start Footer bottom Area -->
-    <?php 
-    if ($con) {
-        include('footer.php');
-    } else {
-    ?>
-    <footer style="background:#103a2a;color:#fff;padding:35px 0">
-        <div class="container text-center">
-            <p><strong>Green Way Industries</strong> • Authorized Waste Oil Collection &amp; Recycling Solutions in Tamil Nadu</p>
-            <p style="font-size:14px;color:#a8c4b2">Corporate Office: 78/30 Suscon Builder, 53rd Street, Ashok Nagar, Chennai - 600083<br>
-            Processing Facility: SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam, Villupuram - 604207</p>
-            <p style="font-size:14px"><a href="tel:+919360036055" style="color:#b5e85f">+91 93600 36055</a> | <a href="mailto:admin@usedoil.in" style="color:#b5e85f">admin@usedoil.in</a></p>
-        </div>
-    </footer>
-    <?php } ?>
+    <?php include('footer.php'); ?>
 
     <!-- all js here -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>

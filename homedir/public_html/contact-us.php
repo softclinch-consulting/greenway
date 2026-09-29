@@ -70,7 +70,7 @@ $msg_disply ="Something went wrong!";
     <meta name="keywords" content="contact waste oil recycler, waste oil pickup request Chennai, used oil collection number Tamil Nadu, hazardous waste disposal contact, Green Way Industries Chennai address, emergency waste oil pickup Hosur Coimbatore, waste oil quote India, oil disposal inquiry Tamil Nadu">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/contact-us.php">
+    <link rel="canonical" href="https://wasteoil.in/contact-us">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -83,7 +83,7 @@ $msg_disply ="Something went wrong!";
     <meta property="og:site_name" content="Green Way Industries">
     <meta property="og:title" content="Contact Green Way Industries | Waste Oil Pickup &amp; Compliance">
     <meta property="og:description" content="TNPCB authorized used oil recycler. Request scheduled tanker pickup, bulk quotes, and Form-10 manifests across Tamil Nadu &amp; India.">
-    <meta property="og:url" content="https://wasteoil.in/contact-us.php">
+    <meta property="og:url" content="https://wasteoil.in/contact-us">
     <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
     <meta property="og:locale" content="en_IN">
 
@@ -103,17 +103,17 @@ $msg_disply ="Something went wrong!";
       "@graph": [
         {
           "@type": "ContactPage",
-          "@id": "https://wasteoil.in/contact-us.php#webpage",
-          "url": "https://wasteoil.in/contact-us.php",
+          "@id": "https://wasteoil.in/contact-us#webpage",
+          "url": "https://wasteoil.in/contact-us",
           "name": "Contact Green Way Industries | Waste Oil Pickup & Recycler in Tamil Nadu, India",
           "description": "Request scheduled on-site waste oil pickup, tanker dispatch, bulk re-refined oil quotes, or facility audits across Tamil Nadu and India. Call +91 93600 36055.",
           "breadcrumb": {
-            "@id": "https://wasteoil.in/contact-us.php#breadcrumb"
+            "@id": "https://wasteoil.in/contact-us#breadcrumb"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://wasteoil.in/contact-us.php#breadcrumb",
+          "@id": "https://wasteoil.in/contact-us#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -125,7 +125,7 @@ $msg_disply ="Something went wrong!";
               "@type": "ListItem",
               "position": 2,
               "name": "Contact Us",
-              "item": "https://wasteoil.in/contact-us.php"
+              "item": "https://wasteoil.in/contact-us"
             }
           ]
         },
@@ -221,7 +221,7 @@ $msg_disply ="Something went wrong!";
                             <h1 style="font-size:36px;font-weight:700;color:#ffffff;margin:0;">Contact Us</h1>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff;">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff;">Home</a></li>
                             <li>Contact Us</li>
                         </ul>
                     </div>

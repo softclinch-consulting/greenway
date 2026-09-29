@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-2 col-sm-3">
                         <div class="quote-button">
-                            <a href="contact-us.php" class="quote-btn">Get a quote</a>
+                            <a href="contact-us" class="quote-btn">Get a quote</a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="col-md-2 col-sm-2">
                         <div class="logo">
                             <!-- Brand -->
-                            <a class="navbar-brand page-scroll sticky-logo" href="index.php">
+                            <a class="navbar-brand page-scroll sticky-logo" href="./">
                                 <img style="max-width: 280px;margin-top: 12px;" src="img/logo/logo.png" alt="Green Way Industries">
                             </a>
                         </div>
@@ -67,32 +67,50 @@
                                 <div class="main-menu">
                                     <ul class="nav navbar-nav navbar-right">
 
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About us</a></li>
-                                        <li><a class="pagess" href="#">Our Services</a>
+                                        <li><a href="./">Home</a></li>
+                                        <li><a href="about">About us</a></li>
+                                        <li><a class="pagess" href="services">Our Services</a>
                                             <ul class="sub-menu">
                                                 <?php
+                                                $service_slug_map = [
+                                                    16 => 'waste-oil-disposal',
+                                                    17 => 'waste-oil-recycling',
+                                                    21 => 'waste-oil-collection',
+                                                    22 => 'used-oil-disposal',
+                                                    23 => 'used-oil-recycler',
+                                                    24 => 'hazardous-waste-recycler',
+                                                    25 => 'used-transformer-oil-recycling',
+                                                    26 => 'used-hydraulic-oil',
+                                                    27 => 'spent-oil',
+                                                    28 => 'hazardous-waste-transport',
+                                                    29 => 'hazardous-waste-disposal-for-ships',
+                                                    30 => 'industrial-waste-management'
+                                                ];
                                                 $services_list = [];
                                                 if (!empty($con)) {
                                                     $service_header_top = @mysqli_query($con, "select * from `service` where `id`!='' and `status`='Active' order by `order` asc");
                                                     if ($service_header_top) {
                                                         while($service_row = mysqli_fetch_array($service_header_top)) {
-                                                            $services_list[] = ['url' => 'services.php?s_id=' . $service_row['id'], 'name' => $service_row['name']];
+                                                            $sid = (int)$service_row['id'];
+                                                            $s_url = isset($service_slug_map[$sid]) ? $service_slug_map[$sid] : ('services?s_id=' . $sid);
+                                                            $services_list[] = ['url' => $s_url, 'name' => $service_row['name']];
                                                         }
                                                     }
                                                 }
                                                 if (empty($services_list)) {
                                                     $services_list = [
-                                                        ['url' => 'waste-oil-collection-professional.php', 'name' => 'Waste Oil Collection'],
-                                                        ['url' => 'waste-oil-recycling-professional.php', 'name' => 'Waste Oil Recycling'],
-                                                        ['url' => 'used-oil-disposal-professional.php', 'name' => 'Used Oil Disposal'],
-                                                        ['url' => 'used-oil-recycler-professional.php', 'name' => 'Used Oil Recycling'],
-                                                        ['url' => 'used-transformer-oil-recycling-professional.php', 'name' => 'Used Transformer oil recycling'],
-                                                        ['url' => 'used-hydraulic-oil-professional.php', 'name' => 'Used Hydraulic Oil'],
-                                                        ['url' => 'spent-oil-professional.php', 'name' => 'Spent Oil'],
-                                                        ['url' => 'hazardous-waste-transport-professional.php', 'name' => 'Hazardous Waste Transport'],
-                                                        ['url' => 'hazardous-waste-disposal-for-ships-professional.php', 'name' => 'Hazardous Waste Disposal for Ships'],
-                                                        ['url' => 'industrial-waste-management-professional.php', 'name' => 'Industrial Waste Management']
+                                                        ['url' => 'waste-oil-disposal', 'name' => 'Waste Oil Disposal'],
+                                                        ['url' => 'waste-oil-recycling', 'name' => 'Waste Oil Recycling'],
+                                                        ['url' => 'waste-oil-collection', 'name' => 'Waste Oil Collection'],
+                                                        ['url' => 'used-oil-disposal', 'name' => 'Used Oil Disposal'],
+                                                        ['url' => 'used-oil-recycler', 'name' => 'Used Oil Recycler'],
+                                                        ['url' => 'hazardous-waste-recycler', 'name' => 'Hazardous Waste Recycler'],
+                                                        ['url' => 'used-transformer-oil-recycling', 'name' => 'Used Transformer Oil Recycling'],
+                                                        ['url' => 'used-hydraulic-oil', 'name' => 'Used Hydraulic Oil'],
+                                                        ['url' => 'spent-oil', 'name' => 'Spent Oil'],
+                                                        ['url' => 'hazardous-waste-transport', 'name' => 'Hazardous Waste Transport'],
+                                                        ['url' => 'hazardous-waste-disposal-for-ships', 'name' => 'Hazardous Waste Disposal for Ships'],
+                                                        ['url' => 'industrial-waste-management', 'name' => 'Industrial Waste Management']
                                                     ];
                                                 }
                                                 foreach ($services_list as $s_item) {
@@ -101,11 +119,11 @@
                                                 <?php } ?>
                                             </ul>
                                         </li>
-                                        <li><a href="certifications.php">Our Certifications</a></li>
-                                        <li><a href="our-industries.php">Our Industries</a></li>
-                                        <li><a href="our-products.php">Our Products</a></li>
-                                        <li><a href="our-gallery.php">Our Gallery</a></li>
-                                        <li><a href="contact-us.php">Contact Us</a></li>
+                                        <li><a href="certifications">Our Certifications</a></li>
+                                        <li><a href="our-industries">Our Industries</a></li>
+                                        <li><a href="our-products">Our Products</a></li>
+                                        <li><a href="our-gallery">Our Gallery</a></li>
+                                        <li><a href="contact-us">Contact Us</a></li>
 
                                     </ul>
                                 </div>
@@ -124,15 +142,15 @@
                     <div class="col-md-12">
                         <div class="mobile-menu">
                             <div class="logo">
-                                <a style="height: 100px;" href="index.php"><img style="height: 45%;" src="img/logo/logo.png" alt="Green Way Industries" /></a>
+                                <a style="height: 100px;" href="./"><img style="height: 45%;" src="img/logo/logo.png" alt="Green Way Industries" /></a>
                             </div>
                             <nav id="dropdown">
                                 <ul>
 
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="about.php">About us</a></li>
+                                    <li><a href="./">Home</a></li>
+                                    <li><a href="about">About us</a></li>
 
-                                    <li><a class="pagess" href="#">Our Services</a>
+                                    <li><a class="pagess" href="services">Our Services</a>
                                         <ul>
                                             <?php
                                             foreach ($services_list as $s_item) {
@@ -141,11 +159,11 @@
                                             <?php } ?>
                                         </ul>
                                     </li>
-                                    <li><a href="certifications.php">Our Certifications</a></li>
-                                    <li><a href="our-industries.php">Our Industries</a></li>
-                                    <li><a href="our-products.php">Our Products</a></li>
-                                    <li><a href="our-gallery.php">Our Gallery</a></li>
-                                    <li><a href="contact-us.php">Contact Us</a></li>
+                                    <li><a href="certifications">Our Certifications</a></li>
+                                    <li><a href="our-industries">Our Industries</a></li>
+                                    <li><a href="our-products">Our Products</a></li>
+                                    <li><a href="our-gallery">Our Gallery</a></li>
+                                    <li><a href="contact-us">Contact Us</a></li>
 
                                 </ul>
                             </nav>

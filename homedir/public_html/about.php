@@ -19,7 +19,7 @@ if ($hasDatabase) {
     <meta name="keywords" content="about Green Way Industries, TNPCB authorized recycler, waste oil recycling facility Tindivanam, hazardous waste management company Tamil Nadu, industrial oil recycling India, environmental compliance partner Chennai, used oil re-refining plant India, oil recycling license Tamil Nadu, CPCB approved recyclers India">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/about.php">
+    <link rel="canonical" href="https://wasteoil.in/about">
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="google71644dabd58cdac1">
 
@@ -34,7 +34,7 @@ if ($hasDatabase) {
     <meta property="og:site_name" content="Green Way Industries">
     <meta property="og:title" content="About Green Way Industries | Authorized Waste Oil &amp; Hazardous Waste Recycler">
     <meta property="og:description" content="TNPCB-authorized used oil recycling facility in Tindivanam, vacuum distillation technology, and hazardous waste compliance across Tamil Nadu &amp; India.">
-    <meta property="og:url" content="https://wasteoil.in/about.php">
+    <meta property="og:url" content="https://wasteoil.in/about">
     <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
     <meta property="og:locale" content="en_IN">
 
@@ -51,8 +51,8 @@ if ($hasDatabase) {
       "@graph": [
         {
           "@type": "AboutPage",
-          "@id": "https://wasteoil.in/about.php#webpage",
-          "url": "https://wasteoil.in/about.php",
+          "@id": "https://wasteoil.in/about#webpage",
+          "url": "https://wasteoil.in/about",
           "name": "About Green Way Industries | Authorized Waste Oil & Hazardous Waste Recycler in Tamil Nadu",
           "description": "Discover Green Way Industries: TNPCB-authorized used oil recycling facility in Tindivanam, vacuum distillation plant, GPS tanker fleet & Form-10 manifests across India.",
           "isPartOf": {
@@ -62,12 +62,12 @@ if ($hasDatabase) {
             "url": "https://wasteoil.in/"
           },
           "breadcrumb": {
-            "@id": "https://wasteoil.in/about.php#breadcrumb"
+            "@id": "https://wasteoil.in/about#breadcrumb"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://wasteoil.in/about.php#breadcrumb",
+          "@id": "https://wasteoil.in/about#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -79,7 +79,7 @@ if ($hasDatabase) {
               "@type": "ListItem",
               "position": 2,
               "name": "About Us",
-              "item": "https://wasteoil.in/about.php"
+              "item": "https://wasteoil.in/about"
             }
           ]
         },
@@ -489,7 +489,7 @@ if ($hasDatabase) {
                             <h3>About Us</h3>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
                             <li>About Us</li>
                         </ul>
                     </div>
@@ -631,7 +631,7 @@ if ($hasDatabase) {
                         <li><i class="fa fa-chevron-right"></i> Used Oil Disposal</li>
                         <li><i class="fa fa-chevron-right"></i> Used Oil Recycling</li>
                     </ul>
-                    <a href="services.php?s_id=21" class="gw-service-card-link">Explore Waste Oil Services <i class="fa fa-arrow-right"></i></a>
+                    <a href="waste-oil-collection" class="gw-service-card-link">Explore Waste Oil Services <i class="fa fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Cluster 2: Industrial & Hazardous Waste Services -->
@@ -644,7 +644,7 @@ if ($hasDatabase) {
                         <li><i class="fa fa-chevron-right"></i> Industrial Waste Management</li>
                         <li><i class="fa fa-chevron-right"></i> Spent Oil Management</li>
                     </ul>
-                    <a href="services.php?s_id=28" class="gw-service-card-link">Explore Hazardous Solutions <i class="fa fa-arrow-right"></i></a>
+                    <a href="hazardous-waste-transport" class="gw-service-card-link">Explore Hazardous Solutions <i class="fa fa-arrow-right"></i></a>
                 </div>
 
                 <!-- Cluster 3: Specialized Oil Management -->
@@ -656,7 +656,7 @@ if ($hasDatabase) {
                         <li><i class="fa fa-chevron-right"></i> Used Hydraulic Oil Management</li>
                         <li><i class="fa fa-chevron-right"></i> Ship and Marine Waste Disposal</li>
                     </ul>
-                    <a href="services.php?s_id=25" class="gw-service-card-link">Explore Specialized Solutions <i class="fa fa-arrow-right"></i></a>
+                    <a href="used-transformer-oil-recycling" class="gw-service-card-link">Explore Specialized Solutions <i class="fa fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -665,7 +665,7 @@ if ($hasDatabase) {
                     <i class="fa fa-info-circle" style="color:var(--gw-green);margin-right:8px;font-size:17px;"></i>
                     Each service is designed around the specific material, quantity, location and management requirement.
                 </p>
-                <a href="services.php?s_id=21" class="gw-btn-green-2026" style="padding:10px 22px;font-size:14px;">
+                <a href="waste-oil-collection" class="gw-btn-green-2026" style="padding:10px 22px;font-size:14px;">
                     Explore All Services <i class="fa fa-arrow-right"></i>
                 </a>
             </div>
@@ -1013,7 +1013,7 @@ if ($hasDatabase) {
                     </p>
                 </div>
                 <div class="col-md-4 col-sm-12 text-right gw-reveal gw-delay-1" style="margin-top:20px;">
-                    <a href="contact-us.php" class="gw-btn-lift gw-btn-green-2026" style="margin-right:10px;display:inline-block;padding:14px 26px;">
+                    <a href="contact-us" class="gw-btn-lift gw-btn-green-2026" style="margin-right:10px;display:inline-block;padding:14px 26px;">
                         Enquire Now <i class="fa fa-paper-plane"></i>
                     </a>
                     <a href="tel:+919360036055" class="gw-btn-lift gw-btn-outline-2026" style="display:inline-block;padding:13px 22px;">

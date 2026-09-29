@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 16; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .wod{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f8f5;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .wod h1,.wod h2,.wod h3,.wod h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -43,7 +44,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Disposal <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -112,7 +113,7 @@
             <h2>Our Waste Oil Disposal Process</h2>
             <p>We provide a transparent, fully tracked disposal procedure from initial plant inquiry to final disposal certification.</p>
             <div style="margin:20px 0 24px;">
-              <a class="gw-btn-primary" href="contact-us.php">Book Waste Oil Pickup <i class="fa fa-arrow-right"></i></a>
+              <a class="gw-btn-primary" href="contact-us">Book Waste Oil Pickup <i class="fa fa-arrow-right"></i></a>
             </div>
             
             <div class="gw-proc-frame"><img src="gallery/74_4.jpg" alt="Barreled Waste Oil Storage"><div class="gw-visual-badge">
@@ -232,7 +233,7 @@
               <strong>Processing Plant:</strong> SIDCO Ind. Estate, Tindivanam<br>
               <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
               <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
-              <a class="gw-btn-primary" href="contact-us.php" style="margin-top:12px">Contact Our Disposal Desk <i class="fa fa-arrow-right"></i></a>
+              <a class="gw-btn-primary" href="contact-us" style="margin-top:12px">Contact Our Disposal Desk <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -369,11 +370,11 @@
         <!-- INTERNAL LINKS BAR -->
         <div class="wod-links-bar text-center" style="margin-top:28px;">
           <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
-          <a href="services.php?s_id=21">Waste Oil Collection</a>
-          <a href="services.php?s_id=17">Waste Oil Recycling</a>
-          <a href="services.php?s_id=22">Used Oil Disposal</a>
-          <a href="services.php?s_id=28">Hazardous Waste Transport</a>
-          <a href="services.php?s_id=30">Industrial Waste Management</a>
+          <a href="waste-oil-collection">Waste Oil Collection</a>
+          <a href="waste-oil-recycling">Waste Oil Recycling</a>
+          <a href="used-oil-disposal">Used Oil Disposal</a>
+          <a href="hazardous-waste-transport">Hazardous Waste Transport</a>
+          <a href="industrial-waste-management">Industrial Waste Management</a>
         </div>
       </div>
 
@@ -381,7 +382,7 @@
       <div class="gw-block gw-block--deep text-center">
         <h2>Need Compliant Waste Oil Disposal for Your Facility?</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Share your waste oil type, estimated quantity, and site location to receive prompt technical assessment and collection coordination.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Disposal Assessment <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Disposal Assessment <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important">
           <i class="fa fa-phone"></i> Call Our Technical Team
         </a>

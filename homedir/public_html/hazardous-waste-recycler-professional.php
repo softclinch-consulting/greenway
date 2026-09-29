@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 24; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .hwr{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .hwr h1,.hwr h2,.hwr h3,.hwr h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -74,7 +75,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Service <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -139,7 +140,7 @@
           <h2>Our Hazardous Waste Recycling Protocol</h2>
           <p>We apply rigorous testing, safe containment, and authorized processing across every hazardous waste batch.</p>
           <div style="margin-top:24px">
-            <a class="gw-btn-primary" href="contact-us.php">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
+            <a class="gw-btn-primary" href="contact-us">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
           </div>
           <div style="margin-top:30px">
             <div class="gw-proc-frame"><img src="gallery/74_4.jpg" alt="Operations Facility"><div class="gw-visual-badge">
@@ -259,7 +260,7 @@
             <strong>Processing Plant:</strong> SIDCO Industrial Estate, Tindivanam<br>
             <strong>Phone:</strong> <a href="tel:+919360036055">+91 93600 36055</a><br>
             <strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
-            <a class="hwr-btn" href="contact-us.php" style="margin-top:12px">Request Hazardous Waste Review</a>
+            <a class="hwr-btn" href="contact-us" style="margin-top:12px">Request Hazardous Waste Review</a>
           </div>
         </div>
       </div>
@@ -393,11 +394,11 @@
       <div class="gw-block" style="padding:22px 28px;">
         <div class="hwr-links-bar text-center">
           <span style="font-weight:700;margin-right:10px;color:var(--deep)">Explore Related Services:</span>
-          <a href="services.php?s_id=28">Hazardous Waste Transport</a>
-          <a href="services.php?s_id=30">Industrial Waste Management</a>
-          <a href="services.php?s_id=16">Waste Oil Disposal</a>
-          <a href="services.php?s_id=17">Waste Oil Recycling</a>
-          <a href="services.php?s_id=29">Hazardous Waste Disposal for Ships</a>
+          <a href="hazardous-waste-transport">Hazardous Waste Transport</a>
+          <a href="industrial-waste-management">Industrial Waste Management</a>
+          <a href="waste-oil-disposal">Waste Oil Disposal</a>
+          <a href="waste-oil-recycling">Waste Oil Recycling</a>
+          <a href="hazardous-waste-disposal-for-ships">Hazardous Waste Disposal for Ships</a>
         </div>
       </div>
 
@@ -405,7 +406,7 @@
       <div class="gw-block gw-block--deep text-center">
         <h2>Ensure Compliant Hazardous Waste Recycling</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Share your hazardous waste streams and production volume to receive an authorized recycling assessment and compliant collection plan.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Stream Assessment <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important"><i class="fa fa-phone"></i> Speak to Hazardous Waste Desk</a>
       </div>
 

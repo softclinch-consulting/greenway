@@ -1,3 +1,4 @@
+<?php if (!defined('GW_SERVICE_WRAPPER')) { $_REQUEST['s_id'] = 25; include(__DIR__ . '/services.php'); return; } ?>
 <style>
 .uto{--green:#196b45;--deep:#103a2a;--lime:#b5e85f;--soft:#f4f7f3;--border:#dce7dc;color:#34433c;font-size:16px;line-height:1.7}
 .uto h1,.uto h2,.uto h3,.uto h4{color:var(--deep);font-weight:700;line-height:1.25}
@@ -81,7 +82,7 @@
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire Now for Service <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -327,7 +328,7 @@
               <li><strong>Store It Properly:</strong> Keep the oil in suitable, secure containers designed for the material.</li>
               <li><strong>Prevent Contamination:</strong> Avoid mixing transformer oil with unrelated chemicals, solvents, waste oils or other materials unless the appropriate management process specifically permits it.</li>
               <li><strong>Protect Against Leakage:</strong> Inspect containers and storage areas regularly and take precautions against spills.</li>
-              <li><strong>Keep Different Oil Streams Separate:</strong> If your facility generates several types of used oil, maintaining segregation can make subsequent assessment and processing easier. Working with a certified <a href="services.php?s_id=23" style="color:var(--green);font-weight:700;">used oil recycler</a> helps keep materials properly cataloged.</li>
+              <li><strong>Keep Different Oil Streams Separate:</strong> If your facility generates several types of used oil, maintaining segregation can make subsequent assessment and processing easier. Working with a certified <a href="used-oil-recycler" style="color:var(--green);font-weight:700;">used oil recycler</a> helps keep materials properly cataloged.</li>
               <li><strong>Contact a Suitable Recycler:</strong> Provide the recycler with information about the oil’s source, approximate quantity and condition.</li>
             </ul>
           </div>
@@ -363,7 +364,7 @@
 
           <div style="margin-top:20px;padding:20px;background:#f4f7f3;border-left:4px solid var(--green)">
             <h4 style="margin:0 0 6px;color:var(--deep)">Comprehensive Industrial Support</h4>
-            <p style="margin:0;font-size:14.5px;color:#506158">In addition to transformer oil, we provide specialized services for <a href="services.php?s_id=24" style="color:var(--green);font-weight:700;">hazardous waste recycling</a> and broad <a href="services.php?s_id=30" style="color:var(--green);font-weight:700;">industrial waste management</a>.</p>
+            <p style="margin:0;font-size:14.5px;color:#506158">In addition to transformer oil, we provide specialized services for <a href="hazardous-waste-recycler" style="color:var(--green);font-weight:700;">hazardous waste recycling</a> and broad <a href="industrial-waste-management" style="color:var(--green);font-weight:700;">industrial waste management</a>.</p>
           </div>
         </div>
       </div>
@@ -545,18 +546,18 @@
           <p class="gw-lead-text">Whether the oil has been removed during transformer maintenance, replacement or repair, the next step should be planned carefully.</p>
           <p>Send us the oil type, approximate quantity, source and pickup location and our team can discuss the appropriate recycling, recovery or waste-management solution.</p>
           <div style="margin-top:20px">
-            <a class="gw-btn-primary" href="contact-us.php">Discuss Your Transformer Oil Requirement <i class="fa fa-arrow-right"></i></a>
+            <a class="gw-btn-primary" href="contact-us">Discuss Your Transformer Oil Requirement <i class="fa fa-arrow-right"></i></a>
           </div>
 
           <!-- Internal links bar -->
           <div class="uto-links-bar">
             <strong>Related Industrial Services:</strong><br>
-            <a href="services.php?s_id=23">Used Oil Recycler</a>
-            <a href="services.php?s_id=17">Waste Oil Recycling</a>
-            <a href="services.php?s_id=21">Waste Oil Collection</a>
-            <a href="services.php?s_id=22">Used Oil Disposal</a>
-            <a href="services.php?s_id=24">Hazardous Waste Recycling</a>
-            <a href="services.php?s_id=30">Industrial Waste Management</a>
+            <a href="used-oil-recycler">Used Oil Recycler</a>
+            <a href="waste-oil-recycling">Waste Oil Recycling</a>
+            <a href="waste-oil-collection">Waste Oil Collection</a>
+            <a href="used-oil-disposal">Used Oil Disposal</a>
+            <a href="hazardous-waste-recycler">Hazardous Waste Recycling</a>
+            <a href="industrial-waste-management">Industrial Waste Management</a>
           </div>
         </div>
 

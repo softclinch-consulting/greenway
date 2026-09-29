@@ -19,7 +19,7 @@ if ($hasDatabase) {
     <meta name="keywords" content="automotive waste oil collection Tamil Nadu, manufacturing waste oil disposal Chennai, power plant used transformer oil, engineering workshop scrap oil recycling, marine bilge oil disposal Chennai port, industrial waste solutions India, SEZ factory oil disposal Hosur Coimbatore, chemical plant hazardous waste management">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/our-industries.php">
+    <link rel="canonical" href="https://wasteoil.in/our-industries">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -32,7 +32,7 @@ if ($hasDatabase) {
     <meta property="og:site_name" content="Green Way Industries">
     <meta property="og:title" content="Waste Oil &amp; Industrial Waste Solutions by Industry | Green Way">
     <meta property="og:description" content="Sector-specific waste oil collection, recycling, and hazardous waste disposal across automotive, power, and manufacturing hubs in Tamil Nadu &amp; India.">
-    <meta property="og:url" content="https://wasteoil.in/our-industries.php">
+    <meta property="og:url" content="https://wasteoil.in/our-industries">
     <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
     <meta property="og:locale" content="en_IN">
 
@@ -52,12 +52,12 @@ if ($hasDatabase) {
       "@graph": [
         {
           "@type": "CollectionPage",
-          "@id": "https://wasteoil.in/our-industries.php#webpage",
-          "url": "https://wasteoil.in/our-industries.php",
+          "@id": "https://wasteoil.in/our-industries#webpage",
+          "url": "https://wasteoil.in/our-industries",
           "name": "Waste Oil & Industrial Waste Solutions by Industry | Green Way Industries",
           "description": "Sector-specific waste oil collection, recycling, and hazardous waste disposal across automotive, power, and manufacturing hubs in Tamil Nadu & India.",
           "breadcrumb": {
-            "@id": "https://wasteoil.in/our-industries.php#breadcrumb"
+            "@id": "https://wasteoil.in/our-industries#breadcrumb"
           },
           "mainEntity": {
             "@type": "ItemList",
@@ -98,7 +98,7 @@ if ($hasDatabase) {
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://wasteoil.in/our-industries.php#breadcrumb",
+          "@id": "https://wasteoil.in/our-industries#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -110,7 +110,7 @@ if ($hasDatabase) {
               "@type": "ListItem",
               "position": 2,
               "name": "Our Industries",
-              "item": "https://wasteoil.in/our-industries.php"
+              "item": "https://wasteoil.in/our-industries"
             }
           ]
         }
@@ -149,80 +149,7 @@ if ($hasDatabase) {
     <div id="preloader"></div>
     
     <!-- header -->
-    <?php 
-    if ($con) {
-        include('header.php');
-    } else {
-    ?>
-    <header class="header-one">
-        <div class="topbar-area fix hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-sm-9">
-                        <div class="topbar-left">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-map-marker"></i> Chennai, India</a></li>
-                                <li><a href="mailto:admin@usedoil.in"><i class="fa fa-envelope"></i> admin@usedoil.in</a></li>
-                                <li><a href="tel:+919360036055"><i class="fa fa-phone"></i> +91 93600 36055</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3">
-                        <div class="quote-button">
-                            <a href="contact-us.php" class="quote-btn">Get a quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="sticker" class="header-area header-area-4 hidden-xs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-2">
-                        <div class="logo">
-                            <a class="navbar-brand page-scroll sticky-logo" href="index.php">
-                                <img style="max-width: 280px;margin-top: 12px;" src="img/logo/logo.png" alt="Green Way Industries">
-                            </a>
-                        </div>
-                    </div>
-                    <div style="margin-top: 10px;" class="col-md-10 col-sm-10">
-                        <nav class="navbar navbar-default">
-                            <div class="collapse navbar-collapse">
-                                <div class="main-menu">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About us</a></li>
-                                        <li><a class="pagess" href="#">Our Services</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="services.php?s_id=16">Waste Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=17">Waste Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=21">Waste Oil Collection</a></li>
-                                                <li><a href="services.php?s_id=22">Used Oil Disposal</a></li>
-                                                <li><a href="services.php?s_id=23">Used Oil Recycler</a></li>
-                                                <li><a href="services.php?s_id=24">Hazardous Waste Recycler</a></li>
-                                                <li><a href="services.php?s_id=25">Used Transformer Oil Recycling</a></li>
-                                                <li><a href="services.php?s_id=26">Used Hydraulic Oil</a></li>
-                                                <li><a href="services.php?s_id=27">Spent Oil</a></li>
-                                                <li><a href="services.php?s_id=28">Hazardous Waste Transport</a></li>
-                                                <li><a href="services.php?s_id=29">Hazardous Waste Disposal for Ships</a></li>
-                                                <li><a href="services.php?s_id=30">Industrial Waste Management</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="certifications.php">Our Certifications</a></li>
-                                        <li class="active"><a href="our-industries.php">Our Industries</a></li>
-                                        <li><a href="our-products.php">Our Products</a></li>
-                                        <li><a href="our-gallery.php">Our Gallery</a></li>
-                                        <li><a href="contact-us.php">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <?php } ?>
+    <?php include('header.php'); ?>
     
     <!-- Start Slider Area -->
     <div class="page-area">
@@ -235,7 +162,7 @@ if ($hasDatabase) {
                             <h3>Our Industries</h3>
                         </div>
                         <ul>
-                            <li class="home-bread"><a href="index.php" style="color:#fff">Home</a></li>
+                            <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
                             <li>Our Industries</li>
                         </ul>
                     </div>
@@ -489,7 +416,7 @@ if ($hasDatabase) {
       </div>
 
       <div>
-        <a class="gw-btn-primary" href="contact-us.php">
+        <a class="gw-btn-primary" href="contact-us">
           Enquire for Your Industry <i class="fa fa-arrow-right"></i>
         </a>
         <a class="gw-btn-secondary" href="tel:+919360036055">
@@ -799,7 +726,7 @@ if ($hasDatabase) {
             <p>That is why waste management should begin with understanding the operational parameters of your facility. A one-size-fits-all model leads to regulatory non-compliance, unsafe storage conditions, or inefficient logistics.</p>
             <p>Green Way Industries works directly with environmental managers, maintenance engineers, and plant operators to create a practical approach based on your specific waste generation patterns and operational constraints.</p>
             <div style="margin-top:20px">
-              <a class="gw-btn-primary" href="contact-us.php">Request an Industry Waste Audit <i class="fa fa-arrow-right"></i></a>
+              <a class="gw-btn-primary" href="contact-us">Request an Industry Waste Audit <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -832,7 +759,7 @@ if ($hasDatabase) {
             <h2>From Used Oil Collection to Responsible Management</h2>
             <p>Our end-to-end services support businesses across every critical stage of the industrial waste management hierarchy.</p>
             <div style="margin:20px 0 24px;">
-              <a class="gw-btn-primary" href="contact-us.php">Coordinate a Collection Schedule <i class="fa fa-arrow-right"></i></a>
+              <a class="gw-btn-primary" href="contact-us">Coordinate a Collection Schedule <i class="fa fa-arrow-right"></i></a>
             </div>
             
             <div class="gw-proc-frame">
@@ -957,24 +884,24 @@ if ($hasDatabase) {
             <p>Talk to Green Way Industries about your used oil or industrial waste requirements. Our technical specialists provide compliant site assessments, scheduled pickups, and legally binding Form-10 documentation.</p>
             
             <div style="margin-top:20px">
-              <a class="gw-btn-primary" href="contact-us.php">Discuss Your Industry Requirements <i class="fa fa-arrow-right"></i></a>
+              <a class="gw-btn-primary" href="contact-us">Discuss Your Industry Requirements <i class="fa fa-arrow-right"></i></a>
             </div>
 
             <!-- Internal links bar to all 12 services -->
             <div class="ind-links-bar">
               <strong style="color:var(--deep)">Explore Our Specialized Industrial Services:</strong><br>
-              <a href="services.php?s_id=16">Waste Oil Disposal</a>
-              <a href="services.php?s_id=17">Waste Oil Recycling</a>
-              <a href="services.php?s_id=21">Waste Oil Collection</a>
-              <a href="services.php?s_id=22">Used Oil Disposal</a>
-              <a href="services.php?s_id=23">Used Oil Recycler</a>
-              <a href="services.php?s_id=24">Hazardous Waste Recycler</a>
-              <a href="services.php?s_id=25">Transformer Oil Recycling</a>
-              <a href="services.php?s_id=26">Used Hydraulic Oil</a>
-              <a href="services.php?s_id=27">Spent Oil Management</a>
-              <a href="services.php?s_id=28">Hazardous Waste Transport</a>
-              <a href="services.php?s_id=29">Ship Waste Disposal</a>
-              <a href="services.php?s_id=30">Industrial Waste Management</a>
+              <a href="waste-oil-disposal">Waste Oil Disposal</a>
+              <a href="waste-oil-recycling">Waste Oil Recycling</a>
+              <a href="waste-oil-collection">Waste Oil Collection</a>
+              <a href="used-oil-disposal">Used Oil Disposal</a>
+              <a href="used-oil-recycler">Used Oil Recycler</a>
+              <a href="hazardous-waste-recycler">Hazardous Waste Recycler</a>
+              <a href="used-transformer-oil-recycling">Transformer Oil Recycling</a>
+              <a href="used-hydraulic-oil">Used Hydraulic Oil</a>
+              <a href="spent-oil">Spent Oil Management</a>
+              <a href="hazardous-waste-transport">Hazardous Waste Transport</a>
+              <a href="hazardous-waste-disposal-for-ships">Ship Waste Disposal</a>
+              <a href="industrial-waste-management">Industrial Waste Management</a>
             </div>
           </div>
 
@@ -1119,7 +1046,7 @@ if ($hasDatabase) {
       <div class="gw-block gw-block--deep text-center">
         <h2>Partner with an Authorized Industrial Recycler</h2>
         <p style="max-width:650px;margin:0 auto 22px;text-align:center!important;">Send us your industry sector, estimated waste oil volume, and site location to receive prompt technical consultation and establish a compliant collection schedule.</p>
-        <a class="gw-btn-primary" href="contact-us.php">Request Industry Assessment <i class="fa fa-arrow-right"></i></a>
+        <a class="gw-btn-primary" href="contact-us">Request Industry Assessment <i class="fa fa-arrow-right"></i></a>
         <a class="gw-btn-secondary" href="tel:+919360036055" style="border-color:var(--gw-lime);color:#fff!important">
           <i class="fa fa-phone"></i> Call Our Technical Desk
         </a>
@@ -1130,20 +1057,7 @@ if ($hasDatabase) {
 </main>
 
     <!-- Start Footer bottom Area -->
-    <?php 
-    if ($con) {
-        include('footer.php');
-    } else {
-    ?>
-    <footer style="background:#103a2a;color:#fff;padding:35px 0">
-        <div class="container text-center">
-            <p><strong>Green Way Industries</strong> • Authorized Waste Oil Collection &amp; Recycling Solutions in Tamil Nadu</p>
-            <p style="font-size:14px;color:#a8c4b2">Corporate Office: 78/30 Suscon Builder, 53rd Street, Ashok Nagar, Chennai - 600083<br>
-            Processing Facility: SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam, Villupuram - 604207</p>
-            <p style="font-size:14px"><a href="tel:+919360036055" style="color:#b5e85f">+91 93600 36055</a> | <a href="mailto:admin@usedoil.in" style="color:#b5e85f">admin@usedoil.in</a></p>
-        </div>
-    </footer>
-    <?php } ?>
+    <?php include('footer.php'); ?>
 
     <!-- all js here -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
