@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -10,18 +10,18 @@ if ($hasDatabase) {
 
 $msg_disply='';
 
-if(isset($_REQUEST['send_msg']))
+if(isset($_REQUEST['send_msg']) || ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['name'], $_POST['email'])))
 {
     
-$name=$_POST['name'];
-$phone=$_POST['phone'];
-$email=$_POST['email'];
-$topic=$_POST['topic'];
-$service=$_POST['service'];
+$name = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES, 'UTF-8');
+$phone = htmlspecialchars(trim($_POST['phone'] ?? ''), ENT_QUOTES, 'UTF-8');
+$email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$topic = htmlspecialchars(trim($_POST['topic'] ?? ''), ENT_QUOTES, 'UTF-8');
+$service = htmlspecialchars(trim($_POST['service'] ?? ''), ENT_QUOTES, 'UTF-8');
 /*$sub=$_POST['subject'];*/
-$msg=$_POST['message'];
+$msg = nl2br(htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES, 'UTF-8'));
     
-$to = "admin@usedoil.in";
+$to = "maskern2287@gmail.com";
 $subject = "Index Enquiry through - Greenway Industries";
 
 $message = ' Dear Admin,<br /><br />
@@ -45,8 +45,11 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
 $headers .= 'From: <no-reply@wasteoil.in>' . "\r\n";
+if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $headers .= 'Reply-To: <' . $email . '>' . "\r\n";
+}
 
-$check = mail($to,$subject,$message,$headers);
+$check = @mail($to,$subject,$message,$headers);
 
 if($check)
 {
@@ -391,9 +394,9 @@ if (!empty($con)) {
                             <h3>Enquiry Now</h3>
                             
                             <?php
-                        if($msg_disply!=''){?> <center><p style="#fff;"><?php echo $msg_disply; ?></p></center> <?php }
+                        if($msg_disply!=''){?> <center><p style="background:#e8f8ee;color:#0b3b24;border:1px solid #22b14c;padding:12px 18px;border-radius:6px;font-weight:600;margin-bottom:18px;"><?php echo $msg_disply; ?></p></center> <?php }
                         ?>
-                            <form  method="POST" action="" class="contact-form">
+                            <form method="POST" action="" class="contact-form">
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" id="name" class="form-control" name="name" placeholder="Name" required=""
                                         data-error="Please enter your name">
@@ -405,7 +408,7 @@ if (!empty($con)) {
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <input type="text" id="msg_subject" class="form-control" name="phone" placeholder="Phone"
+                                    <input type="text" id="phone" class="form-control" name="phone" placeholder="Phone"
                                         required="" data-error="Please enter your phone number">
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -425,13 +428,33 @@ if (!empty($con)) {
                                           
     <option value="" disabled selected>Select Service</option>
     <?php
-			    $service_contact = mysqli_query($con, "select * from `service` where `id`!='' and `status`='Active' order by `order` asc") or die(mysqli_error($con));
-				while($service_contact1 = mysqli_fetch_array($service_contact)) {
-				?>
-    <option value="<?php echo $service_contact1['name'];?>"><?php echo $service_contact1['name'];?></option>
+    $has_service_options = false;
+    if ($con) {
+        $service_contact = @mysqli_query($con, "select * from `service` where `id`!='' and `status`='Active' order by `order` asc");
+        if ($service_contact && mysqli_num_rows($service_contact) > 0) {
+            $has_service_options = true;
+            while($service_contact1 = mysqli_fetch_array($service_contact)) {
+    ?>
+    <option value="<?php echo htmlspecialchars($service_contact1['name'], ENT_QUOTES, 'UTF-8');?>"><?php echo htmlspecialchars($service_contact1['name'], ENT_QUOTES, 'UTF-8');?></option>
+    <?php
+            }
+        }
+    }
+    if (!$has_service_options) {
+    ?>
+        <option value="Waste Oil Disposal">Waste Oil Disposal</option>
+        <option value="Waste Oil Recycling">Waste Oil Recycling</option>
+        <option value="Waste Oil Collection">Waste Oil Collection</option>
+        <option value="Used Oil Disposal">Used Oil Disposal</option>
+        <option value="Used Oil Recycler">Used Oil Recycler</option>
+        <option value="Hazardous Waste Recycler">Hazardous Waste Recycler</option>
+        <option value="Used Transformer oil recycling">Used Transformer oil recycling</option>
+        <option value="Used Hydraulic Oil">Used Hydraulic Oil</option>
+        <option value="Spent Oil">Spent Oil</option>
+        <option value="Hazardous Waste Transport">Hazardous Waste Transport</option>
+        <option value="Hazardous Waste Disposal for Ships">Hazardous Waste Disposal for Ships</option>
+        <option value="Industrial Waste Management">Industrial Waste Management</option>
     <?php } ?>
-    <!--<option value="recycling">Waste Oil Recycling</option>
-    <option value="disposal">Waste Oil Collection</option>-->
   </select></div>
 
                                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -441,8 +464,6 @@ if (!empty($con)) {
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                                     <button type="submit" name="send_msg" id="submit" class="contact-btn">Submit</button>
-                                    <!--<div id="msgSubmit" class="h3 text-center hidden"></div>-->
-                                    <!--<div class="clearfix"></div>-->
                                 </div>
                             </form>
                         </div>
