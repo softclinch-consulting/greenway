@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -43,6 +43,7 @@ if ($hasDatabase) {
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
     <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
     <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- JSON-LD Structured Data: Certifications & Compliance Schema -->
@@ -901,7 +902,7 @@ if ($hasDatabase) {
                         <div class="gw-contact-info-box">
                             <i class="fa fa-map-marker"></i>
                             <h5>Factory Location</h5>
-                            <p>Plot No. 101, 102, 103 &amp; 104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District – 604207</p>
+                            <p>Plot No. 101, 102, 103 &amp; 104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District â€“ 604207</p>
                         </div>
                     </div>
                 </div>

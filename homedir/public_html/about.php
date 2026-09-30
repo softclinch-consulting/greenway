@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -21,6 +21,7 @@ if ($hasDatabase) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://wasteoil.in/about">
     <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
     <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -43,6 +43,7 @@ if ($hasDatabase) {
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
     <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
     <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- JSON-LD Structured Data: CollectionPage & BreadcrumbList -->
@@ -296,7 +297,7 @@ if ($hasDatabase) {
   border-bottom: none;
 }
 .ind-check-list li:before {
-  content: '✓';
+  content: 'âœ“';
   position: absolute;
   left: 0;
   color: var(--green);
@@ -822,7 +823,7 @@ if ($hasDatabase) {
         </div>
       </div>
 
-      <!-- BLOCK 6: QUICK DIRECTORY — INDUSTRIES WE SERVE -->
+      <!-- BLOCK 6: QUICK DIRECTORY â€” INDUSTRIES WE SERVE -->
       <div class="gw-block">
         <div class="gw-block-header text-center">
           <div class="ind-label ind-label--dark">Industry Directory</div>
@@ -912,10 +913,10 @@ if ($hasDatabase) {
               <p style="margin-bottom:16px"><strong>Email:</strong> <a href="mailto:admin@usedoil.in">admin@usedoil.in</a></p>
               
               <p style="margin-bottom:12px"><strong>Corporate Operations:</strong><br>
-              78/30 Suscon Builder, 53rd Street, Ashok Nagar, Anjenear Kovil Opp, Chennai – 600083</p>
+              78/30 Suscon Builder, 53rd Street, Ashok Nagar, Anjenear Kovil Opp, Chennai â€“ 600083</p>
               
               <p style="margin-bottom:0"><strong>Statewide Processing Plant:</strong><br>
-              Plot No. 101, 102, 103 &amp; 104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu – 604207</p>
+              Plot No. 101, 102, 103 &amp; 104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu â€“ 604207</p>
               
               <div style="margin-top:20px;border-top:1px solid rgba(255,255,255,0.15);padding-top:16px;">
                 <span style="font-size:13px;color:#a8c4b2;"><i class="fa fa-shield"></i> TNPCB &amp; CPCB Authorized Facility</span>

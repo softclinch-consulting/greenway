@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -102,6 +102,7 @@ if (empty($gallery_list)) {
     <meta name="twitter:image" content="https://wasteoil.in/gallery/71_1.jpg">
 
     <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
     <meta name="google-site-verification" content="google71644dabd58cdac1">
 
     <!-- JSON-LD Structured Data: ImageGallery & BreadcrumbList -->

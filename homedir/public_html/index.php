@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 @include('web-admin/config.php');
 ?>
 <!doctype html>
@@ -13,7 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://wasteoil.in/">
   <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="google71644dabd58cdac1">
+  <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
+    <meta name="google-site-verification" content="google71644dabd58cdac1">
 
   <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
   <meta name="geo.region" content="IN-TN">
@@ -138,7 +139,7 @@
         "name": "Where does Green Way Industries operate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Green Way Industries operates across all major industrial clusters in Tamil Nadu—including Chennai, Sriperumbudur, Oragadam, Maraimalai Nagar, Hosur, Coimbatore, Tiruppur, Salem, Cuddalore, and Villupuram—with nationwide compliance support across India."
+          "text": "Green Way Industries operates across all major industrial clusters in Tamil Naduâ€”including Chennai, Sriperumbudur, Oragadam, Maraimalai Nagar, Hosur, Coimbatore, Tiruppur, Salem, Cuddalore, and Villupuramâ€”with nationwide compliance support across India."
         }
       },
       {
@@ -183,7 +184,7 @@
 <main class="gw-home-2026">
 
   <!-- ========================================================================
-       1. HERO — CENTRAL SEO & CONVERSION HUB
+       1. HERO â€” CENTRAL SEO & CONVERSION HUB
        ======================================================================== -->
   <section class="gw-hero-2026 gw-parallax-section">
     <!-- Lightweight HTML5 Particle Canvas -->
@@ -256,7 +257,7 @@
   </div>
 
   <!-- ========================================================================
-       3. BRAND VALUE TRUST STRIP — CONTINUOUS SIDE-TO-SIDE SLIDING MOTION
+       3. BRAND VALUE TRUST STRIP â€” CONTINUOUS SIDE-TO-SIDE SLIDING MOTION
        ======================================================================== -->
   <section class="gw-trust-strip-2026" aria-label="Core Capabilities">
     <div class="gw-trust-marquee-wrapper">
@@ -411,7 +412,7 @@
   </section>
 
   <!-- ========================================================================
-       5. CONNECTED JOURNEY — MISSION → VISION → RESOURCE RECOVERY
+       5. CONNECTED JOURNEY â€” MISSION â†’ VISION â†’ RESOURCE RECOVERY
        ======================================================================== -->
   <section class="gw-section-2026 gw-soft">
     <div class="container">
@@ -431,7 +432,7 @@
             <div class="gw-journey-node">
               <i class="fa fa-compass"></i>
             </div>
-            <span class="gw-journey-step-tag">Step 01 • Purpose</span>
+            <span class="gw-journey-step-tag">Step 01 â€¢ Purpose</span>
             <h3>Our Mission</h3>
             <p>
               Make importance about waste management to our customers and provide practical solutions through safe handling and structured processes.
@@ -443,7 +444,7 @@
             <div class="gw-journey-node">
               <i class="fa fa-leaf"></i>
             </div>
-            <span class="gw-journey-step-tag">Step 02 • Preservation</span>
+            <span class="gw-journey-step-tag">Step 02 â€¢ Preservation</span>
             <h3>Our Vision</h3>
             <p>
               Protect natural environments through responsible service delivery and support the conservation of petroleum resources.
@@ -455,7 +456,7 @@
             <div class="gw-journey-node">
               <i class="fa fa-recycle"></i>
             </div>
-            <span class="gw-journey-step-tag">Step 03 • Impact</span>
+            <span class="gw-journey-step-tag">Step 03 â€¢ Impact</span>
             <h3>Resource Recovery</h3>
             <p>
               Direct suitable waste streams toward recovery and recycling to support a more sustainable industrial future across Tamil Nadu.
@@ -467,7 +468,7 @@
   </section>
 
   <!-- ========================================================================
-       6. SERVICES OVERVIEW — BALANCED 3x3 GRID + SPOTLIGHT CARD
+       6. SERVICES OVERVIEW â€” BALANCED 3x3 GRID + SPOTLIGHT CARD
        ======================================================================== -->
   <section id="services" class="gw-section-2026">
     <div class="container">
@@ -534,7 +535,7 @@
       <!-- Service 10: Full-Width Enterprise Spotlight Card -->
       <article class="gw-service-spotlight-card gw-reveal" data-category="specialized hazardous">
         <div class="gw-spotlight-img-wrap">
-          <span class="gw-service-num">10 • Enterprise</span>
+          <span class="gw-service-num">10 â€¢ Enterprise</span>
           <img src="service_one/30_12.jpg" alt="Industrial Waste Management Solutions in Tamil Nadu" loading="lazy">
           <span class="gw-mosaic-badge gw-float-anim" style="bottom:18px;left:18px;top:auto;">
             <span class="gw-pulse-dot"></span> Integrated Facility Programs
@@ -815,11 +816,11 @@
           <div style="background:#f4f8f5;border:1px solid #dce8dd;border-radius:6px;padding:20px;margin-bottom:24px;">
             <p style="margin:0 0 10px;font-size:14.5px;color:var(--gw-deep);">
               <i class="fa fa-building" style="color:var(--gw-green);margin-right:8px;"></i>
-              <strong>Corporate Office:</strong> Suscon Builder, 53rd Street, Ashok Nagar, Chennai, Tamil Nadu – 600083
+              <strong>Corporate Office:</strong> Suscon Builder, 53rd Street, Ashok Nagar, Chennai, Tamil Nadu â€“ 600083
             </p>
             <p style="margin:0;font-size:14.5px;color:var(--gw-deep);">
               <i class="fa fa-industry" style="color:var(--gw-green);margin-right:8px;"></i>
-              <strong>Processing Plant:</strong> Plot No: 101-104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu – 604207
+              <strong>Processing Plant:</strong> Plot No: 101-104, SIDCO Industrial Estate, Venmaniathur &amp; Pattanam Village, Tindivanam Taluk, Villupuram District, Tamil Nadu â€“ 604207
             </p>
           </div>
           <p style="font-size:14.5px;color:var(--gw-text-muted);margin-bottom:12px;font-weight:600;">
@@ -988,7 +989,7 @@
   </section>
 
   <!-- ========================================================================
-       15. FINAL CTA — INQUIRY & COLLECTION REQUEST
+       15. FINAL CTA â€” INQUIRY & COLLECTION REQUEST
        ======================================================================== -->
   <section id="request" class="gw-section-2026 gw-deep">
     <div class="container">
