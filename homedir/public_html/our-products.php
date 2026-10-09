@@ -109,6 +109,16 @@ if (empty($product_list)) {
 <html class="no-js" lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW5GT1CM3P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BW5GT1CM3P');
+  </script>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Re-Refined Base Oil, Furnace Oil &amp; Industrial Barrels in Tamil Nadu, India | Green Way</title>
