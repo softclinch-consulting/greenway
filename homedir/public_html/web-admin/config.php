@@ -1,11 +1,12 @@
 <?php 
-	$server="localhost";
 
-	$username="root";	
-
-	$password="$@GreenWaySRS2026#$";
-
-	$db_name="wasteoil_cms_db";// Database name
+  $server="localhost";
+ 
+  $username="wwwwasteoil_cms_user";
+ 
+  $password="P9Maqn*cLGe46K4";
+ 
+  $db_name="wwwwasteoil_greenwayind";
 
 $con=mysqli_connect($server,$username,$password,$db_name);
   if (mysqli_connect_errno())
