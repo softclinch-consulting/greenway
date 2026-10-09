@@ -169,13 +169,13 @@ if (isset($service_registry[$service_id])) {
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW5GT1CM3P"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7S3468T7TG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-BW5GT1CM3P');
+    gtag('config', 'G-7S3468T7TG');
   </script>
 
     <meta charset="utf-8">
