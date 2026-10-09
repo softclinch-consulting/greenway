@@ -1,21 +1,18 @@
 <?php 
+	$server="localhost";
 
-  $server="localhost";
- 
-  $username="wwwwasteoil_cms_user";
- 
-  $password="P9Maqn*cLGe46K4";
- 
-  $db_name="wwwwasteoil_greenwayind";
+	$username="wwwwasteoil_cms_user";	
 
-$con=mysqli_connect($server,$username,$password,$db_name);
-  if (mysqli_connect_errno())
-      {
-      echo "Failed to connect to MySQL: " . mysqli_connect_error();
-      }
-	  
+	$password="P9Maqn*cLGe46K4";
 
+	$db_name="wwwwasteoil_greenwayind";// Database name
 
+mysqli_report(MYSQLI_REPORT_OFF);
+$con = @mysqli_connect($server,$username,$password,$db_name);
+if (mysqli_connect_errno())
+{
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
 
 $timezone  = 5.5; //(GMT -5:00) EST (U.S. & Canada)
 $timesss=date("H:i:s a", time() + 3600*($timezone+date("I")));
@@ -49,13 +46,26 @@ $endtimesss=date("Y-m-d H:i:s a", time() + 3600*($endtime+date("I")));
 //session_start();
                            
 
+$currency_value1 = [];
+$settings1 = [];
+$moduleview1 = [];
 
+if ($con) {
+    $currency_value  = mysqli_query($con, "select * from `currency_value` where `status`='Active'");
+    if ($currency_value && $row = mysqli_fetch_array($currency_value)) {
+        $currency_value1 = $row;
+    }
 
-$currency_value  = mysqli_query($con, "select * from `currency_value` where `status`='Active'") or die(mysqli_error($con));
-// fetch_array() returns null when zero rows match; default to [] so the
-// lookups below can't warn on a missing row, instead of assuming a row
-// always exists.
-$currency_value1 = mysqli_fetch_array($currency_value) ?: [];
+    $settings  = mysqli_query($con, "select * from `settings` where `id`='1'");
+    if ($settings && $row = mysqli_fetch_array($settings)) {
+        $settings1 = $row;
+    }
+
+    $moduleview  = mysqli_query($con, "select * from `module_view` where `id`='1'");
+    if ($moduleview && $row = mysqli_fetch_array($moduleview)) {
+        $moduleview1 = $row;
+    }
+}
 
 $currency_code = $currency_value1['currency'] ?? '';
 
@@ -63,18 +73,11 @@ $code = $currency_value1['code'] ?? '';
 
 $value = $currency_value1['value'] ?? '';
 
-
-$settings  = mysqli_query($con, "select * from `settings` where `id`='1'") or die(mysqli_error($con));
-$settings1 = mysqli_fetch_array($settings);
-
-$moduleview  = mysqli_query($con, "select * from `module_view` where `id`='1'") or die(mysqli_error($con));
-$moduleview1 = mysqli_fetch_array($moduleview);
-
 ///////////////////////////// Email Id ///////////////////////////////
 
-$admin_form =$settings1['form_email_id'];
+$admin_form = $settings1['form_email_id'] ?? 'info@wasteoil.in';
 
-$admin_to =$settings1['to_email_id'];
+$admin_to = $settings1['to_email_id'] ?? 'maskern2287@gmail.com';
 
 ///////////////////////////// Email Id ///////////////////////////////
 
@@ -84,17 +87,17 @@ $baseurlview = "http://localhost:8080/";
 
 ///////////////////////////// Url and Title ///////////////////////////////
 
-$baseurl =$settings1['base_url'];
+$baseurl = $settings1['base_url'] ?? '';
 
-$siteurl =$settings1['site_url'];
+$siteurl = $settings1['site_url'] ?? '';
 
-$mainurl =$settings1['main_url'];
+$mainurl = $settings1['main_url'] ?? '';
 
-$adminurl =$settings1['admin_url'];
+$adminurl = $settings1['admin_url'] ?? '';
 
-$shopname = $settings1['title']; 
+$shopname = $settings1['title'] ?? 'Green Way Industries'; 
 
-$domain_name = $settings1['domain_name'];
+$domain_name = $settings1['domain_name'] ?? 'wasteoil.in';
 
 
 ///////////////////////////// Url and Title ///////////////////////////////
@@ -102,13 +105,13 @@ $domain_name = $settings1['domain_name'];
 
 ///////////////////////////// footer ///////////////////////////////
 
-$footer = $settings1['footer_text'];
+$footer = $settings1['footer_text'] ?? '';
 
-$footer1 = $settings1['footer_text1'];
+$footer1 = $settings1['footer_text1'] ?? '';
 
-$footer2 = $settings1['footer_text2'];
+$footer2 = $settings1['footer_text2'] ?? '';
 
-$footer_link = $settings1['footer_link'];
+$footer_link = $settings1['footer_link'] ?? '';
 
 ///////////////////////////// footer ///////////////////////////////
 
@@ -116,32 +119,32 @@ $footer_link = $settings1['footer_link'];
 
 ///////////////////////////// logo and favicon ///////////////////////////////
 
-$logo = $baseurl.'settings/'.$settings1['logo'];
+$logo = !empty($settings1['logo']) ? $baseurl.'settings/'.$settings1['logo'] : 'img/logo/logo.png';
 
-$favicon = $baseurl.'settings/'.$settings1['favicon'];
+$favicon = !empty($settings1['favicon']) ? $baseurl.'settings/'.$settings1['favicon'] : 'img/favicon.ico';
 
 ///////////////////////////// logo and favicon ///////////////////////////////
 
 
 ///////////////////////////// Contact info ///////////////////////////////
 
-$c_email = $settings1['contact_email'];
+$c_email = $settings1['contact_email'] ?? 'info@wasteoil.in';
 
-$c_phone = $settings1['contact_phone'];
+$c_phone = $settings1['contact_phone'] ?? '+91 93600 36055';
 
-$c_address = $settings1['address'];
+$c_address = $settings1['address'] ?? '';
 
-$c_address1 = $settings1['address1'];
+$c_address1 = $settings1['address1'] ?? '';
 
-$c_address2 = $settings1['address2'];
+$c_address2 = $settings1['address2'] ?? '';
 
-$c_city = $settings1['city'];
+$c_city = $settings1['city'] ?? 'Chennai';
 
-$c_state = $settings1['state'];
+$c_state = $settings1['state'] ?? 'Tamil Nadu';
 
-$c_pincode = $settings1['pincode'];
+$c_pincode = $settings1['pincode'] ?? '600083';
 
-$c_country = $settings1['country'];
+$c_country = $settings1['country'] ?? 'India';
 
 
 ///////////////////////////// Contact info ///////////////////////////////
@@ -150,9 +153,9 @@ $c_country = $settings1['country'];
 
 ///////////////////////////// Social Links ///////////////////////////////
 
-$c_facebook = $settings1['facebook_link'];
+$c_facebook = $settings1['facebook_link'] ?? '';
 
-$c_google = $settings1['google'];
+$c_google = $settings1['google'] ?? '';
 
 // `settings` has no Twitter-equivalent column (only facebook_link,
 // instagram_link, google, youtube_link/youtube, linkedin_link exist) and
@@ -160,27 +163,27 @@ $c_google = $settings1['google'];
 // empty string rather than inventing a database column for it.
 $c_twitter = '';
 
-$c_youtube = $settings1['youtube'];
+$c_youtube = $settings1['youtube'] ?? '';
 
-$c_linkedin = $settings1['linkedin_link'];
+$c_linkedin = $settings1['linkedin_link'] ?? '';
 
 ///////////////////////////// Social Links ///////////////////////////////
 
 
 ///////////////////////////// Payment ///////////////////////////////
 
-$paypalmail =$settings1['paypalmail'];
+$paypalmail = $settings1['paypalmail'] ?? '';
 
 ///////////////////////////// Payment ///////////////////////////////
 
 
 ///////////////////////////// currency & shipping ///////////////////////////////
 
-$currency = $settings1['currency'];
+$currency = $settings1['currency'] ?? '';
 
-$shipping =$settings1['shipping'];
+$shipping = $settings1['shipping'] ?? '';
 
-$free_shipping =$settings1['free_shipping'];
+$free_shipping = $settings1['free_shipping'] ?? '';
 
 ///////////////////////////// currency & shipping ///////////////////////////////
 
