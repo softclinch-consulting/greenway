@@ -139,7 +139,15 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- 10. CPCB EPR Compliance Pillar Guide -->
+  <!-- 10. Industrial Recycling & Compliance Blog Hub -->
+  <url>
+    <loc>https://wasteoil.in/blog</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 11. CPCB EPR Compliance Pillar Guide -->
   <url>
     <loc>https://wasteoil.in/cpcb-epr-used-oil-compliance</loc>
     <lastmod>2026-10-14</lastmod>

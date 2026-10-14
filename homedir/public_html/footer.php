@@ -70,6 +70,7 @@
                                         <li><a href="./">Home</a></li>
                                         <li><a href="about">About Us</a></li>
                                         <li><a href="certifications">Our Certifications</a></li>
+                                        <li><a href="blog">Blog &amp; Knowledge Hub</a></li>
                                         <li><a href="cpcb-epr-used-oil-compliance">EPR Used Oil Guide</a></li>
                                         <li><a href="our-industries">Our Industries</a></li>
                                         <li><a href="our-products">Our Products</a></li>

@@ -123,6 +123,12 @@
                                         <li><a href="our-industries">Our Industries</a></li>
                                         <li><a href="our-products">Our Products</a></li>
                                         <li><a href="our-gallery">Our Gallery</a></li>
+                                        <li><a class="pagess" href="blog">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog">All Blog Articles</a></li>
+                                                <li><a href="cpcb-epr-used-oil-compliance">CPCB EPR Compliance Guide</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="contact-us">Contact Us</a></li>
 
                                     </ul>
@@ -163,6 +169,12 @@
                                     <li><a href="our-industries">Our Industries</a></li>
                                     <li><a href="our-products">Our Products</a></li>
                                     <li><a href="our-gallery">Our Gallery</a></li>
+                                    <li><a class="pagess" href="blog">Blog</a>
+                                        <ul>
+                                            <li><a href="blog">All Blog Articles</a></li>
+                                            <li><a href="cpcb-epr-used-oil-compliance">CPCB EPR Compliance Guide</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="contact-us">Contact Us</a></li>
 
                                 </ul>

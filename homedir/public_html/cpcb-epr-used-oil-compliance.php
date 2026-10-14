@@ -114,8 +114,8 @@ if ($hasDatabase) {
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Certifications & Compliance",
-              "item": "https://wasteoil.in/certifications"
+              "name": "Blog",
+              "item": "https://wasteoil.in/blog"
             },
             {
               "@type": "ListItem",
@@ -465,7 +465,7 @@ if ($hasDatabase) {
                         </div>
                         <ul>
                             <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
-                            <li><a href="certifications" style="color:#fff">Compliance</a></li>
+                            <li><a href="blog" style="color:#fff">Blog</a></li>
                             <li>CPCB EPR Used Oil Guide</li>
                         </ul>
                     </div>

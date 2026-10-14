@@ -38,4 +38,5 @@ AddType text/plain .txt
     RewriteRule ^our-gallery/?$ our-gallery.php [L,QSA]
     RewriteRule ^contact-us/?$ contact-us.php [L,QSA]
     RewriteRule ^cpcb-epr-used-oil-compliance/?$ cpcb-epr-used-oil-compliance.php [L,QSA]
+    RewriteRule ^blog/?$ blog.php [L,QSA]
 </IfModule>
