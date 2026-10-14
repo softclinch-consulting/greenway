@@ -23,6 +23,7 @@ Allow: /our-industries
 Allow: /our-products
 Allow: /our-gallery
 Allow: /contact-us
+Allow: /cpcb-epr-used-oil-compliance
 Allow: /css/
 Allow: /js/
 Allow: /img/
