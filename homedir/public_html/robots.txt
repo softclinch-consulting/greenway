@@ -25,6 +25,9 @@ Allow: /our-gallery
 Allow: /contact-us
 Allow: /cpcb-epr-used-oil-compliance
 Allow: /blog
+Allow: /form-10-hazardous-waste-manifest-rules
+Allow: /transformer-oil-recycling-testing-standards
+Allow: /tnpcb-hazardous-waste-compliance-checklist
 Allow: /css/
 Allow: /js/
 Allow: /img/

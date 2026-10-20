@@ -155,4 +155,28 @@
     <priority>0.90</priority>
   </url>
 
+  <!-- 12. Form 10 Hazardous Waste Manifest Guide -->
+  <url>
+    <loc>https://wasteoil.in/form-10-hazardous-waste-manifest-rules</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 13. Used Transformer Oil Recycling Standards -->
+  <url>
+    <loc>https://wasteoil.in/transformer-oil-recycling-testing-standards</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 14. TNPCB Hazardous Waste Audit Checklist -->
+  <url>
+    <loc>https://wasteoil.in/tnpcb-hazardous-waste-compliance-checklist</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
 </urlset>

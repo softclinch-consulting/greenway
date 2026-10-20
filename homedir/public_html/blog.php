@@ -431,18 +431,18 @@ if ($hasDatabase) {
                 <!-- Article Card 2 -->
                 <div class="gw-article-card">
                     <div class="gw-card-body">
-                        <span class="gw-post-tag">EHS &amp; Facility Audits</span>
+                        <span class="gw-post-tag">Logistics &amp; Rule 19</span>
                         <h4>
-                            <a href="cpcb-epr-used-oil-compliance#section-3">
-                                How to Choose a TNPCB-Authorized Waste Oil Recycler in Tamil Nadu
+                            <a href="form-10-hazardous-waste-manifest-rules">
+                                Form 10 Hazardous Waste Manifest: 7-Copy Rules &amp; Audit Tracking
                             </a>
                         </h4>
                         <p>
-                            A comprehensive 7-point audit checklist for EHS officers to verify pollution board licenses, secondary containment, laboratory testing, and GPS vacuum tanker fleet capabilities.
+                            Master the statutory 7-copy Form 10 Hazardous Waste Manifest under Rule 19. Learn color coding, generator duties, 30-day blue copy rules, and SPCB audit readiness.
                         </p>
                         <div class="gw-card-footer">
-                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 6 Min Read</span>
-                            <a href="cpcb-epr-used-oil-compliance">Read More <i class="fa fa-angle-right"></i></a>
+                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 7 Min Read</span>
+                            <a href="form-10-hazardous-waste-manifest-rules">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -450,18 +450,18 @@ if ($hasDatabase) {
                 <!-- Article Card 3 -->
                 <div class="gw-article-card">
                     <div class="gw-card-body">
-                        <span class="gw-post-tag">Operations &amp; Logistics</span>
+                        <span class="gw-post-tag">Power &amp; Transformers</span>
                         <h4>
-                            <a href="cpcb-epr-used-oil-compliance#section-3">
-                                Used Oil Storage, Transport &amp; Form 10 Manifests: Step-by-Step Guide
+                            <a href="transformer-oil-recycling-testing-standards">
+                                Used Transformer Oil Recycling: IS 1866 &amp; BDV Testing Standards
                             </a>
                         </h4>
                         <p>
-                            Best practices for on-site drum storage under Hazardous Waste Rule 17, secondary bunding dimensions, spill prevention protocols, and statutory manifest color-coding.
+                            Technical engineering guide to insulating mineral transformer oil recycling, vacuum regeneration, IS 1866 testing parameters, breakdown voltage (BDV) restoration, and SPCB disposal.
                         </p>
                         <div class="gw-card-footer">
-                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 5 Min Read</span>
-                            <a href="cpcb-epr-used-oil-compliance">Read More <i class="fa fa-angle-right"></i></a>
+                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 8 Min Read</span>
+                            <a href="transformer-oil-recycling-testing-standards">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -469,18 +469,18 @@ if ($hasDatabase) {
                 <!-- Article Card 4 -->
                 <div class="gw-article-card">
                     <div class="gw-card-body">
-                        <span class="gw-post-tag">Power &amp; Transformers</span>
+                        <span class="gw-post-tag">TNPCB &amp; Plant Audits</span>
                         <h4>
-                            <a href="used-transformer-oil-recycling">
-                                Transformer Oil Regeneration: Dielectric Breakdown Voltage Restoration
+                            <a href="tnpcb-hazardous-waste-compliance-checklist">
+                                TNPCB Hazardous Waste Factory Audit Checklist &amp; CTO Guide
                             </a>
                         </h4>
                         <p>
-                            How specialized high-vacuum dehydration and degasification restore dielectric strength in electrical transformer oils, avoiding costly oil replacement.
+                            The ultimate factory audit checklist for TNPCB hazardous waste compliance in Tamil Nadu. Master Form 3 daily registers, 90-day storage bunding, Form 4 annual returns, and CTO renewals.
                         </p>
                         <div class="gw-card-footer">
-                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 7 Min Read</span>
-                            <a href="used-transformer-oil-recycling">Read Service <i class="fa fa-angle-right"></i></a>
+                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 9 Min Read</span>
+                            <a href="tnpcb-hazardous-waste-compliance-checklist">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
