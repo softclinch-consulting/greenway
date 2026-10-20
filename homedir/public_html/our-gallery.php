@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }

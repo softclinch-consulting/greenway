@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 if (!defined('GW_SERVICE_WRAPPER')) {
     define('GW_SERVICE_WRAPPER', true);
 }
