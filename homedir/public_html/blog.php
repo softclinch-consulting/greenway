@@ -108,14 +108,14 @@ if (isset($blog_registry[$blog_id])) {
     $page_title = $current_article['title'];
     $meta_desc = $current_article['meta_desc'];
     $meta_keywords = $current_article['keywords'];
-    $canonical_url = "https://wasteoil.in/blog/" . $current_article['slug'];
+    $canonical_url = "https://wasteoil.in/" . $current_article['slug'];
     $schema_code = isset($blog_schemas[$current_article['slug']]) ? $blog_schemas[$current_article['slug']] : null;
 } elseif (!empty($blog_dtl1)) {
     $display_name = $blog_dtl1['name'];
     $page_title = htmlspecialchars($display_name) . " | Green Way Industries Blog";
     $meta_desc = !empty($blog_dtl1['short_desc']) ? strip_tags($blog_dtl1['short_desc']) : ("Read about " . htmlspecialchars($display_name) . " on Green Way Industries.");
     $meta_keywords = htmlspecialchars($display_name) . ", waste oil recycling Tamil Nadu, TNPCB hazardous waste compliance, industrial recycling India";
-    $canonical_url = "https://wasteoil.in/blog/" . (!empty($current_slug) ? $current_slug : ("article?b_id=" . $blog_id));
+    $canonical_url = "https://wasteoil.in/" . (!empty($current_slug) ? $current_slug : ("article?b_id=" . $blog_id));
     $schema_code = null;
 } else {
     $display_name = "Blog & Knowledge Hub";
@@ -835,7 +835,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                     <div class="gw-featured-content">
                         <span class="gw-post-tag">CPCB &amp; TNPCB Regulatory</span>
                         <h3>
-                            <a href="blog/cpcb-epr-used-oil-compliance">
+                            <a href="cpcb-epr-used-oil-compliance">
                                 CPCB EPR for Used Oil in India: The Complete Compliance, Target &amp; Certificate Guide for Manufacturers &amp; Bulk Users
                             </a>
                         </h3>
@@ -847,7 +847,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                             <span><i class="fa fa-clock-o"></i> 8 Min Read</span>
                             <span><i class="fa fa-check-circle"></i> Verified Regulatory</span>
                         </div>
-                        <a href="blog/cpcb-epr-used-oil-compliance" class="gw-btn-read">
+                        <a href="cpcb-epr-used-oil-compliance" class="gw-btn-read">
                             Read Full Guide <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
@@ -862,7 +862,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                     <div class="gw-card-body">
                         <span class="gw-post-tag">Logistics &amp; Rule 19</span>
                         <h4>
-                            <a href="blog/form-10-hazardous-waste-manifest-rules">
+                            <a href="form-10-hazardous-waste-manifest-rules">
                                 Form 10 Hazardous Waste Manifest: 7-Copy Rules &amp; Audit Tracking
                             </a>
                         </h4>
@@ -871,7 +871,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 7 Min Read</span>
-                            <a href="blog/form-10-hazardous-waste-manifest-rules">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="form-10-hazardous-waste-manifest-rules">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -881,7 +881,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                     <div class="gw-card-body">
                         <span class="gw-post-tag">Power &amp; Transformers</span>
                         <h4>
-                            <a href="blog/transformer-oil-recycling-testing-standards">
+                            <a href="transformer-oil-recycling-testing-standards">
                                 Used Transformer Oil Recycling: IS 1866 &amp; BDV Testing Standards
                             </a>
                         </h4>
@@ -890,7 +890,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 8 Min Read</span>
-                            <a href="blog/transformer-oil-recycling-testing-standards">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="transformer-oil-recycling-testing-standards">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -900,7 +900,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                     <div class="gw-card-body">
                         <span class="gw-post-tag">TNPCB &amp; Plant Audits</span>
                         <h4>
-                            <a href="blog/tnpcb-hazardous-waste-compliance-checklist">
+                            <a href="tnpcb-hazardous-waste-compliance-checklist">
                                 TNPCB Hazardous Waste Factory Audit Checklist: 90-Day Storage &amp; CTO
                             </a>
                         </h4>
@@ -909,7 +909,7 @@ $is_subpath = (strpos($req_uri, '/blog/') !== false);
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 9 Min Read</span>
-                            <a href="blog/tnpcb-hazardous-waste-compliance-checklist">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="tnpcb-hazardous-waste-compliance-checklist">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
