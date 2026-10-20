@@ -172,20 +172,27 @@ if ($hasDatabase) {
     }
     </script>
 
-    <!-- Core CSS -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
+
+    <!-- Core Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/meanmenu.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/magnific.min.css">
     <link rel="stylesheet" href="css/venobox.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- 2026 Modern Industrial Sustainability Styles -->
     <link rel="stylesheet" href="css/service-modern.css">
+
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     <style>
       :root {
@@ -447,8 +454,8 @@ if ($hasDatabase) {
 
     <div id="preloader"></div>
     
-    <!-- Header -->
-    <?php @include('header.php'); ?>
+    <!-- Header Area -->
+    <?php include('header.php'); ?>
 
     <!-- Start Slider Area (Breadcrumb Banner) -->
     <div class="page-area">
@@ -699,8 +706,33 @@ if ($hasDatabase) {
         </div>
     </section>
 
-    <!-- Footer -->
-    <?php @include('footer.php'); ?>
+    <!-- Support & Consultation Section -->
+    <section class="gw-cta-section-2026" style="background:linear-gradient(135deg, #103a2a 0%, #196b45 100%);padding:56px 0;color:#ffffff;">
+        <div class="container">
+            <div class="row" style="align-items:center;display:flex;flex-wrap:wrap;">
+                <div class="col-md-8 col-sm-12 gw-reveal">
+                    <span class="gw-eyebrow-2026 gw-eyebrow-lime" style="margin-bottom:12px;display:inline-block;">Support &amp; Consultation</span>
+                    <h2 class="gw-h2-2026" style="font-size:34px;font-weight:800;color:#ffffff;line-height:1.25;margin:0 0 14px;">
+                        Need Help With Waste Oil or Industrial Waste?
+                    </h2>
+                    <p class="gw-lead-2026 gw-lead-left" style="font-size:16px;line-height:1.7;color:#dbe7df;margin:0;max-width:680px;">
+                        Tell us what type of waste you generate, the approximate quantity and your location. Our team can help you identify the appropriate waste management service for your requirement.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-right gw-reveal gw-delay-1" style="margin-top:20px;">
+                    <a href="contact-us" class="gw-btn-lift gw-btn-green-2026" style="margin-right:10px;display:inline-block;padding:14px 26px;">
+                        Enquire Now <i class="fa fa-paper-plane"></i>
+                    </a>
+                    <a href="tel:+919360036055" class="gw-btn-lift gw-btn-outline-2026" style="display:inline-block;padding:13px 22px;">
+                        <i class="fa fa-phone"></i> Call Direct
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Footer bottom Area -->
+    <?php include('footer.php'); ?>
 
     <!-- JavaScript Dependencies -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
