@@ -1,4 +1,8 @@
 <?php 
+if (!defined('GW_BLOG_WRAPPER')) {
+    define('GW_BLOG_WRAPPER', true);
+}
+
 $dbSocket = @fsockopen('127.0.0.1', 3306, $dbError, $dbErrorMessage, 0.2);
 $hasDatabase = $dbSocket !== false;
 if ($dbSocket) { fclose($dbSocket); }
@@ -7,6 +11,123 @@ $con = null;
 if ($hasDatabase) {
     @include('web-admin/config.php');
 }
+
+@include(__DIR__ . '/blog-schemas.php');
+
+// Master Registry for Green Way Technical Blog Articles
+$blog_registry = [
+    1 => [
+        'slug' => 'cpcb-epr-used-oil-compliance',
+        'name' => 'CPCB EPR Used Oil Regulations',
+        'title' => 'CPCB EPR for Used Oil: Complete Compliance Guide India | Green Way',
+        'meta_desc' => 'Comprehensive guide to CPCB EPR used oil rules, targets & certificates in India. Learn Form-10 manifests, TNPCB audits & compliant recycling. Call +91 93600 36055.',
+        'keywords' => 'CPCB EPR used oil India, used oil EPR certificate, EPR targets for used oil, TNPCB authorized recycler EPR, hazardous waste management rules 2024 circular economy, re-refined base oil RRBO compliance, Form 10 manifest waste oil, used oil recycling Tamil Nadu, waste oil pickup Chennai',
+        'file' => 'cpcb-epr-used-oil-compliance-content.php',
+        'category' => 'CPCB & TNPCB Regulatory',
+        'read_time' => '8 Min Read',
+        'date' => 'October 2026',
+        'image' => 'img/epr-used-oil-compliance.png'
+    ],
+    2 => [
+        'slug' => 'form-10-hazardous-waste-manifest-rules',
+        'name' => 'Form 10 Manifest & Transport Rules',
+        'title' => 'Form 10 Hazardous Waste Manifest: 7-Copy Rules & Tracking | Green Way',
+        'meta_desc' => 'Master the statutory 7-copy Form 10 Hazardous Waste Manifest under Rule 19 in India. Learn color coding, generator duties, 30-day blue copy rules, and SPCB audit readiness.',
+        'keywords' => 'Form 10 manifest hazardous waste India, Rule 19 hazardous waste manifest 7 copies, hazardous waste transport manifest color codes, yellow copy green copy manifest, waste oil transportation manifest Tamil Nadu, Form 10 manifest compliance checklist',
+        'file' => 'form-10-hazardous-waste-manifest-rules-content.php',
+        'category' => 'Logistics & Rule 19',
+        'read_time' => '7 Min Read',
+        'date' => 'October 2026',
+        'image' => 'img/logo/logo.png'
+    ],
+    3 => [
+        'slug' => 'transformer-oil-recycling-testing-standards',
+        'name' => 'Transformer Oil Recycling Standards',
+        'title' => 'Used Transformer Oil Recycling: IS 1866 & BDV Testing Standards | Green Way',
+        'meta_desc' => 'Technical guide to used transformer oil recycling under IS 1866 & IS 6792 in India. Learn BDV testing, dehydration, PCB limits, and TNPCB-approved recycling.',
+        'keywords' => 'used transformer oil recycling India, IS 1866 transformer oil testing parameters, dielectric breakdown voltage BDV test, transformer oil filtration and dehydration, transformer oil recycler Tamil Nadu, PCB contamination transformer oil',
+        'file' => 'transformer-oil-recycling-testing-standards-content.php',
+        'category' => 'Power & Transformers',
+        'read_time' => '8 Min Read',
+        'date' => 'October 2026',
+        'image' => 'img/logo/logo.png'
+    ],
+    4 => [
+        'slug' => 'tnpcb-hazardous-waste-compliance-checklist',
+        'name' => 'TNPCB Factory Audit Checklist',
+        'title' => 'TNPCB Hazardous Waste Audit Checklist for Factories | Green Way',
+        'meta_desc' => 'Essential TNPCB audit checklist for industrial hazardous waste in Tamil Nadu. Learn 90-day storage limits, Form 4 annual returns, manifest reconciliation & CTO renewal.',
+        'keywords' => 'TNPCB hazardous waste audit checklist, 90 day hazardous waste storage limit Tamil Nadu, Form 4 annual returns hazardous waste TNPCB, CTO renewal hazardous waste compliance, TNPCB inspection waste oil disposal, PCB compliance audit Chennai Sriperumbudur',
+        'file' => 'tnpcb-hazardous-waste-compliance-checklist-content.php',
+        'category' => 'TNPCB & Plant Audits',
+        'read_time' => '9 Min Read',
+        'date' => 'October 2026',
+        'image' => 'img/logo/logo.png'
+    ]
+];
+
+$blog_id = isset($_REQUEST['b_id']) ? (int)$_REQUEST['b_id'] : 0;
+if ($blog_id === 0 && !empty($_REQUEST['id'])) {
+    $blog_id = (int)$_REQUEST['id'];
+}
+
+$current_slug = '';
+if (!empty($_REQUEST['slug'])) {
+    $current_slug = strtolower(trim($_REQUEST['slug'], '/'));
+}
+
+if ($blog_id === 0 && !empty($current_slug)) {
+    foreach ($blog_registry as $bid => $bmeta) {
+        if ($bmeta['slug'] === $current_slug) {
+            $blog_id = $bid;
+            break;
+        }
+    }
+}
+
+$blog_dtl1 = null;
+if ($con && $blog_id > 0 && !isset($blog_registry[$blog_id])) {
+    $blog_dtl = mysqli_query($con, "SELECT * FROM `blog` WHERE `id`='$blog_id' AND `status`='Active'");
+    if ($blog_dtl && mysqli_num_rows($blog_dtl) > 0) {
+        $blog_dtl1 = mysqli_fetch_array($blog_dtl);
+    }
+} elseif ($con && !empty($current_slug) && $blog_id === 0) {
+    $esc_slug = mysqli_real_escape_string($con, str_replace('-', ' ', $current_slug));
+    $blog_dtl = mysqli_query($con, "SELECT * FROM `blog` WHERE (`name` LIKE '%$esc_slug%' OR `id`='$current_slug') AND `status`='Active' LIMIT 1");
+    if ($blog_dtl && mysqli_num_rows($blog_dtl) > 0) {
+        $blog_dtl1 = mysqli_fetch_array($blog_dtl);
+        $blog_id = (int)$blog_dtl1['id'];
+    }
+}
+
+$is_single_article = ($blog_id > 0 && (isset($blog_registry[$blog_id]) || !empty($blog_dtl1)));
+
+if (isset($blog_registry[$blog_id])) {
+    $current_article = $blog_registry[$blog_id];
+    $display_name = $current_article['name'];
+    $page_title = $current_article['title'];
+    $meta_desc = $current_article['meta_desc'];
+    $meta_keywords = $current_article['keywords'];
+    $canonical_url = "https://wasteoil.in/blog/" . $current_article['slug'];
+    $schema_code = isset($blog_schemas[$current_article['slug']]) ? $blog_schemas[$current_article['slug']] : null;
+} elseif (!empty($blog_dtl1)) {
+    $display_name = $blog_dtl1['name'];
+    $page_title = htmlspecialchars($display_name) . " | Green Way Industries Blog";
+    $meta_desc = !empty($blog_dtl1['short_desc']) ? strip_tags($blog_dtl1['short_desc']) : ("Read about " . htmlspecialchars($display_name) . " on Green Way Industries.");
+    $meta_keywords = htmlspecialchars($display_name) . ", waste oil recycling Tamil Nadu, TNPCB hazardous waste compliance, industrial recycling India";
+    $canonical_url = "https://wasteoil.in/blog/" . (!empty($current_slug) ? $current_slug : ("article?b_id=" . $blog_id));
+    $schema_code = null;
+} else {
+    $display_name = "Blog & Knowledge Hub";
+    $page_title = "Industrial Recycling & Waste Management Blog | Green Way Industries";
+    $meta_desc = "Read expert articles on CPCB EPR used oil rules, TNPCB compliance guidelines, hazardous waste management, Form-10 manifests, and circular economy lubrication.";
+    $meta_keywords = "waste oil recycling blog, CPCB EPR used oil updates, TNPCB compliance articles, hazardous waste disposal guide, industrial recycling insights India, used oil management blog";
+    $canonical_url = "https://wasteoil.in/blog";
+    $schema_code = null;
+}
+
+$req_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+$is_subpath = (strpos($req_uri, '/blog/') !== false);
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -30,14 +151,18 @@ if ($hasDatabase) {
     gtag('config', 'G-7S3468T7TG');
   </script>
 
+  <?php if ($is_subpath) { ?>
+  <base href="../">
+  <?php } ?>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Industrial Recycling &amp; Waste Management Blog | Green Way Industries</title>
-    <meta name="description" content="Read expert articles on CPCB EPR used oil rules, TNPCB compliance guidelines, hazardous waste management, Form-10 manifests, and circular economy lubrication.">
-    <meta name="keywords" content="waste oil recycling blog, CPCB EPR used oil updates, TNPCB compliance articles, hazardous waste disposal guide, industrial recycling insights India, used oil management blog">
+    <title><?php echo htmlspecialchars($page_title); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($meta_desc); ?>">
+    <meta name="keywords" content="<?php echo htmlspecialchars($meta_keywords); ?>">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="https://wasteoil.in/blog">
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
 
     <!-- Geo Meta Tags for High Local Search Relevance in Tamil Nadu & India -->
     <meta name="geo.region" content="IN-TN">
@@ -46,53 +171,68 @@ if ($hasDatabase) {
     <meta name="ICBM" content="13.0336, 80.2117">
 
     <!-- Open Graph & Social Cards -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="<?php echo $is_single_article ? 'article' : 'website'; ?>">
     <meta property="og:site_name" content="Green Way Industries">
-    <meta property="og:title" content="Industrial Recycling &amp; Waste Management Blog | Green Way Industries">
-    <meta property="og:description" content="Expert insights on CPCB EPR used oil compliance, TNPCB hazardous waste rules, Form-10 manifests, and sustainable industrial recycling.">
-    <meta property="og:url" content="https://wasteoil.in/blog">
+    <meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($meta_desc); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
     <meta property="og:image" content="https://wasteoil.in/img/logo/logo.png">
     <meta property="og:locale" content="en_IN">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Industrial Recycling &amp; Waste Management Blog | Green Way Industries">
-    <meta name="twitter:description" content="Expert insights on CPCB EPR used oil compliance, TNPCB hazardous waste rules, Form-10 manifests, and sustainable industrial recycling.">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($meta_desc); ?>">
     <meta name="twitter:image" content="https://wasteoil.in/img/logo/logo.png">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="22DnXNvAgVo2tubJaZ-rWUtMDNN0BWOCs8ozpOYaRvU">
-    <meta name="google-site-verification" content="google71644dabd58cdac1">
-
-    <!-- JSON-LD Structured Data: Blog & CollectionPage Schema -->
+    <!-- JSON-LD Structured Data Schema -->
+    <?php if (!empty($schema_code)) { ?>
+    <script type="application/ld+json">
+    <?php echo $schema_code; ?>
+    </script>
+    <?php } else { ?>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
-      "@id": "https://wasteoil.in/blog#blog",
-      "url": "https://wasteoil.in/blog",
-      "name": "Green Way Industries Knowledge Hub & Blog",
-      "description": "Expert insights on CPCB EPR used oil regulations, TNPCB compliance guidelines, hazardous waste management, and circular economy lubrication.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Green Way Industries",
-        "url": "https://wasteoil.in/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://wasteoil.in/img/logo/logo.png"
-        }
-      },
-      "blogPost": [
+      "@graph": [
         {
-          "@type": "BlogPosting",
-          "headline": "CPCB EPR for Used Oil in India: The Complete Compliance, Target & Certificate Guide for Manufacturers & Bulk Users",
-          "url": "https://wasteoil.in/cpcb-epr-used-oil-compliance",
-          "datePublished": "2026-10-14T08:00:00+05:30",
-          "description": "Comprehensive guide to CPCB EPR used oil rules, targets, certificates, Form-10 manifests, and SPCB compliance for industrial units across India."
+          "@type": "CollectionPage",
+          "@id": "https://wasteoil.in/blog#collection",
+          "name": "Green Way Industries Blog & Industrial Waste Compliance Hub",
+          "url": "https://wasteoil.in/blog",
+          "description": "Expert compliance guides on CPCB EPR used oil targets, TNPCB hazardous waste storage, Form-10 manifests, and circular economy recycling.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Green Way Industries",
+            "url": "https://wasteoil.in/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://wasteoil.in/img/logo/logo.png"
+            }
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://wasteoil.in/blog#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://wasteoil.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://wasteoil.in/blog"
+            }
+          ]
         }
       ]
     }
     </script>
+    <?php } ?>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png">
@@ -127,6 +267,7 @@ if ($hasDatabase) {
         --gw-text-muted: #526359;
       }
 
+      /* Blog Listing Styles */
       .gw-blog-section {
         padding: 60px 0 90px;
         background: #fbfdfb;
@@ -151,7 +292,6 @@ if ($hasDatabase) {
         line-height: 1.65;
       }
 
-      /* Featured Post Banner */
       .gw-featured-post {
         background: #ffffff;
         border: 1px solid var(--gw-border);
@@ -179,14 +319,14 @@ if ($hasDatabase) {
       }
 
       .gw-featured-img {
-        background: linear-gradient(135deg, var(--gw-deep), var(--gw-primary));
+        background: linear-gradient(135deg, var(--gw-deep) 0%, #175438 100%);
         min-height: 280px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px;
-        color: #ffffff;
+        padding: 30px;
         text-align: center;
+        color: #ffffff;
         position: relative;
       }
 
@@ -233,16 +373,18 @@ if ($hasDatabase) {
         color: var(--gw-text-muted);
         font-size: 15px;
         line-height: 1.65;
-        margin-bottom: 22px;
+        margin: 0 0 20px;
       }
 
       .gw-post-meta {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         gap: 18px;
         font-size: 13.5px;
-        color: #798a80;
-        margin-bottom: 24px;
+        color: var(--gw-text-muted);
+        margin-bottom: 22px;
+        padding-top: 15px;
+        border-top: 1px solid #edf2ee;
       }
 
       .gw-post-meta span {
@@ -252,16 +394,16 @@ if ($hasDatabase) {
       }
 
       .gw-btn-read {
-        background: var(--gw-primary);
-        color: #ffffff !important;
-        font-weight: 700;
-        font-size: 14.5px;
-        padding: 11px 24px;
-        border-radius: 4px;
-        text-decoration: none;
         display: inline-flex;
         align-items: center;
         gap: 8px;
+        background: var(--gw-primary);
+        color: #ffffff !important;
+        font-weight: 600;
+        font-size: 14.5px;
+        padding: 10px 22px;
+        border-radius: 4px;
+        text-decoration: none;
         width: fit-content;
         transition: background 0.2s, transform 0.2s;
       }
@@ -271,7 +413,6 @@ if ($hasDatabase) {
         transform: translateX(4px);
       }
 
-      /* Articles Grid */
       .gw-articles-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -329,7 +470,7 @@ if ($hasDatabase) {
         color: var(--gw-text-muted);
         font-size: 14.5px;
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
         flex-grow: 1;
       }
 
@@ -338,7 +479,7 @@ if ($hasDatabase) {
         align-items: center;
         justify-content: space-between;
         padding-top: 16px;
-        border-top: 1px solid #edf3ed;
+        border-top: 1px solid #eef3ef;
         font-size: 13.5px;
       }
 
@@ -353,6 +494,246 @@ if ($hasDatabase) {
 
       .gw-card-footer a:hover {
         color: var(--gw-deep);
+      }
+
+      /* Single Article Content Styles */
+      .gw-article-wrapper {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        color: var(--gw-text-dark);
+        font-family: inherit;
+        line-height: 1.75;
+      }
+
+      .gw-article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--gw-border);
+        font-size: 14px;
+        color: var(--gw-text-muted);
+      }
+
+      .gw-article-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .gw-article-badge {
+        background: #e7f5eb;
+        color: var(--gw-primary);
+        font-weight: 700;
+        padding: 5px 12px;
+        border-radius: 4px;
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .gw-callout-box {
+        background: #f2f8f4;
+        border-left: 5px solid var(--gw-primary);
+        padding: 24px 28px;
+        border-radius: 0 8px 8px 0;
+        margin: 35px 0;
+      }
+
+      .gw-callout-box h4 {
+        color: var(--gw-deep);
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+      .gw-callout-box p {
+        margin: 0;
+        color: var(--gw-text-dark);
+        font-size: 15.5px;
+      }
+
+      .gw-h2-title {
+        color: var(--gw-deep);
+        font-size: 27px;
+        font-weight: 700;
+        margin: 45px 0 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #ebf2eb;
+      }
+
+      .gw-h3-title {
+        color: var(--gw-primary);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 28px 0 14px;
+      }
+
+      .gw-table-responsive {
+        overflow-x: auto;
+        margin: 30px 0;
+        border-radius: 8px;
+        border: 1px solid var(--gw-border);
+      }
+
+      .gw-custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        background: #ffffff;
+      }
+
+      .gw-custom-table th {
+        background: var(--gw-deep);
+        color: #ffffff;
+        padding: 14px 18px;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .gw-custom-table td {
+        padding: 14px 18px;
+        border-bottom: 1px solid #edf3ed;
+        vertical-align: top;
+      }
+
+      .gw-custom-table tr:nth-child(even) td {
+        background: #f9fbf9;
+      }
+
+      .gw-checklist-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .gw-checklist-card {
+        background: #ffffff;
+        border: 1px solid var(--gw-border);
+        border-top: 4px solid var(--gw-primary);
+        border-radius: 6px;
+        padding: 22px 20px;
+        box-shadow: 0 4px 12px rgba(16, 58, 42, 0.04);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .gw-checklist-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(16, 58, 42, 0.08);
+      }
+
+      .gw-checklist-card h4 {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--gw-deep);
+        margin: 0 0 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .gw-checklist-card h4 i {
+        color: var(--gw-primary);
+      }
+
+      .gw-checklist-card p {
+        font-size: 14px;
+        color: var(--gw-text-muted);
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      .gw-faq-card {
+        background: #fcfdfc;
+        border: 1px solid var(--gw-border);
+        border-radius: 8px;
+        margin-bottom: 16px;
+        padding: 20px 24px;
+      }
+
+      .gw-faq-card h4 {
+        margin: 0 0 10px;
+        color: var(--gw-deep);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .gw-faq-card p {
+        margin: 0;
+        color: var(--gw-text-muted);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+
+      .gw-cta-banner {
+        background: linear-gradient(135deg, var(--gw-deep) 0%, #164f37 100%);
+        border-radius: 10px;
+        padding: 45px 40px;
+        color: #ffffff;
+        margin: 50px 0 20px;
+        text-align: center;
+      }
+
+      .gw-cta-banner h3 {
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0 0 14px;
+      }
+
+      .gw-cta-banner p {
+        color: #e0ece3;
+        font-size: 16px;
+        max-width: 720px;
+        margin: 0 auto 28px;
+      }
+
+      .gw-cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .gw-btn-cta-primary {
+        background: var(--gw-lime);
+        color: var(--gw-deep) !important;
+        font-weight: 700;
+        padding: 13px 28px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .gw-btn-cta-primary:hover {
+        background: #a4db4a;
+        transform: translateY(-2px);
+      }
+
+      .gw-btn-cta-secondary {
+        background: transparent;
+        color: #ffffff !important;
+        border: 2px solid #ffffff;
+        font-weight: 700;
+        padding: 11px 26px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .gw-btn-cta-secondary:hover {
+        background: rgba(255, 255, 255, 0.15);
       }
     </style>
 </head>
@@ -376,11 +757,16 @@ if ($hasDatabase) {
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="breadcrumb text-center">
                         <div class="section-headline white-headline text-center">
-                            <h3>Blog</h3>
+                            <h3><?php echo htmlspecialchars($is_single_article ? $display_name : 'Blog'); ?></h3>
                         </div>
                         <ul>
                             <li class="home-bread"><a href="./" style="color:#fff">Home</a></li>
+                            <?php if ($is_single_article) { ?>
+                            <li><a href="blog" style="color:#fff">Blog</a></li>
+                            <li><?php echo htmlspecialchars($display_name); ?></li>
+                            <?php } else { ?>
                             <li>Blog</li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -388,7 +774,43 @@ if ($hasDatabase) {
         </div>
     </div>
 
-    <!-- Blog Listing Section -->
+    <?php if ($is_single_article) { ?>
+    <!-- Single Blog Article Content -->
+    <?php 
+    if (isset($current_article['file']) && file_exists(__DIR__ . '/' . $current_article['file'])) {
+        include(__DIR__ . '/' . $current_article['file']);
+    } elseif (!empty($blog_dtl1)) {
+    ?>
+    <section class="gw-article-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                    <div class="gw-article-meta">
+                        <span class="gw-article-badge">Industry Insight</span>
+                        <span><i class="fa fa-calendar"></i> <?php echo date('F Y', strtotime(!empty($blog_dtl1['post_date']) ? $blog_dtl1['post_date'] : $blog_dtl1['c_date'])); ?></span>
+                        <?php if (!empty($blog_dtl1['post_name'])) { ?>
+                        <span><i class="fa fa-user"></i> <?php echo htmlspecialchars($blog_dtl1['post_name']); ?></span>
+                        <?php } ?>
+                    </div>
+                    <h1 style="color:var(--gw-deep);font-size:32px;font-weight:700;line-height:1.35;margin-bottom:20px;">
+                        <?php echo htmlspecialchars($blog_dtl1['name']); ?>
+                    </h1>
+                    <?php if (!empty($blog_dtl1['image']) && file_exists(__DIR__ . '/blog/' . $blog_dtl1['image'])) { ?>
+                    <div style="margin:20px 0 30px;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.08);">
+                        <img src="blog/<?php echo htmlspecialchars($blog_dtl1['image']); ?>" alt="<?php echo htmlspecialchars($blog_dtl1['name']); ?>" style="width:100%;height:auto;max-height:460px;object-fit:cover;">
+                    </div>
+                    <?php } ?>
+                    <div style="font-size:16px;line-height:1.8;color:var(--gw-text-dark);">
+                        <?php echo $blog_dtl1['desc']; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php } ?>
+
+    <?php } else { ?>
+    <!-- Blog Listing Hub Section -->
     <section class="gw-blog-section">
         <div class="container">
             
@@ -413,7 +835,7 @@ if ($hasDatabase) {
                     <div class="gw-featured-content">
                         <span class="gw-post-tag">CPCB &amp; TNPCB Regulatory</span>
                         <h3>
-                            <a href="cpcb-epr-used-oil-compliance">
+                            <a href="blog/cpcb-epr-used-oil-compliance">
                                 CPCB EPR for Used Oil in India: The Complete Compliance, Target &amp; Certificate Guide for Manufacturers &amp; Bulk Users
                             </a>
                         </h3>
@@ -425,7 +847,7 @@ if ($hasDatabase) {
                             <span><i class="fa fa-clock-o"></i> 8 Min Read</span>
                             <span><i class="fa fa-check-circle"></i> Verified Regulatory</span>
                         </div>
-                        <a href="cpcb-epr-used-oil-compliance" class="gw-btn-read">
+                        <a href="blog/cpcb-epr-used-oil-compliance" class="gw-btn-read">
                             Read Full Guide <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>
@@ -440,7 +862,7 @@ if ($hasDatabase) {
                     <div class="gw-card-body">
                         <span class="gw-post-tag">Logistics &amp; Rule 19</span>
                         <h4>
-                            <a href="form-10-hazardous-waste-manifest-rules">
+                            <a href="blog/form-10-hazardous-waste-manifest-rules">
                                 Form 10 Hazardous Waste Manifest: 7-Copy Rules &amp; Audit Tracking
                             </a>
                         </h4>
@@ -449,7 +871,7 @@ if ($hasDatabase) {
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 7 Min Read</span>
-                            <a href="form-10-hazardous-waste-manifest-rules">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="blog/form-10-hazardous-waste-manifest-rules">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -459,7 +881,7 @@ if ($hasDatabase) {
                     <div class="gw-card-body">
                         <span class="gw-post-tag">Power &amp; Transformers</span>
                         <h4>
-                            <a href="transformer-oil-recycling-testing-standards">
+                            <a href="blog/transformer-oil-recycling-testing-standards">
                                 Used Transformer Oil Recycling: IS 1866 &amp; BDV Testing Standards
                             </a>
                         </h4>
@@ -468,7 +890,7 @@ if ($hasDatabase) {
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 8 Min Read</span>
-                            <a href="transformer-oil-recycling-testing-standards">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="blog/transformer-oil-recycling-testing-standards">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -478,65 +900,75 @@ if ($hasDatabase) {
                     <div class="gw-card-body">
                         <span class="gw-post-tag">TNPCB &amp; Plant Audits</span>
                         <h4>
-                            <a href="tnpcb-hazardous-waste-compliance-checklist">
-                                TNPCB Hazardous Waste Factory Audit Checklist &amp; CTO Guide
+                            <a href="blog/tnpcb-hazardous-waste-compliance-checklist">
+                                TNPCB Hazardous Waste Factory Audit Checklist: 90-Day Storage &amp; CTO
                             </a>
                         </h4>
                         <p>
-                            The ultimate factory audit checklist for TNPCB hazardous waste compliance in Tamil Nadu. Master Form 3 daily registers, 90-day storage bunding, Form 4 annual returns, and CTO renewals.
+                            Comprehensive compliance inspection checklist for factory occupiers in Tamil Nadu. Master the 90-day storage shed rules, Form 4 annual filings, and manifest reconciliation.
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 9 Min Read</span>
-                            <a href="tnpcb-hazardous-waste-compliance-checklist">Read Guide <i class="fa fa-angle-right"></i></a>
+                            <a href="blog/tnpcb-hazardous-waste-compliance-checklist">Read Guide <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Article Card 5 -->
+                <!-- Dynamic Articles from Database if present -->
+                <?php
+                if ($con) {
+                    $db_blog_res = @mysqli_query($con, "SELECT * FROM `blog` WHERE `status`='Active' ORDER BY `order` ASC, `id` DESC");
+                    if ($db_blog_res && mysqli_num_rows($db_blog_res) > 0) {
+                        while ($db_row = mysqli_fetch_array($db_blog_res)) {
+                ?>
                 <div class="gw-article-card">
                     <div class="gw-card-body">
-                        <span class="gw-post-tag">Marine &amp; Ports</span>
+                        <span class="gw-post-tag">Industry Update</span>
                         <h4>
-                            <a href="hazardous-waste-disposal-for-ships">
-                                Ship Bilge Sludge &amp; MARPOL Annex I Collection at Chennai &amp; Ennore Ports
+                            <a href="blog?b_id=<?php echo $db_row['id']; ?>">
+                                <?php echo htmlspecialchars($db_row['name']); ?>
                             </a>
                         </h4>
                         <p>
-                            Operating protocols for port reception facilities, bunker sludge de-slopping, and certified disposal under international maritime environmental standards.
+                            <?php echo !empty($db_row['short_desc']) ? htmlspecialchars(strip_tags($db_row['short_desc'])) : htmlspecialchars(substr(strip_tags($db_row['desc']), 0, 160)) . '...'; ?>
+                        </p>
+                        <div class="gw-card-footer">
+                            <span style="color:#798a80;"><i class="fa fa-calendar"></i> <?php echo date('M Y', strtotime($db_row['post_date'] ? $db_row['post_date'] : $db_row['c_date'])); ?></span>
+                            <a href="blog?b_id=<?php echo $db_row['id']; ?>">Read Article <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                        }
+                    }
+                }
+                ?>
+
+                <!-- Service Cross-Links -->
+                <div class="gw-article-card">
+                    <div class="gw-card-body">
+                        <span class="gw-post-tag">Core Capabilities</span>
+                        <h4>
+                            <a href="waste-oil-recycling">
+                                Vacuum Re-Refining &amp; Base Oil Production in Tamil Nadu
+                            </a>
+                        </h4>
+                        <p>
+                            Learn how Green Way Industries transforms used industrial lubricating oils into premium reusable base oil via advanced thin-film vacuum distillation.
                         </p>
                         <div class="gw-card-footer">
                             <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 6 Min Read</span>
-                            <a href="hazardous-waste-disposal-for-ships">Read Service <i class="fa fa-angle-right"></i></a>
+                            <a href="waste-oil-recycling">Read Service <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Article Card 6 -->
                 <div class="gw-article-card">
                     <div class="gw-card-body">
-                        <span class="gw-post-tag">Circular Economy &amp; ESG</span>
-                        <h4>
-                            <a href="cpcb-epr-used-oil-compliance#section-4">
-                                Re-Refined Base Oil (RRBO): Driving Scope 3 Decarbonization in Manufacturing
-                            </a>
-                        </h4>
-                        <p>
-                            The carbon math behind closed-loop lubrication: how substituting virgin base oil with certified RRBO cuts industrial manufacturing greenhouse gas footprints by up to 70%.
-                        </p>
-                        <div class="gw-card-footer">
-                            <span style="color:#798a80;"><i class="fa fa-clock-o"></i> 5 Min Read</span>
-                            <a href="cpcb-epr-used-oil-compliance">Read More <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article Card 7: Direct Service Link -->
-                <div class="gw-article-card">
-                    <div class="gw-card-body">
-                        <span class="gw-post-tag">Industrial Waste Management</span>
+                        <span class="gw-post-tag">Total Waste Management</span>
                         <h4>
                             <a href="industrial-waste-management">
-                                Integrated Factory Hazardous Waste Management Across Tamil Nadu
+                                End-to-End Industrial Waste Management for SEZs &amp; Factories
                             </a>
                         </h4>
                         <p>
@@ -553,6 +985,7 @@ if ($hasDatabase) {
 
         </div>
     </section>
+    <?php } ?>
 
     <!-- Support & Consultation Section -->
     <section class="gw-cta-section-2026" style="background:linear-gradient(135deg, #103a2a 0%, #196b45 100%);padding:56px 0;color:#ffffff;">

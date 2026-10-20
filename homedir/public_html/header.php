@@ -123,13 +123,36 @@
                                         <li><a href="our-industries">Our Industries</a></li>
                                         <li><a href="our-products">Our Products</a></li>
                                         <li><a href="our-gallery">Our Gallery</a></li>
+                                        <?php
+                                        $blog_slug_map = [
+                                            1 => 'cpcb-epr-used-oil-compliance',
+                                            2 => 'form-10-hazardous-waste-manifest-rules',
+                                            3 => 'transformer-oil-recycling-testing-standards',
+                                            4 => 'tnpcb-hazardous-waste-compliance-checklist'
+                                        ];
+                                        $blog_menu_list = [
+                                            ['url' => 'blog', 'name' => 'All Blog Articles'],
+                                            ['url' => 'cpcb-epr-used-oil-compliance', 'name' => 'CPCB EPR Used Oil Compliance'],
+                                            ['url' => 'form-10-hazardous-waste-manifest-rules', 'name' => 'Form 10 Manifest 7-Copy Rules'],
+                                            ['url' => 'transformer-oil-recycling-testing-standards', 'name' => 'Transformer Oil IS 1866 & BDV'],
+                                            ['url' => 'tnpcb-hazardous-waste-compliance-checklist', 'name' => 'TNPCB Factory Audit Checklist']
+                                        ];
+                                        if (!empty($con)) {
+                                            $blog_header_top = @mysqli_query($con, "select * from `blog` where `id`!='' and `status`='Active' order by `order` asc");
+                                            if ($blog_header_top) {
+                                                while($b_row = mysqli_fetch_array($blog_header_top)) {
+                                                    $bid = (int)$b_row['id'];
+                                                    $b_url = isset($blog_slug_map[$bid]) ? $blog_slug_map[$bid] : ('blog?b_id=' . $bid);
+                                                    $blog_menu_list[] = ['url' => $b_url, 'name' => $b_row['name']];
+                                                }
+                                            }
+                                        }
+                                        ?>
                                         <li><a class="pagess" href="blog">Blog</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog">All Blog Articles</a></li>
-                                                <li><a href="cpcb-epr-used-oil-compliance">CPCB EPR Used Oil Compliance</a></li>
-                                                <li><a href="form-10-hazardous-waste-manifest-rules">Form 10 Manifest 7-Copy Rules</a></li>
-                                                <li><a href="transformer-oil-recycling-testing-standards">Transformer Oil IS 1866 &amp; BDV</a></li>
-                                                <li><a href="tnpcb-hazardous-waste-compliance-checklist">TNPCB Factory Audit Checklist</a></li>
+                                                <?php foreach ($blog_menu_list as $b_item) { ?>
+                                                    <li><a href="<?php echo $b_item['url']; ?>"><?php echo htmlspecialchars($b_item['name']); ?></a></li>
+                                                <?php } ?>
                                             </ul>
                                         </li>
                                         <li><a href="contact-us">Contact Us</a></li>
@@ -174,11 +197,9 @@
                                     <li><a href="our-gallery">Our Gallery</a></li>
                                     <li><a class="pagess" href="blog">Blog</a>
                                         <ul>
-                                            <li><a href="blog">All Blog Articles</a></li>
-                                            <li><a href="cpcb-epr-used-oil-compliance">CPCB EPR Used Oil Compliance</a></li>
-                                            <li><a href="form-10-hazardous-waste-manifest-rules">Form 10 Manifest 7-Copy Rules</a></li>
-                                            <li><a href="transformer-oil-recycling-testing-standards">Transformer Oil IS 1866 &amp; BDV</a></li>
-                                            <li><a href="tnpcb-hazardous-waste-compliance-checklist">TNPCB Factory Audit Checklist</a></li>
+                                            <?php foreach ($blog_menu_list as $b_item) { ?>
+                                                <li><a href="<?php echo $b_item['url']; ?>"><?php echo htmlspecialchars($b_item['name']); ?></a></li>
+                                            <?php } ?>
                                         </ul>
                                     </li>
                                     <li><a href="contact-us">Contact Us</a></li>

@@ -37,9 +37,11 @@ AddType text/plain .txt
     RewriteRule ^our-products/?$ our-products.php [L,QSA]
     RewriteRule ^our-gallery/?$ our-gallery.php [L,QSA]
     RewriteRule ^contact-us/?$ contact-us.php [L,QSA]
-    RewriteRule ^cpcb-epr-used-oil-compliance/?$ cpcb-epr-used-oil-compliance.php [L,QSA]
+    # Clean SEO Slugs for Blog (supports both /blog/<slug> and /<slug>)
+    RewriteRule ^blog/([a-zA-Z0-9_-]+)/?$ blog.php?slug=$1 [L,QSA]
     RewriteRule ^blog/?$ blog.php [L,QSA]
-    RewriteRule ^form-10-hazardous-waste-manifest-rules/?$ form-10-hazardous-waste-manifest-rules.php [L,QSA]
-    RewriteRule ^transformer-oil-recycling-testing-standards/?$ transformer-oil-recycling-testing-standards.php [L,QSA]
-    RewriteRule ^tnpcb-hazardous-waste-compliance-checklist/?$ tnpcb-hazardous-waste-compliance-checklist.php [L,QSA]
+    RewriteRule ^cpcb-epr-used-oil-compliance/?$ blog.php?slug=cpcb-epr-used-oil-compliance [L,QSA]
+    RewriteRule ^form-10-hazardous-waste-manifest-rules/?$ blog.php?slug=form-10-hazardous-waste-manifest-rules [L,QSA]
+    RewriteRule ^transformer-oil-recycling-testing-standards/?$ blog.php?slug=transformer-oil-recycling-testing-standards [L,QSA]
+    RewriteRule ^tnpcb-hazardous-waste-compliance-checklist/?$ blog.php?slug=tnpcb-hazardous-waste-compliance-checklist [L,QSA]
 </IfModule>
